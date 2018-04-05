@@ -1,0 +1,29 @@
+.tabs {
+  display: flex;
+}
+
+.tabs a {
+  text-decoration: none;
+}
+
+.tabs > a {
+  padding: var(--box-1) var(--box-2);
+  flex: 0 1 auto;
+  color: var(--body-color);
+  border-bottom: var(--box-00) solid var(--state-disabled);
+  text-align: center;
+}
+
+.tabs > a.active,
+.tabs > a:hover {
+  opacity: 1;
+  border-bottom: var(--box-00) solid var(--state-dark);
+}
+
+.tabs > a.active {
+  border-color: var(--state-primary);
+}
+
+.full a {
+  flex: 1;
+}

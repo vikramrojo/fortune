@@ -1,18 +1,18 @@
 :root {
 	/* Spacing */
-	--box-0: 0.0625rem;
-	--box-00: 0.125rem;
-	--box-000: 0.25rem;
-	--box-0000: 0.5rem;
-	--box-1: 0.75rem;
-	--box-2: 1rem;
-	--box-3: 1.5rem;
-	--box-4: 2rem;
-	--box-5: 2.5rem;
-	--box-6: 3rem;
-	--box-7: 4rem;
-	--box-8: 5rem;
-	--box-9: 6rem;
+	--box-0: 0.0625rem; /* 1px */
+	--box-00: 0.125rem; /* 2px */
+	--box-000: 0.25rem; /* 4px */
+	--box-0000: 0.5rem; /* 8px */
+	--box-1: 0.75rem; /* 12px */
+	--box-2: 1rem; /* 16px */
+	--box-3: 1.5rem; /* 24px */
+	--box-4: 2rem; /* 32px */
+	--box-5: 2.5rem; /* 40px */
+	--box-6: 3rem; /* 48px */
+	--box-7: 4rem; /* 64px */
+	--box-8: 5rem; /* 80px */
+	--box-9: 6rem; /* 96px */
 
 	--white: white;
 	--whitesmoke: whitesmoke;
@@ -46,6 +46,7 @@
 	--state-danger: var(--red);
 	--state-light: var(--white);
 	--state-dark: var(--black);
+	--state-disabled: var(--lightgray);
 	--darken: rgba(0, 0, 0, 0.125);
 	--lighten: rgba(255, 255, 255, 0.100);
 	--lighten-200: rgba(255, 255, 255, 0.200);
