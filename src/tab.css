@@ -24,6 +24,4 @@
   border-color: var(--state-primary);
 }
 
-.full a {
-  flex: 1;
-}
+.tab-full a { flex: 1; }
