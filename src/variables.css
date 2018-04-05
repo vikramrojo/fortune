@@ -1,0 +1,130 @@
+:root {
+	/* Spacing */
+	--box-0: 0.0625rem;
+	--box-00: 0.125rem;
+	--box-000: 0.25rem;
+	--box-0000: 0.5rem;
+	--box-1: 0.75rem;
+	--box-2: 1rem;
+	--box-3: 1.5rem;
+	--box-4: 2rem;
+	--box-5: 2.5rem;
+	--box-6: 3rem;
+	--box-7: 4rem;
+	--box-8: 5rem;
+	--box-9: 6rem;
+
+	--white: white;
+	--whitesmoke: whitesmoke;
+	--lightgray: lightgray;
+	--silver: silver;
+	--darkgray: darkgray;
+	--gray: gray;
+	--black: black;
+
+	/* Colors (most courtesy of http://clrs.cc/) */
+	--navy: #001f3f;
+	--blue: #0074d9;
+	--aqua: #7fdbff;
+	--teal: #39cccc;
+	--olive: #3d9970;
+	--green: #2ecc40;
+	--lime: #01ff70;
+	--yellow: #ffdc00;
+	--orange: #ff851b;
+	--red: #ff4136;
+	--maroon: #85144b;
+	--fuchsia: #f012be;
+	--purple: #b10dc9;
+
+	/* States */
+	--state-primary: var(--blue);
+	--state-secondary: var(--gray);
+	--state-success: var(--green);
+	--state-info: var(--teal);
+	--state-warning: var(--orange);
+	--state-danger: var(--red);
+	--state-light: var(--white);
+	--state-dark: var(--black);
+
+	/* Components */
+	--component-bg-color: var(--whitesmoke);
+	--component-border-color: var(--silver);
+	--component-border-radius: var(--box-000);
+	--component-border-width: var(--box-0);
+	--component-focus-width: var(--box-00);
+	--component-padding-x: var(--box-0);
+	--component-padding-y: var(--box-0);
+	--component-speed: .1s;
+	--component-box-shadow-inner: inset 0 1px 1px rgba(0, 0, 0, .05);
+	--component-box-shadow-outer: 0 1px 0 rgba(0, 0, 0, .05);
+
+	/* Content.css */
+	--font-sans-serif: sans-serif; /* System Fonts */
+	--font-serif: serif;
+	--font-system: system-ui;
+	--font-monospace: Menlo, Consolas, "DejaVu Sans Mono", monospace;
+
+	--body-bg-color: var(--white);
+	--body-color: var(--black);
+	--body-color-muted: var(--gray);
+
+	--font-family: var(--font-system);
+	--font-size: var(--box-2); /* Most browsers use a default font size of 16px */
+	--font-size-small: calc(var(--font-size) * .75);
+	--font-weight-light: 300;
+	--font-weight: 400;
+	--font-weight-bold: 700;
+	--line-height: 1.5;
+
+	--code-font-size: 90%;
+	--code-color: var(--black);
+	--code-border-radius: var(--component-border-radius);
+	--code-bg-color: var(--component-bg-color);
+	--code-padding-x: calc(var(--font-size) * .4);
+	--code-padding-y: calc(var(--font-size) * .2);
+
+	--headings-font-family: var(--font-system);
+	--headings-font-weight: var(--font-weight-light);
+	--headings-line-height: 1.25;
+	--headings-margin-bottom: var(--box-1);
+	--headings-color: inherit;
+	--headings-font-size-h1: var(--box-6);
+	--headings-font-size-h2: var(--box-5);
+	--headings-font-size-h3: var(--box-4);
+	--headings-font-size-h4: var(--box-3);
+	--headings-font-size-h5: var(--box-2);
+	--headings-font-size-h6: var(--box-1);
+
+	--hr-border-width: var(--box-0);
+	--hr-border-color: var(--component-border-color);
+	--hr-margin-x: 0;
+	--hr-margin-y: var(--box-4);
+
+	--kbd-font-size: 90%;
+	--kbd-color: var(--white);
+	--kbd-border-radius: var(--component-border-radius);
+	--kbd-bg-color: var(--black);
+	--kbd-padding-x: calc(var(--font-size) * .4);
+	--kbd-padding-y: calc(var(--font-size) * .2);
+
+	--link-color: var(--state-primary);
+	--link-text-decoration: none;
+	--link-color-hover: var(--link-color);
+	--link-text-decoration-hover: underline;
+
+	--mark-color: inherit;
+	--mark-bg-color: var(--yellow);
+	--mark-padding-x: var(--box-1);
+	--mark-padding-y: var(--box-000);
+
+	--placeholder-color: var(--body-color-muted);
+
+	--pre-color: var(--code-color);
+	--pre-border-radius: var(--component-border-radius);
+	--pre-bg-color: var(--code-bg-color);
+	--pre-max-height: none;
+
+	--selection-color: var(--white);
+	--selection-bg-color: var(--state-primary);
+}

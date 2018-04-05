@@ -1,0 +1,21 @@
+.h-0 { height: 0; }
+.h-1 { height: var(--box-1); }
+.h-2 { height: var(--box-2); }
+.h-3 { height: var(--box-3); }
+.h-4 { height: var(--box-4); }
+.h-5 { height: var(--box-5); }
+.h-6 { height: var(--box-6); }
+
+.h-25 { height: 25%; }
+.h-33 { height: calc(100% / 3); }
+.h-50 { height: 50%; }
+.h-66 { height: calc((100% / 3) * 2); }
+.h-75 { height: 75%; }
+.h-100 { height: 100%; }
+
+.minvh-25 { min-height: 25vh; }
+.minvh-33 { min-height: calc(100 / 3)vh; }
+.minvh-50 { min-height: 50vh; }
+.minvh-66 { min-height: calc((100 / 3) * 2)vh; }
+.minvh-75 { min-height: 75vh; }
+.minvh-100 { min-height: 100vh; }

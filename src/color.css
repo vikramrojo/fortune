@@ -1,0 +1,32 @@
+.white { color: var(--white); }
+.smoke { color: var(--whitesmoke); }
+.light { color: var(--lightgray); }
+.silver { color: var(--silver); }
+.dark { color: var(--darkgray); }
+.gray,
+.grey { color: var(--gray); }
+.black { color: var(--black); }
+
+.bg-white { background-color: var(--white); }
+.bg-smoke { background-color: var(--whitesmoke); }
+.bg-light { background-color: var(--lightgray); }
+.bg-silver { background-color: var(--silver); }
+.bg-dark { background-color: var(--darkgray); }
+.bg-gray,
+.bg-grey { background-color: var(--gray); }
+.bg-black { background-color: var(--black); }
+
+.bg-navy {background-color: var(--navy); }
+.bg-blue {background-color: var(--blue); }
+.bg-aqua {background-color: var(--aqua); }
+.bg-teal {background-color: var(--teal); }
+.bg-olive {background-color: var(--olive); }
+.bg-green {background-color: var(--green); }
+.bg-lime {background-color: var(--lime); }
+.bg-yellow {background-color: var(--yellow); }
+.bg-orange {background-color: var(--orange); }
+.bg-red {background-color: var(--red); }
+.bg-maroon {background-color: var(--maroon); }
+.bg-fuchsia {background-color: var(--fuchsia); }
+.bg-purple {background-color: var(--purple); }
+.bg-silver {background-color: var(--silver); }
