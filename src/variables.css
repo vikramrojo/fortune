@@ -59,7 +59,7 @@
 	--component-border-color: var(--silver);
 	--component-border-radius: var(--box-00);
 	--component-border-width: var(--box-0);
-	/* --component-focus-width: var(--box-00); */
+	--component-focus-width: var(--box-00);
 	--component-padding-x: var(--box-1);
 	--component-padding-y: var(--box-1);
 	--component-speed: .1s;
@@ -243,9 +243,9 @@
 	--badge-color-danger: var(--white);
 	--badge-bg-color-danger: var(--state-danger);
 
-	--badge-color-light: var(--dark);
+	--badge-color-light: var(--black);
 	--badge-bg-color-light: var(--state-light);
 
-	--badge-color-dark: var(--light);
+	--badge-color-dark: var(--white);
 	--badge-bg-color-dark: var(--state-dark);
 }
