@@ -1,6 +1,6 @@
 {
   "name": "fortune-css",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Vikram Babu",
   "description": "Fortune is your friendly CSS framework.",
   "main": "dist/fortune.css",
@@ -9,7 +9,9 @@
     "start": "gulp watch",
     "test": "gulp test"
   },
-  "keywords": ["css"],
+  "keywords": [
+    "css"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/atav1k/fortune"
