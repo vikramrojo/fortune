@@ -1,19 +1,10 @@
 {
-  "name": "fortune",
-  "version": "0.1.0",
+  "name": "fortune-css",
+  "version": "0.0.1",
   "author": "Vikram Babu",
   "description": "Fortune is your friendly CSS framework.",
-  "main": "dist/fortune.css",
-  "scripts": {
-    "prepare": "mkdir -p dist && gulp build",
-    "start": "gulp watch",
-    "build": "gulp build",
-    "watch": "gulp watch",
-    "test": "gulp test"
-  },
-  "keywords": [
-    "CSS"
-  ],
+  "main": "src/fortune.css",
+  "keywords": ["css"],
   "repository": {
     "type": "git",
     "url": "https://github.com/atav1k/fortune"
@@ -22,17 +13,5 @@
   "bugs": {
     "url": "https://github.com/atav1k/fortune/issues"
   },
-  "homepage": "https://fortune.dance",
-  "devDependencies": {
-    "gulp": "latest",
-    "gulp-cssnano": "latest",
-    "gulp-gzip": "latest",
-    "gulp-postcss": "latest",
-    "gulp-rename": "latest",
-    "gulp-size": "latest",
-    "gulp-stylelint": "latest",
-    "postcss-cssnext": "latest",
-    "postcss-import": "latest",
-    "stylelint": "latest"
-  }
+  "homepage": "https://fortune.dance"
 }
