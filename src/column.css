@@ -1,0 +1,111 @@
+.container {
+  max-width: var(--column-maxWidth);
+  margin: 0 auto;
+  width: 96%;
+  padding: 0 calc(var(--column-gutter) / 2);
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-left: calc(var(--column-gutter) / -2);
+  margin-right: calc(var(--column-gutter) / -2);
+}
+
+.col {
+  flex: 1;
+}
+
+.col,
+[class*=" col-"],
+[class^='col-'] {
+  margin: 0 calc(var(--column-gutter) / 2) calc(var(--column-gutter) / 2);
+}
+
+.col-1 {
+  flex: 0 0 calc((100% / (12/1)) - var(--column-gutter));
+  max-width: calc((100% / (12/1)) - var(--column-gutter));
+}
+
+.col-2 {
+  flex: 0 0 calc((100% / (12/2)) - var(--column-gutter));
+  max-width: calc((100% / (12/2)) - var(--column-gutter));
+}
+
+.col-3 {
+  flex: 0 0 calc((100% / (12/3)) - var(--column-gutter));
+  max-width: calc((100% / (12/3)) - var(--column-gutter));
+}
+
+.col-4 {
+  flex: 0 0 calc((100% / (12/4)) - var(--column-gutter));
+  max-width: calc((100% / (12/4)) - var(--column-gutter));
+}
+
+.col-5 {
+  flex: 0 0 calc((100% / (12/5)) - var(--column-gutter));
+  max-width: calc((100% / (12/5)) - var(--column-gutter));
+}
+
+.col-6 {
+  flex: 0 0 calc((100% / (12/6)) - var(--column-gutter));
+  max-width: calc((100% / (12/6)) - var(--column-gutter));
+}
+
+.col-7 {
+  flex: 0 0 calc((100% / (12/7)) - var(--column-gutter));
+  max-width: calc((100% / (12/7)) - var(--column-gutter));
+}
+
+.col-8 {
+  flex: 0 0 calc((100% / (12/8)) - var(--column-gutter));
+  max-width: calc((100% / (12/8)) - var(--column-gutter));
+}
+
+.col-9 {
+  flex: 0 0 calc((100% / (12/9)) - var(--column-gutter));
+  max-width: calc((100% / (12/9)) - var(--column-gutter));
+}
+
+.col-10 {
+  flex: 0 0 calc((100% / (12/10)) - var(--column-gutter));
+  max-width: calc((100% / (12/10)) - var(--column-gutter));
+}
+
+.col-11 {
+  flex: 0 0 calc((100% / (12/11)) - var(--column-gutter));
+  max-width: calc((100% / (12/11)) - var(--column-gutter));
+}
+
+.col-12 {
+  flex: 0 0 calc((100% / (12/12)) - var(--column-gutter));
+  max-width: calc((100% / (12/12)) - var(--column-gutter));
+}
+
+@media screen and (--breakpoint-md) {
+  .container {
+      width: 100%;
+  }
+
+  .hide-tablet {
+    display: none !important
+  }
+
+  .col,
+  [class*=" col-"],
+  [class^='col-'] {
+      flex: 0 1 100%;
+      max-width: 100%;
+  }
+}
+
+@media screen and (--breakpoint-sm) {
+    .hide-phone {
+        display: none !important;
+    }
+}
+
+@custom-media --breakpoint-sm (max-width: 40rem);
+@custom-media --breakpoint-md (max-width: 52rem);
+@custom-media --breakpoint-lg (max-width: 64rem);

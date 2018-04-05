@@ -2,7 +2,9 @@
 @import url("./variables.css");
 
 @import url("./border.css");
+@import url("./button.css");
 @import url("./color.css");
+@import url("./column.css");
 @import url("./display.css");
 @import url("./flex.css");
 @import url("./grid.css");

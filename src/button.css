@@ -1,0 +1,106 @@
+/*! Buttons */
+
+button,
+.button {
+  font-family: var(--button-font-family);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  text-align: center;
+  text-decoration: none;
+  color: var(--button-color);
+  background-color: var(--button-bg-color);
+  border-radius: var(--button-border-radius);
+  border-style: solid;
+  border-width: var(--button-border-width);
+  border-color: var(--button-bg-color);
+  height: var(--button-height);
+  line-height: calc(var(--button-height) - var(--button-border-width) * 2);
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: 0 var(--box-1); /* ems for relative sizing */
+  cursor: pointer;
+  display: inline-block;
+  transition: var(--button-speed) all;
+  box-shadow: var(--component-box-shadow-outer);
+
+  &:hover {
+    color: var(--button-color);
+    background-image: linear-gradient(
+      var(--darken),
+      var(--darken)
+    );
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    background-image: linear-gradient(
+      var(--lighten),
+      var(--lighten)
+    );
+  }
+
+  &:focus {
+    outline: none;
+    /* box-shadow: 0 0 0 var(--button-focus-width) var(--button-bg-color); */
+  }
+
+  &:disabled,
+  &.disabled {
+    opacity: 0.2;
+    box-shadow: none;
+    text-decoration: none;
+    opacity: .5;
+    cursor: not-allowed;
+  }
+
+  /* Sizes */
+  &.button-xs {
+    font-size: var(--button-font-size-xs);
+    height: var(--button-height-xs);
+    line-height: calc(var(--button-height-xs) - var(--button-border-width) * 2);
+  }
+
+  &.button-sm {
+    font-size: var(--button-font-size-sm);
+    height: var(--button-height-sm);
+    line-height: calc(var(--button-height-sm) - var(--button-border-width) * 2);
+  }
+
+  &.button-lg {
+    font-size: var(--button-font-size-lg);
+    height: var(--button-height-lg);
+    line-height: calc(var(--button-height-lg) - var(--button-border-width) * 2);
+  }
+
+  &.button-xl {
+    font-size: var(--button-font-size-xl);
+    height: var(--button-height-xl);
+    line-height: calc(var(--button-height-xl) - var(--button-border-width) * 2);
+  }
+
+  /* Block buttons */
+  &.button-block {
+    width: 100% !important;
+    display: block;
+  }
+
+  /* Link buttons */
+  &.button-link {
+    border-color: transparent;
+    background-color: transparent;
+    color: var(--link-color);
+    text-decoration: var(--link-text-decoration);
+    box-shadow: none;
+  }
+
+  &.button-link:hover,
+  &.button-link:focus {
+    border-color: transparent;
+    background-color: transparent;
+    color: var(--link-color-hover);
+    text-decoration: var(--link-text-decoration-hover);
+    box-shadow: none;
+  }
+}

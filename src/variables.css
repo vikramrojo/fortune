@@ -46,18 +46,43 @@
 	--state-danger: var(--red);
 	--state-light: var(--white);
 	--state-dark: var(--black);
+	--darken: rgba(0, 0, 0, 0.125);
+	--lighten: rgba(255, 255, 255, 0.125);
 
 	/* Components */
 	--component-bg-color: var(--whitesmoke);
 	--component-border-color: var(--silver);
-	--component-border-radius: var(--box-000);
+	--component-border-radius: var(--box-00);
 	--component-border-width: var(--box-0);
-	--component-focus-width: var(--box-00);
-	--component-padding-x: var(--box-0);
-	--component-padding-y: var(--box-0);
+	/* --component-focus-width: var(--box-00); */
+	--component-padding-x: var(--box-1);
+	--component-padding-y: var(--box-1);
 	--component-speed: .1s;
-	--component-box-shadow-inner: inset 0 1px 1px rgba(0, 0, 0, .05);
-	--component-box-shadow-outer: 0 1px 0 rgba(0, 0, 0, .05);
+	--component-box-shadow-inner: inset 0 1px 1px rgba(0, 0, 0, .1);
+	--component-box-shadow-outer: 0 2px 2px rgba(0, 0, 0, .1);
+
+	/* Button.css */
+	--button-height-xs: var(--input-height-xs);
+	--button-height-sm: var(--input-height-sm);
+	--button-height: var(--input-height);
+	--button-height-lg: var(--input-height-lg);
+	--button-height-xl: var(--input-height-xl);
+	--button-font-size-xs: var(--input-font-size-xs);
+	--button-font-size-sm: var(--input-font-size-sm);
+	--button-font-size: var(--input-font-size);
+	--button-font-size-lg: var(--input-font-size-lg);
+	--button-font-size-xl: var(--input-font-size-xl);
+	--button-font-family: var(--input-font-family);
+	--button-font-weight: var(--input-font-weight);
+	--button-border-radius: var(--component-border-radius);
+	--button-border-width: var(--component-border-width);
+	--button-focus-width: var(--component-focus-width);
+	--button-speed: var(--component-speed);
+	--button-loader-size: 1em;
+	--button-loader-border-width: .15em;
+
+	--button-color: var(--white);
+	--button-bg-color: var(--state-primary);
 
 	/* Content.css */
 	--font-sans-serif: sans-serif; /* System Fonts */
@@ -127,4 +152,31 @@
 
 	--selection-color: var(--white);
 	--selection-bg-color: var(--state-primary);
+
+	/* Column.css */
+	--column-maxWidth: 120rem;
+	--column-gutter: 2rem;
+
+	/* Form.css */
+	--input-height-xs: var(--box-2);
+	--input-height-sm: var(--box-3);
+	--input-height: var(--box-4);
+	--input-height-lg: var(--box-5);
+	--input-height-xl: var(--box-6);
+	--input-font-size-xs: var(--box-0000);
+	--input-font-size-sm: var(--box-0);
+	--input-font-size: var(--box-1);
+	--input-font-size-lg: var(--box-2);
+	--input-font-size-xl: var(--box-3);
+	--input-font-family: inherit;
+	--input-font-weight: inherit;
+	--input-color: var(--body-color);
+	--input-border-color: var(--component-border-color);
+	--input-border-width: var(--box-0);
+	--input-border-radius: var(--component-border-radius);
+	--input-bg-color: var(--color-white);
+	--input-box-shadow: var(--component-box-shadow-inner);
+	--input-readonly-bg-color: var(--component-bg-color);
+	--input-focus-color: var(--state-primary);
+	--input-speed: var(--component-speed);
 }
