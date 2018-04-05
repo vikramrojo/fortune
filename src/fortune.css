@@ -1,8 +1,14 @@
 @import url("./reset.css");
 @import url("./variables.css");
 
-@import url("./border.css");
+/* Components */
 @import url("./button.css");
+@import url("./table.css");
+@import url("./alert.css");
+@import url("./badge.css");
+
+/* Utilities */
+@import url("./border.css");
 @import url("./color.css");
 @import url("./column.css");
 @import url("./display.css");
