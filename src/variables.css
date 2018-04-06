@@ -159,8 +159,8 @@
 	--selection-bg-color: var(--state-primary);
 
 	/* Column.css */
-	--column-maxWidth: 120rem;
-	--column-gutter: 2rem;
+	--container-width: 80rem;
+	--column-gutter: var(--box-4);
 
 	/* Form.css */
 	--input-height-xs: var(--box-2);

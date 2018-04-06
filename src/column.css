@@ -1,7 +1,7 @@
 .container {
-  max-width: var(--column-maxWidth);
+  max-width: var(--container-width);
   margin: 0 auto;
-  width: 96%;
+  width: 100%;
   padding: 0 calc(var(--column-gutter) / 2);
 }
 
@@ -13,6 +13,10 @@
   margin-right: calc(var(--column-gutter) / -2);
 }
 
+.row-flush > .col, .row-flush > [class*="col-"] {
+    padding: 0;
+}
+
 .col {
   flex: 1;
 }
@@ -20,75 +24,102 @@
 .col,
 [class*=" col-"],
 [class^='col-'] {
-  margin: 0 calc(var(--column-gutter) / 2) calc(var(--column-gutter) / 2);
+  padding: 0 calc(var(--column-gutter) / 2);
+  /* Uncomment for vertical gutters */
+  /* padding: calc(var(--column-gutter) / 2); */
 }
 
 .col-1 {
-  flex: 0 0 calc((100% / (12/1)) - var(--column-gutter));
-  max-width: calc((100% / (12/1)) - var(--column-gutter));
+  flex: 0 0 calc(100% / (12/1));
+  max-width: calc(100% / (12/1));
 }
 
 .col-2 {
-  flex: 0 0 calc((100% / (12/2)) - var(--column-gutter));
-  max-width: calc((100% / (12/2)) - var(--column-gutter));
+  flex: 0 0 calc(100% / (12/2));
+  max-width: calc(100% / (12/2));
 }
 
 .col-3 {
-  flex: 0 0 calc((100% / (12/3)) - var(--column-gutter));
-  max-width: calc((100% / (12/3)) - var(--column-gutter));
+  flex: 0 0 calc(100% / (12/3));
+  max-width: calc(100% / (12/3));
 }
 
 .col-4 {
-  flex: 0 0 calc((100% / (12/4)) - var(--column-gutter));
-  max-width: calc((100% / (12/4)) - var(--column-gutter));
+  flex: 0 0 calc(100% / (12/4));
+  max-width: calc(100% / (12/4));
 }
 
 .col-5 {
-  flex: 0 0 calc((100% / (12/5)) - var(--column-gutter));
-  max-width: calc((100% / (12/5)) - var(--column-gutter));
+  flex: 0 0 calc(100% / (12/5));
+  max-width: calc(100% / (12/5));
 }
 
 .col-6 {
-  flex: 0 0 calc((100% / (12/6)) - var(--column-gutter));
-  max-width: calc((100% / (12/6)) - var(--column-gutter));
+  flex: 0 0 calc(100% / (12/6));
+  max-width: calc(100% / (12/6));
 }
 
 .col-7 {
-  flex: 0 0 calc((100% / (12/7)) - var(--column-gutter));
-  max-width: calc((100% / (12/7)) - var(--column-gutter));
+  flex: 0 0 calc(100% / (12/7));
+  max-width: calc(100% / (12/7));
 }
 
 .col-8 {
-  flex: 0 0 calc((100% / (12/8)) - var(--column-gutter));
-  max-width: calc((100% / (12/8)) - var(--column-gutter));
+  flex: 0 0 calc(100% / (12/8));
+  max-width: calc(100% / (12/8));
 }
 
 .col-9 {
-  flex: 0 0 calc((100% / (12/9)) - var(--column-gutter));
-  max-width: calc((100% / (12/9)) - var(--column-gutter));
+  flex: 0 0 calc(100% / (12/9));
+  max-width: calc(100% / (12/9));
 }
 
 .col-10 {
-  flex: 0 0 calc((100% / (12/10)) - var(--column-gutter));
-  max-width: calc((100% / (12/10)) - var(--column-gutter));
+  flex: 0 0 calc(100% / (12/10));
+  max-width: calc(100% / (12/10));
 }
 
 .col-11 {
-  flex: 0 0 calc((100% / (12/11)) - var(--column-gutter));
-  max-width: calc((100% / (12/11)) - var(--column-gutter));
+  flex: 0 0 calc(100% / (12/11));
+  max-width: calc(100% / (12/11));
 }
 
 .col-12 {
-  flex: 0 0 calc((100% / (12/12)) - var(--column-gutter));
-  max-width: calc((100% / (12/12)) - var(--column-gutter));
+  flex: 0 0 calc(100% / (12/12));
+  max-width: calc(100% / (12/12));
 }
+
+.order-1 { order: 1; }
+.order-2 { order: 2; }
+.order-3 { order: 3; }
+.order-4 { order: 4; }
+.order-5 { order: 5; }
+.order-6 { order: 6; }
+.order-7 { order: 7; }
+.order-8 { order: 8; }
+.order-9 { order: 9; }
+.order-10 { order: 10; }
+.order-11 { order: 11; }
+.order-12 { order: 12; }
+
+.offset-1 { margin-left: calc(100% / (12/1)); }
+.offset-2 { margin-left: calc(100% / (12/2)); }
+.offset-3 { margin-left: calc(100% / (12/3)); }
+.offset-4 { margin-left: calc(100% / (12/4)); }
+.offset-5 { margin-left: calc(100% / (12/5)); }
+.offset-6 { margin-left: calc(100% / (12/6)); }
+.offset-7 { margin-left: calc(100% / (12/7)); }
+.offset-8 { margin-left: calc(100% / (12/8)); }
+.offset-9 { margin-left: calc(100% / (12/9)); }
+.offset-10 { margin-left: calc(100% / (12/10)); }
+.offset-11 { margin-left: calc(100% / (12/11)); }
 
 @media screen and (--breakpoint-md) {
   .container {
       width: 100%;
   }
 
-  .hide-tablet {
+  .hide {
     display: none !important
   }
 
@@ -98,12 +129,6 @@
       flex: 0 1 100%;
       max-width: 100%;
   }
-}
-
-@media screen and (--breakpoint-sm) {
-    .hide-phone {
-        display: none !important;
-    }
 }
 
 @custom-media --breakpoint-sm (max-width: 40rem);
