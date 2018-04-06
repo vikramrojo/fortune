@@ -2,10 +2,6 @@
   display: flex;
 }
 
-.tabs a {
-  text-decoration: none;
-}
-
 .tabs > a {
   padding: var(--box-1) var(--box-2);
   flex: 0 1 auto;
@@ -18,6 +14,7 @@
 .tabs > a:hover {
   opacity: 1;
   border-bottom: var(--box-00) solid var(--state-dark);
+  text-decoration: none;
 }
 
 .tabs > a.active {

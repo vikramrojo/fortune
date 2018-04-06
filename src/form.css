@@ -1,0 +1,492 @@
+fieldset {
+  border: solid var(--fieldset-border-width) var(--fieldset-border-color);
+  border-radius: var(--fieldset-border-radius);
+  padding: var(--fieldset-padding-y) var(--fieldset-padding-x);
+  margin-bottom: 1.5rem;
+
+  & legend {
+    font-weight: var(--font-weight-bold);
+    padding: 0 .25rem;
+  }
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+label {
+  color: var(--label-color);
+  display: inline-block;
+  margin-bottom: .25rem;
+
+  & + label {
+    margin-left: 1rem;
+  }
+}
+
+input[type="color"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select,
+textarea {
+  width: 100%;
+  font-family: var(--input-font-family);
+  font-size: var(--input-font-size);
+  font-weight: var(--input-font-weight);
+  color: var(--input-color);
+  border: solid var(--input-border-width) var(--input-border-color);
+  border-radius: var(--input-border-radius);
+  box-shadow: var(--input-box-shadow);
+  background-color: var(--input-bg-color);
+  height: var(--input-height);
+  line-height: var(--input-height);
+  vertical-align: middle;
+  display: block;
+  padding-left: var(--box-0000);
+  padding-right: var(--box-0000);
+  margin: 0;
+  transition:
+    var(--input-speed) border-color,
+    var(--component-speed) background-color,
+    var(--component-speed) color;
+  white-space: nowrap;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+  &:focus {
+    outline: none;
+    border-color: var(--input-focus-color);
+  }
+
+  &[disabled] {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+
+  &[readonly] {
+    background-color: var(--input-readonly-bg-color);
+  }
+
+  &[type="color"] {
+    padding: var(--box-0000);
+
+    &::-webkit-color-swatch-wrapper {
+      padding: 0;
+    }
+
+    &::-webkit-color-swatch {
+      border: none;
+      border-radius: var(--input-border-radius);
+    }
+  }
+
+  &.input-xs {
+    font-size: var(--input-font-size-xs);
+    height: var(--input-height-xs);
+    line-height: var(--input-height-xs);
+  }
+
+  &.input-sm {
+    font-size: var(--input-font-size-sm);
+    height: var(--input-height-sm);
+    line-height: var(--input-height-sm);
+  }
+
+  &.input-lg {
+    font-size: var(--input-font-size-lg);
+    height: var(--input-height-lg);
+    line-height: var(--input-height-lg);
+  }
+
+  &.input-xl {
+    font-size: var(--input-font-size-xl);
+    height: var(--input-height-xl);
+    line-height: var(--input-height-xl);
+  }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  vertical-align: var(--box-0);
+}
+
+select {
+  position: relative;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='41px' height='26px' viewBox='0 0 41 26' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3C/defs%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpolygon id='Path-3' fill='%23000000' points='0 5.38215461 19.9830489 25.3652035 40.1398855 5.20836689 34.9315186 0 19.8691842 15.0623344 4.83971338 0.0328636246'%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E%0A");
+  background-position: right var(--box-0000) center;
+  background-repeat: no-repeat;
+  background-size: var(--box-1);
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: var(--box-3);
+}
+
+textarea,
+textarea.input-xs,
+textarea.input-sm,
+textarea.input-lg,
+textarea.input-xl {
+  height: auto;
+  resize: vertical;
+  line-height: var(--line-height);
+  white-space: normal;
+}
+
+/* Range */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: var(--input-height);
+  line-height: var(--input-height);
+  vertical-align: middle;
+
+  &:focus {
+    outline: none;
+  }
+
+  /* Webkit */
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: var(--input-range-track-height);
+    cursor: pointer;
+    background: var(--input-range-track-color);
+    border-radius: var(--input-border-radius);
+    border: none;
+    box-shadow: var(--input-range-track-box-shadow);
+  }
+
+  &::-webkit-slider-thumb {
+    border: none;
+    width: var(--input-range-thumb-height);
+    height: var(--input-range-thumb-height);
+    border-radius: 50%;
+    background: var(--input-range-thumb-color);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: calc(var(--input-range-thumb-height) / -2 + var(--input-range-track-height) / 2);
+  }
+
+  &:focus {
+    &::-webkit-slider-runnable-track {
+      background: var(--input-range-track-color);
+    }
+
+    &::-webkit-slider-thumb {
+      box-shadow: 0 0 0 var(--component-focus-width) color(var(--input-range-thumb-color) alpha(50%));
+    }
+  }
+
+  /* Firefox */
+  &::-moz-range-track {
+    width: 100%;
+    height: var(--input-range-track-height);
+    cursor: pointer;
+    background: var(--input-range-track-color);
+    border-radius: var(--input-border-radius);
+    border: none;
+    box-shadow: var(--input-range-track-box-shadow);
+  }
+
+  &::-moz-range-thumb {
+    border: none;
+    height: var(--input-range-thumb-height);
+    width: var(--input-range-thumb-height);
+    border-radius: 50%;
+    background: var(--input-range-thumb-color);
+    cursor: pointer;
+  }
+
+  &:focus::-moz-range-thumb {
+    box-shadow: 0 0 0 var(--component-focus-width) color(var(--input-range-thumb-color) alpha(50%));
+  }
+
+  /* IE / Edge */
+  &::-ms-track {
+    width: 100%;
+    height: var(--input-range-track-height);
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+
+  &::-ms-fill-lower {
+    background: var(--input-range-track-color);
+    border: none;
+    border-radius: var(--input-border-radius);
+  }
+
+  &::-ms-fill-upper {
+    background: var(--input-range-track-color);
+    border: none;
+    border-radius: var(--input-border-radius);
+  }
+
+  &::-ms-thumb {
+    border: none;
+    height: var(--input-range-thumb-height);
+    width: var(--input-range-thumb-height);
+    border-radius: 50%;
+    background: var(--input-range-thumb-color);
+    cursor: pointer;
+    margin-top: calc(var(--input-range-track-height) / -2);
+  }
+
+  &:focus::-ms-thumb {
+    box-shadow: 0 0 0 var(--component-focus-width) color(var(--input-range-thumb-color) alpha(50%));
+  }
+
+  &:focus::-ms-fill-lower {
+    background: var(--input-range-track-color);
+  }
+
+  &:focus::-ms-fill-upper {
+    background: var(--input-range-track-color);
+  }
+}
+
+/* Input fields */
+.input-field {
+  margin-bottom: var(--box-3);
+}
+
+/* Input groups */
+.input-group {
+  width: 100%;
+  display: flex;
+  margin-bottom: var(--box-3);
+
+  & > input,
+  & > button,
+  & > .button,
+  & > .dropdown button,
+  & > .dropdown .button,
+  & > .file-button label,
+  & > .input-icon input,
+  & > .input-icon select {
+    border-radius: 0;
+  }
+
+  & > input:first-child,
+  & > button:first-child,
+  & > .button:first-child,
+  & > .dropdown:first-child button,
+  & > .dropdown:first-child .button,
+  & > .file-button:first-child label,
+  & > .input-icon:first-child input,
+  & > .input-icon:first-child select {
+    border-top-left-radius: var(--input-border-radius);
+    border-bottom-left-radius: var(--input-border-radius);
+  }
+
+  & > input:last-child,
+  & > button:last-child,
+  & > .button:last-child,
+  & > .dropdown:last-child button,
+  & > .dropdown:last-child .button,
+  & > .file-button:last-child label,
+  & > .input-icon:last-child input,
+  & > .input-icon:last-child select {
+    border-top-right-radius: var(--input-border-radius);
+    border-bottom-right-radius: var(--input-border-radius);
+  }
+
+  & > input + input {
+    border-left-width: 0;
+  }
+
+  & > input + input:focus {
+    border-left-width: var(--input-border-width);
+    margin-left: calc(var(--input-border-width) * -1);
+  }
+
+  /* Force a new stacking context so focus rings don't get truncated by adjacent elements */
+  & button:focus,
+  & .button:focus,
+  & .file-button input[type="file"]:focus + label {
+    transform: translateZ(0);
+  }
+}
+
+/* Input hints */
+.input-hint {
+  font-size: var(--input-hint-font-size);
+  color: var(--input-hint-color);
+  margin: 0 0 0 0;
+  display: block;
+}
+
+/* Input groups can have input hints, but we need to adjust margins a bit */
+.input-group + .input-hint {
+  margin-top: calc(-1 * var(--box-3)); /* input group margin - input hint margin */
+  margin-bottom: 1.5rem;
+}
+
+/* Input addons */
+.input-addon {
+  font-size: var(--input-font-size);
+  height: var(--input-height);
+  line-height: var(--input-height);
+  border-top: solid var(--input-border-width) var(--input-border-color);
+  border-bottom: solid var(--input-border-width) var(--input-border-color);
+  background: var(--input-addon-bg-color);
+  color: var(--input-addon-color);
+  padding: 0 .5rem;
+  white-space: nowrap;
+
+  &:first-child {
+    border-left: solid var(--input-border-width) var(--input-border-color);
+    border-top-left-radius: var(--input-border-radius);
+    border-bottom-left-radius: var(--input-border-radius);
+  }
+
+  &:last-child {
+    border-right: solid var(--input-border-width) var(--input-border-color);
+    border-top-right-radius: var(--input-border-radius);
+    border-bottom-right-radius: var(--input-border-radius);
+  }
+
+  &.input-addon-xs {
+    font-size: var(--input-font-size-xs);
+    height: var(--input-height-xs);
+    line-height: var(--input-height-xs);
+  }
+
+  &.input-addon-sm {
+    font-size: var(--input-font-size-sm);
+    height: var(--input-height-sm);
+    line-height: var(--input-height-sm);
+  }
+
+  &.input-addon-lg {
+    font-size: var(--input-font-size-lg);
+    height: var(--input-height-lg);
+    line-height: var(--input-height-lg);
+  }
+
+  &.input-addon-xl {
+    font-size: var(--input-font-size-xl);
+    height: var(--input-height-xl);
+    line-height: var(--input-height-xl);
+  }
+}
+
+/* Input icons */
+.input-icon {
+  position: relative;
+  width: 100%;
+
+  /* Change default position for select controls so icons don't get hidden */
+  & select {
+    position: static;
+  }
+
+  & input:not(:first-child),
+  & select:not(:first-child) {
+    padding-left: var(--input-icon-width);
+  }
+
+  & input:not(:last-child) {
+    padding-right: var(--input-icon-width);
+  }
+
+  & :first-child:not(input, select),
+  & :last-child:not(input, select) {
+    position: absolute;
+    top: 0;
+    left: var(--input-icon-offset);
+    height: var(--input-height);
+    line-height: var(--input-height);
+    color: var(--input-icon-color);
+    vertical-align: middle;
+    pointer-events: none;
+  }
+
+  & :last-child:not(input, select) {
+    left: auto;
+    right: var(--input-icon-offset);
+  }
+
+  &.input-icon-xs {
+    & :first-child:not(input, select),
+    & :last-child:not(input, select) {
+      font-size: var(--input-font-size-xs);
+      height: var(--input-height-xs);
+      line-height: var(--input-height-xs);
+    }
+  }
+
+  &.input-icon-sm {
+    & :first-child:not(input, select),
+    & :last-child:not(input, select) {
+      font-size: var(--input-font-size-sm);
+      height: var(--input-height-sm);
+      line-height: var(--input-height-sm);
+    }
+  }
+
+  &.input-icon-lg {
+    & :first-child:not(input, select),
+    & :last-child:not(input, select) {
+      font-size: var(--input-font-size-lg);
+      height: var(--input-height-lg);
+      line-height: var(--input-height-lg);
+    }
+  }
+
+  &.input-icon-xl {
+    & :first-child:not(input, select),
+    & :last-child:not(input, select) {
+      font-size: var(--input-font-size-xl);
+      height: var(--input-height-xl);
+      line-height: var(--input-height-xl);
+    }
+  }
+}
+
+/* Validation */
+.input-invalid {
+  & label {
+    color: var(--input-invalid-color) !important;
+  }
+
+  & input,
+  & select,
+  & textarea {
+    color: var(--input-invalid-color) !important;
+    border-color: var(--input-invalid-border-color) !important;
+  }
+
+  & .input-icon :first-child:not(input, select),
+  & .input-icon :last-child:not(input, select) {
+    color: var(--input-invalid-color);
+  }
+}
+
+.input-valid {
+  & label {
+    color: var(--input-valid-color) !important;
+  }
+
+  & input,
+  & select,
+  & textarea {
+    color: var(--input-valid-color) !important;
+    border-color: var(--input-valid-border-color) !important;
+  }
+
+  & .input-icon :first-child:not(input, select),
+  & .input-icon :last-child:not(input, select) {
+    color: var(--input-valid-color);
+  }
+}

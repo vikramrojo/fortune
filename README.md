@@ -4,7 +4,7 @@
 
 Fortune helps prototype sites by providing a set of non-blocking utilities and basic components.
 
-- ⚡️  Light-weight at 10kb
+- ⚡️  Light-weight at < 10kb gzipped
 - ⛔️  No preprocessor required
 - 📐  Easy CSS grids & flexbox
 - 🌈  Customizable CSS variables

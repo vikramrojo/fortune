@@ -63,8 +63,8 @@
 	--component-padding-x: var(--box-1);
 	--component-padding-y: var(--box-1);
 	--component-speed: .1s;
-	--component-box-shadow-inner: inset 0 1px 1px rgba(0, 0, 0, .1);
-	--component-box-shadow-outer: 0 2px 2px rgba(0, 0, 0, .1);
+	--component-box-shadow-inner: inset 0 1px 1px var(--darken);
+	--component-box-shadow-outer: 0 2px 2px var(--darken);
 
 	/* Button.css */
 	--button-height-xs: var(--input-height-xs);
@@ -163,16 +163,16 @@
 	--column-gutter: var(--box-4);
 
 	/* Form.css */
-	--input-height-xs: var(--box-2);
-	--input-height-sm: var(--box-3);
-	--input-height: var(--box-4);
-	--input-height-lg: var(--box-5);
-	--input-height-xl: var(--box-6);
+	--input-height-xs: var(--box-3);
+	--input-height-sm: var(--box-4);
+	--input-height: var(--box-5);
+	--input-height-lg: var(--box-6);
+	--input-height-xl: var(--box-7);
 	--input-font-size-xs: var(--box-0000);
-	--input-font-size-sm: var(--box-0);
-	--input-font-size: var(--box-1);
-	--input-font-size-lg: var(--box-2);
-	--input-font-size-xl: var(--box-3);
+	--input-font-size-sm: var(--box-1);
+	--input-font-size: var(--box-2);
+	--input-font-size-lg: var(--box-3);
+	--input-font-size-xl: var(--box-4);
 	--input-font-family: inherit;
 	--input-font-weight: inherit;
 	--input-color: var(--body-color);
@@ -184,6 +184,35 @@
 	--input-readonly-bg-color: var(--component-bg-color);
 	--input-focus-color: var(--state-primary);
 	--input-speed: var(--component-speed);
+
+	--input-addon-bg-color: var(--component-bg-color);
+	--input-addon-color: var(--body-color-muted);
+
+	--input-hint-color: var(--body-color-muted);
+	--input-hint-font-size: var(--font-size-small);
+
+	--input-icon-width: 2em;
+	--input-icon-offset: .5em;
+	--input-icon-color: var(--state-secondary);
+
+	--input-range-track-height: .5rem;
+	--input-range-track-color: var(--component-bg-color);
+	--input-range-track-box-shadow: var(--component-box-shadow-inner);
+	--input-range-thumb-height: 1.25rem;
+	--input-range-thumb-color: var(--state-primary);
+
+	--input-invalid-color: var(--state-danger);
+	--input-invalid-border-color: var(--state-danger);
+	--input-valid-color: var(--state-success);
+	--input-valid-border-color: var(--state-success);
+
+	--fieldset-border-color: var(--component-border-color);
+	--fieldset-border-width: var(--component-border-width);
+	--fieldset-border-radius: var(--component-border-radius);
+	--fieldset-padding-x: var(--box-2);
+	--fieldset-padding-y: var(--box-3);
+
+	--label-color: inherit;
 
 	/* Table.css */
 	--table-bg-color: var(--white);
