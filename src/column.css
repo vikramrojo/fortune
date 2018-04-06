@@ -114,7 +114,7 @@
 .offset-10 { margin-left: calc(100% / (12/10)); }
 .offset-11 { margin-left: calc(100% / (12/11)); }
 
-@media screen and (--breakpoint-md) {
+@media screen and (--breakpoint) {
   .container {
       width: 100%;
   }
@@ -131,6 +131,4 @@
   }
 }
 
-@custom-media --breakpoint-sm (max-width: 40rem);
-@custom-media --breakpoint-md (max-width: 52rem);
-@custom-media --breakpoint-lg (max-width: 64rem);
+@custom-media --breakpoint (max-width: 52rem);
