@@ -7,6 +7,15 @@
 .left-0 { left: 0; }
 .right-0 { right: 0; }
 .top-0 { top: 0; }
+.top-1 { top: var(--box-1); }
+.top-2 { top: var(--box-2); }
+.top-3 { top: var(--box-3); }
+.top-4 { top: var(--box-4); }
+.top-5 { top: var(--box-5); }
+.top-6 { top: var(--box-6); }
+.top-7 { top: var(--box-7); }
+.top-8 { top: var(--box-8); }
+.top-9 { top: var(--box-9); }
 
 .z-0 { z-index: 0; }
 .z-1 { z-index: 10; }

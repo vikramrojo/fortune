@@ -5,6 +5,9 @@
 .h-4 { height: var(--box-4); }
 .h-5 { height: var(--box-5); }
 .h-6 { height: var(--box-6); }
+.h-7 { height: var(--box-7); }
+.h-8 { height: var(--box-8); }
+.h-9 { height: var(--box-9); }
 
 .h-25 { height: 25%; }
 .h-33 { height: calc(100% / 3); }

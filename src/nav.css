@@ -1,0 +1,77 @@
+.nav {
+  display: flex;
+  min-height: var(--box-3);
+  align-items: stretch;
+}
+
+.nav img {
+  max-height: var(--box-3);
+}
+
+.nav>.container {
+  display: flex;
+}
+
+.nav-center,
+.nav-left,
+.nav-right {
+  display: flex;
+  flex: 1;
+}
+
+.nav-left {
+  justify-content: flex-start;
+}
+
+.nav-right {
+  justify-content: flex-end;
+}
+
+.nav-center {
+  justify-content: center;
+}
+
+@media screen and (--breakpoint-sm) {
+  .nav,
+  .nav>.container {
+      flex-direction: column;
+  }
+  .nav-center,
+  .nav-left,
+  .nav-right {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+}
+
+.nav a,
+.nav .brand {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: var(--box-1) var(--box-2);
+  color: var(--body-color);
+}
+
+.nav .active:not(.button) {
+  color: #000; /* fallback */
+  color: var(--state-primary);
+}
+
+.nav .brand {
+  font-size: var(--box-2);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.nav .brand img {
+  padding-right: var(--box-1);
+}
+
+.nav .button {
+  margin: auto var(--box-1);
+}
+
+@custom-media --breakpoint-sm (max-width: 40rem);
+@custom-media --breakpoint-md (max-width: 52rem);
+@custom-media --breakpoint-lg (max-width: 64rem);
