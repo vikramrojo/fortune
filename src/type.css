@@ -71,9 +71,18 @@ h6,
 .h6 {
   font-family: var(--headings-font-family);
   font-weight: var(--headings-font-weight);
-  line-height: var(--headings-line-height);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
   color: var(--headings-color);
-  margin-top: 0;
+  line-height: var(--headings-line-height);
   margin-bottom: var(--headings-margin-bottom);
 }
 

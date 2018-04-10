@@ -24,21 +24,11 @@ label {
   }
 }
 
-input[type="color"],
-input[type="date"],
-input[type="datetime-local"],
-input[type="email"],
-input[type="month"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="time"],
-input[type="url"],
-input[type="week"],
+input:not([type=checkbox]):not([type=radio]):not([type=submit]):not([type=color]):not([type=button]):not([type=reset]),
 select,
-textarea {
+textarea,
+textarea[type=text]
+{
   width: 100%;
   font-family: var(--input-font-family);
   font-size: var(--input-font-size);
@@ -48,12 +38,10 @@ textarea {
   border-radius: var(--input-border-radius);
   box-shadow: var(--input-box-shadow);
   background-color: var(--input-bg-color);
-  height: var(--input-height);
-  line-height: var(--input-height);
+  line-height: var(--line-height);
   vertical-align: middle;
   display: block;
-  padding-left: var(--gap-4);
-  padding-right: var(--gap-4);
+  padding: var(--gap-4) var(--gap-4);
   margin: 0;
   transition:
     var(--input-speed) border-color,
@@ -88,30 +76,6 @@ textarea {
       border: none;
       border-radius: var(--input-border-radius);
     }
-  }
-
-  &.input-xs {
-    font-size: var(--input-font-size-xs);
-    height: var(--input-height-xs);
-    line-height: var(--input-height-xs);
-  }
-
-  &.input-sm {
-    font-size: var(--input-font-size-sm);
-    height: var(--input-height-sm);
-    line-height: var(--input-height-sm);
-  }
-
-  &.input-lg {
-    font-size: var(--input-font-size-lg);
-    height: var(--input-height-lg);
-    line-height: var(--input-height-lg);
-  }
-
-  &.input-xl {
-    font-size: var(--input-font-size-xl);
-    height: var(--input-height-xl);
-    line-height: var(--input-height-xl);
   }
 }
 
@@ -222,13 +186,12 @@ textarea.input-xl {
 /* Input addons */
 .input-addon {
   font-size: var(--input-font-size);
-  height: var(--input-height);
-  line-height: var(--input-height);
+  line-height: var(--line-height);
   border-top: solid var(--input-border-width) var(--input-border-color);
   border-bottom: solid var(--input-border-width) var(--input-border-color);
   background: var(--input-addon-bg-color);
   color: var(--input-addon-color);
-  padding: 0 .5rem;
+  padding: var(--gap-4) var(--gap-4);
   white-space: nowrap;
 
   &:first-child {
@@ -241,30 +204,6 @@ textarea.input-xl {
     border-right: solid var(--input-border-width) var(--input-border-color);
     border-top-right-radius: var(--input-border-radius);
     border-bottom-right-radius: var(--input-border-radius);
-  }
-
-  &.input-addon-xs {
-    font-size: var(--input-font-size-xs);
-    height: var(--input-height-xs);
-    line-height: var(--input-height-xs);
-  }
-
-  &.input-addon-sm {
-    font-size: var(--input-font-size-sm);
-    height: var(--input-height-sm);
-    line-height: var(--input-height-sm);
-  }
-
-  &.input-addon-lg {
-    font-size: var(--input-font-size-lg);
-    height: var(--input-height-lg);
-    line-height: var(--input-height-lg);
-  }
-
-  &.input-addon-xl {
-    font-size: var(--input-font-size-xl);
-    height: var(--input-height-xl);
-    line-height: var(--input-height-xl);
   }
 }
 
@@ -292,8 +231,7 @@ textarea.input-xl {
     position: absolute;
     top: 0;
     left: var(--input-icon-offset);
-    height: var(--input-height);
-    line-height: var(--input-height);
+    line-height: var(--line-height);
     color: var(--input-icon-color);
     vertical-align: middle;
     pointer-events: none;
@@ -302,42 +240,6 @@ textarea.input-xl {
   & :last-child:not(input, select) {
     left: auto;
     right: var(--input-icon-offset);
-  }
-
-  &.input-icon-xs {
-    & :first-child:not(input, select),
-    & :last-child:not(input, select) {
-      font-size: var(--input-font-size-xs);
-      height: var(--input-height-xs);
-      line-height: var(--input-height-xs);
-    }
-  }
-
-  &.input-icon-sm {
-    & :first-child:not(input, select),
-    & :last-child:not(input, select) {
-      font-size: var(--input-font-size-sm);
-      height: var(--input-height-sm);
-      line-height: var(--input-height-sm);
-    }
-  }
-
-  &.input-icon-lg {
-    & :first-child:not(input, select),
-    & :last-child:not(input, select) {
-      font-size: var(--input-font-size-lg);
-      height: var(--input-height-lg);
-      line-height: var(--input-height-lg);
-    }
-  }
-
-  &.input-icon-xl {
-    & :first-child:not(input, select),
-    & :last-child:not(input, select) {
-      font-size: var(--input-font-size-xl);
-      height: var(--input-height-xl);
-      line-height: var(--input-height-xl);
-    }
   }
 }
 

@@ -51,7 +51,11 @@
 	--state-light: var(--white);
 	--state-dark: var(--black);
 	--state-disabled: var(--lightgray);
-	--darken: rgba(0, 0, 0, 0.125);
+	--darken: rgba(0, 0, 0, 0.100);
+	--darken-200: rgba(0, 0, 0, 0.200);
+	--darken-400: rgba(0, 0, 0, 0.400);
+	--darken-600: rgba(0, 0, 0, 0.600);
+	--darken-800: rgba(0, 0, 0, 0.800);
 	--lighten: rgba(255, 255, 255, 0.100);
 	--lighten-200: rgba(255, 255, 255, 0.200);
 	--lighten-400: rgba(255, 255, 255, 0.400);
@@ -71,16 +75,7 @@
 	--component-box-shadow-outer: 0 2px 2px var(--darken);
 
 	/* Button.css */
-	--button-height-xs: var(--input-height-xs);
-	--button-height-sm: var(--input-height-sm);
-	--button-height: var(--input-height);
-	--button-height-lg: var(--input-height-lg);
-	--button-height-xl: var(--input-height-xl);
-	--button-font-size-xs: var(--input-font-size-xs);
-	--button-font-size-sm: var(--input-font-size-sm);
 	--button-font-size: var(--input-font-size);
-	--button-font-size-lg: var(--input-font-size-lg);
-	--button-font-size-xl: var(--input-font-size-xl);
 	--button-font-family: var(--input-font-family);
 	--button-font-weight: var(--input-font-weight);
 	--button-border-radius: var(--component-border-radius);
@@ -120,7 +115,7 @@
 
 	--headings-font-family: var(--font-system);
 	--headings-font-weight: var(--font-weight-light);
-	--headings-line-height: 1.25;
+	--headings-line-height: 1.5;
 	--headings-margin-bottom: var(--gap-5);
 	--headings-color: inherit;
 	--headings-font-size-h1: var(--space-5);
@@ -167,16 +162,7 @@
 	--column-gutter: var(--space-3);
 
 	/* Form.css */
-	--input-height-xs: var(--space-2);
-	--input-height-sm: var(--space-3);
-	--input-height: var(--space-4);
-	--input-height-lg: var(--space-5);
-	--input-height-xl: var(--space-6);
-	--input-font-size-xs: var(--gap-4);
-	--input-font-size-sm: var(--gap-5);
 	--input-font-size: var(--space-1);
-	--input-font-size-lg: var(--space-2);
-	--input-font-size-xl: var(--space-3);
 	--input-font-family: inherit;
 	--input-font-weight: inherit;
 	--input-color: var(--body-color);
@@ -198,12 +184,6 @@
 	--input-icon-width: 2em;
 	--input-icon-offset: .5em;
 	--input-icon-color: var(--state-secondary);
-
-	--input-range-track-height: .5rem;
-	--input-range-track-color: var(--component-bg-color);
-	--input-range-track-box-shadow: var(--component-box-shadow-inner);
-	--input-range-thumb-height: 1.25rem;
-	--input-range-thumb-color: var(--state-primary);
 
 	--input-invalid-color: var(--state-danger);
 	--input-invalid-border-color: var(--state-danger);
