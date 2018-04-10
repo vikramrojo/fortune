@@ -29,9 +29,9 @@ strong {
 
 blockquote {
   font-size: 120%;
-  border-left: solid var(--box-000) var(--component-border-color);
-  padding: var(--box-1) var(--box-1) var(--box-1) var(--box-2);
-  margin-bottom: var(--box-3);
+  border-left: solid var(--gap-3) var(--component-border-color);
+  padding: var(--gap-5) var(--gap-5) var(--gap-5) var(--space-1);
+  margin-bottom: var(--space-2);
   margin-left: 0;
 }
 
@@ -72,9 +72,18 @@ h6,
   font-family: var(--headings-font-family);
   font-weight: var(--headings-font-weight);
   line-height: var(--headings-line-height);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
   color: var(--headings-color);
-  margin-top: 0;
   margin-bottom: var(--headings-margin-bottom);
+  margin-top: 0;
 }
 
 h1,
@@ -123,7 +132,7 @@ mark {
 
 p {
   margin-top: 0;
-  margin-bottom: var(--box-3);
+  margin-bottom: var(--space-2);
 }
 
 pre {
@@ -157,7 +166,9 @@ sup { vertical-align: super; }
 .normal { font-style: normal; }
 .oblique { font-style: oblique; }
 
+.thin { font-weight: var(--font-weight-thin); }
 .regular { font-weight: var(--font-weight); }
+.medium { font-weight: var(--font-weight-medium); }
 .bold { font-weight: var(--font-weight-bold); }
 .muted { color: var(--body-color-muted) !important; }
 
@@ -174,7 +185,6 @@ sup { vertical-align: super; }
 .lowercase { text-transform: lowercase; }
 .uppercase { text-transform: uppercase; }
 
-/* What is Pre */
 .pre { white-space: pre; }
 .pre-line { white-space: pre-line; }
 .pre-wrap { white-space: pre-wrap; }

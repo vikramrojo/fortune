@@ -24,21 +24,11 @@ label {
   }
 }
 
-input[type="color"],
-input[type="date"],
-input[type="datetime-local"],
-input[type="email"],
-input[type="month"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="time"],
-input[type="url"],
-input[type="week"],
+input:not([type=checkbox]):not([type=radio]):not([type=submit]):not([type=color]):not([type=button]):not([type=reset]),
 select,
-textarea {
+textarea,
+textarea[type=text]
+{
   width: 100%;
   font-family: var(--input-font-family);
   font-size: var(--input-font-size);
@@ -48,12 +38,10 @@ textarea {
   border-radius: var(--input-border-radius);
   box-shadow: var(--input-box-shadow);
   background-color: var(--input-bg-color);
-  height: var(--input-height);
-  line-height: var(--input-height);
+  line-height: var(--line-height);
   vertical-align: middle;
   display: block;
-  padding-left: var(--box-0000);
-  padding-right: var(--box-0000);
+  padding: var(--gap-4) var(--gap-4);
   margin: 0;
   transition:
     var(--input-speed) border-color,
@@ -78,7 +66,7 @@ textarea {
   }
 
   &[type="color"] {
-    padding: var(--box-0000);
+    padding: var(--gap-4);
 
     &::-webkit-color-swatch-wrapper {
       padding: 0;
@@ -89,46 +77,22 @@ textarea {
       border-radius: var(--input-border-radius);
     }
   }
-
-  &.input-xs {
-    font-size: var(--input-font-size-xs);
-    height: var(--input-height-xs);
-    line-height: var(--input-height-xs);
-  }
-
-  &.input-sm {
-    font-size: var(--input-font-size-sm);
-    height: var(--input-height-sm);
-    line-height: var(--input-height-sm);
-  }
-
-  &.input-lg {
-    font-size: var(--input-font-size-lg);
-    height: var(--input-height-lg);
-    line-height: var(--input-height-lg);
-  }
-
-  &.input-xl {
-    font-size: var(--input-font-size-xl);
-    height: var(--input-height-xl);
-    line-height: var(--input-height-xl);
-  }
 }
 
 input[type="checkbox"],
 input[type="radio"] {
-  vertical-align: var(--box-0);
+  vertical-align: var(--gap-1);
 }
 
 select {
   position: relative;
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='41px' height='26px' viewBox='0 0 41 26' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3C/defs%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpolygon id='Path-3' fill='%23000000' points='0 5.38215461 19.9830489 25.3652035 40.1398855 5.20836689 34.9315186 0 19.8691842 15.0623344 4.83971338 0.0328636246'%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E%0A");
-  background-position: right var(--box-0000) center;
+  background-position: right var(--gap-4) center;
   background-repeat: no-repeat;
-  background-size: var(--box-1);
+  background-size: var(--gap-5);
   padding-top: 0;
   padding-bottom: 0;
-  padding-right: var(--box-3);
+  padding-right: var(--gap-3);
 }
 
 textarea,
@@ -142,16 +106,14 @@ textarea.input-xl {
   white-space: normal;
 }
 
-/* Input fields */
 .input-field {
-  margin-bottom: var(--box-3);
+  margin-bottom: var(--space-2);
 }
 
-/* Input groups */
 .input-group {
   width: 100%;
   display: flex;
-  margin-bottom: var(--box-3);
+  margin-bottom: var(--space-2);
 
   & > input,
   & > button,
@@ -205,7 +167,6 @@ textarea.input-xl {
   }
 }
 
-/* Input hints */
 .input-hint {
   font-size: var(--input-hint-font-size);
   color: var(--input-hint-color);
@@ -213,22 +174,19 @@ textarea.input-xl {
   display: block;
 }
 
-/* Input groups can have input hints, but we need to adjust margins a bit */
 .input-group + .input-hint {
-  margin-top: calc(-1 * var(--box-3)); /* input group margin - input hint margin */
+  margin-top: calc(-1 * var(--space-2)); /* input group margin - input hint margin */
   margin-bottom: 1.5rem;
 }
 
-/* Input addons */
 .input-addon {
   font-size: var(--input-font-size);
-  height: var(--input-height);
-  line-height: var(--input-height);
+  line-height: var(--line-height);
   border-top: solid var(--input-border-width) var(--input-border-color);
   border-bottom: solid var(--input-border-width) var(--input-border-color);
   background: var(--input-addon-bg-color);
   color: var(--input-addon-color);
-  padding: 0 .5rem;
+  padding: var(--gap-4) var(--gap-4);
   white-space: nowrap;
 
   &:first-child {
@@ -242,38 +200,12 @@ textarea.input-xl {
     border-top-right-radius: var(--input-border-radius);
     border-bottom-right-radius: var(--input-border-radius);
   }
-
-  &.input-addon-xs {
-    font-size: var(--input-font-size-xs);
-    height: var(--input-height-xs);
-    line-height: var(--input-height-xs);
-  }
-
-  &.input-addon-sm {
-    font-size: var(--input-font-size-sm);
-    height: var(--input-height-sm);
-    line-height: var(--input-height-sm);
-  }
-
-  &.input-addon-lg {
-    font-size: var(--input-font-size-lg);
-    height: var(--input-height-lg);
-    line-height: var(--input-height-lg);
-  }
-
-  &.input-addon-xl {
-    font-size: var(--input-font-size-xl);
-    height: var(--input-height-xl);
-    line-height: var(--input-height-xl);
-  }
 }
 
-/* Input icons */
 .input-icon {
   position: relative;
   width: 100%;
 
-  /* Change default position for select controls so icons don't get hidden */
   & select {
     position: static;
   }
@@ -292,8 +224,7 @@ textarea.input-xl {
     position: absolute;
     top: 0;
     left: var(--input-icon-offset);
-    height: var(--input-height);
-    line-height: var(--input-height);
+    line-height: var(--line-height);
     color: var(--input-icon-color);
     vertical-align: middle;
     pointer-events: none;
@@ -303,45 +234,8 @@ textarea.input-xl {
     left: auto;
     right: var(--input-icon-offset);
   }
-
-  &.input-icon-xs {
-    & :first-child:not(input, select),
-    & :last-child:not(input, select) {
-      font-size: var(--input-font-size-xs);
-      height: var(--input-height-xs);
-      line-height: var(--input-height-xs);
-    }
-  }
-
-  &.input-icon-sm {
-    & :first-child:not(input, select),
-    & :last-child:not(input, select) {
-      font-size: var(--input-font-size-sm);
-      height: var(--input-height-sm);
-      line-height: var(--input-height-sm);
-    }
-  }
-
-  &.input-icon-lg {
-    & :first-child:not(input, select),
-    & :last-child:not(input, select) {
-      font-size: var(--input-font-size-lg);
-      height: var(--input-height-lg);
-      line-height: var(--input-height-lg);
-    }
-  }
-
-  &.input-icon-xl {
-    & :first-child:not(input, select),
-    & :last-child:not(input, select) {
-      font-size: var(--input-font-size-xl);
-      height: var(--input-height-xl);
-      line-height: var(--input-height-xl);
-    }
-  }
 }
 
-/* Validation */
 .input-invalid {
   & label {
     color: var(--input-invalid-color) !important;

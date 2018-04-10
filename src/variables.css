@@ -1,18 +1,22 @@
 :root {
 	/* Spacing */
-	--box-0: 0.0625rem; /* 1px */
-	--box-00: 0.125rem; /* 2px */
-	--box-000: 0.25rem; /* 4px */
-	--box-0000: 0.5rem; /* 8px */
-	--box-1: 0.75rem; /* 12px */
-	--box-2: 1rem; /* 16px */
-	--box-3: 1.5rem; /* 24px */
-	--box-4: 2rem; /* 32px */
-	--box-5: 2.5rem; /* 40px */
-	--box-6: 3rem; /* 48px */
-	--box-7: 4rem; /* 64px */
-	--box-8: 5rem; /* 80px */
-	--box-9: 6rem; /* 96px */
+	--gap-0: 0rem;
+	--gap-1: 0.0625rem; /* 1px */
+	--gap-2: 0.125rem; /* 2px */
+	--gap-3: 0.25rem; /* 4px */
+	--gap-4: 0.5rem; /* 8px */
+	--gap-5: 0.75rem; /* 12px */
+
+	--space-0: 0rem;
+	--space-1: 1rem; /* 16px */
+	--space-2: 1.5rem; /* 24px */
+	--space-3: 2rem; /* 32px */
+	--space-4: 3rem; /* 48px */
+	--space-5: 4rem; /* 64px */
+	--space-6: 5rem; /* 80px */
+	--space-7: 6rem; /* 96px */
+	--space-8: 8rem; /* 128px */
+	--space-9: 10rem; /* 160px */
 
 	--white: white;
 	--whitesmoke: whitesmoke;
@@ -47,7 +51,11 @@
 	--state-light: var(--white);
 	--state-dark: var(--black);
 	--state-disabled: var(--lightgray);
-	--darken: rgba(0, 0, 0, 0.125);
+	--darken: rgba(0, 0, 0, 0.100);
+	--darken-200: rgba(0, 0, 0, 0.200);
+	--darken-400: rgba(0, 0, 0, 0.400);
+	--darken-600: rgba(0, 0, 0, 0.600);
+	--darken-800: rgba(0, 0, 0, 0.800);
 	--lighten: rgba(255, 255, 255, 0.100);
 	--lighten-200: rgba(255, 255, 255, 0.200);
 	--lighten-400: rgba(255, 255, 255, 0.400);
@@ -57,26 +65,17 @@
 	/* Components */
 	--component-bg-color: var(--whitesmoke);
 	--component-border-color: var(--silver);
-	--component-border-radius: var(--box-00);
-	--component-border-width: var(--box-0);
-	--component-focus-width: var(--box-00);
-	--component-padding-x: var(--box-1);
-	--component-padding-y: var(--box-1);
+	--component-border-radius: var(--gap-2);
+	--component-border-width: var(--gap-1);
+	--component-focus-width: var(--gap-2);
+	--component-padding-x: var(--gap-5);
+	--component-padding-y: var(--gap-5);
 	--component-speed: .1s;
 	--component-box-shadow-inner: inset 0 1px 1px var(--darken);
 	--component-box-shadow-outer: 0 2px 2px var(--darken);
 
-	/* Button.css */
-	--button-height-xs: var(--input-height-xs);
-	--button-height-sm: var(--input-height-sm);
-	--button-height: var(--input-height);
-	--button-height-lg: var(--input-height-lg);
-	--button-height-xl: var(--input-height-xl);
-	--button-font-size-xs: var(--input-font-size-xs);
-	--button-font-size-sm: var(--input-font-size-sm);
+	/* Button */
 	--button-font-size: var(--input-font-size);
-	--button-font-size-lg: var(--input-font-size-lg);
-	--button-font-size-xl: var(--input-font-size-xl);
 	--button-font-family: var(--input-font-family);
 	--button-font-weight: var(--input-font-weight);
 	--button-border-radius: var(--component-border-radius);
@@ -89,8 +88,8 @@
 	--button-color: var(--white);
 	--button-bg-color: var(--state-primary);
 
-	/* Content.css */
-	--font-sans-serif: sans-serif; /* System Fonts */
+	/* Type */
+	--font-sans-serif: sans-serif;
 	--font-serif: serif;
 	--font-system: system-ui;
 	--font-monospace: Menlo, Consolas, "DejaVu Sans Mono", monospace;
@@ -100,11 +99,12 @@
 	--body-color-muted: var(--gray);
 
 	--font-family: var(--font-system);
-	--font-size: var(--box-2); /* Most browsers use a default font size of 16px */
+	--font-size: var(--space-1);
 	--font-size-small: calc(var(--font-size) * .75);
-	--font-weight-light: 300;
-	--font-weight: 400;
-	--font-weight-bold: 700;
+	--font-weight-thin: 200;
+	--font-weight: 300;
+	--font-weight-medium: 400;
+	--font-weight-bold: 600;
 	--line-height: 1.5;
 
 	--code-font-size: 90%;
@@ -116,20 +116,20 @@
 
 	--headings-font-family: var(--font-system);
 	--headings-font-weight: var(--font-weight-light);
-	--headings-line-height: 1.25;
-	--headings-margin-bottom: var(--box-1);
+	--headings-line-height: 1.5;
+	--headings-margin-bottom: var(--gap-5);
 	--headings-color: inherit;
-	--headings-font-size-h1: var(--box-6);
-	--headings-font-size-h2: var(--box-5);
-	--headings-font-size-h3: var(--box-4);
-	--headings-font-size-h4: var(--box-3);
-	--headings-font-size-h5: var(--box-2);
-	--headings-font-size-h6: var(--box-1);
+	--headings-font-size-h1: var(--space-5);
+	--headings-font-size-h2: var(--space-4);
+	--headings-font-size-h3: var(--space-3);
+	--headings-font-size-h4: var(--space-2);
+	--headings-font-size-h5: var(--space-1);
+	--headings-font-size-h6: var(--gap-5);
 
-	--hr-border-width: var(--box-0);
+	--hr-border-width: var(--gap-1);
 	--hr-border-color: var(--component-border-color);
 	--hr-margin-x: 0;
-	--hr-margin-y: var(--box-4);
+	--hr-margin-y: var(--space-3);
 
 	--kbd-font-size: 90%;
 	--kbd-color: var(--white);
@@ -145,8 +145,8 @@
 
 	--mark-color: inherit;
 	--mark-bg-color: var(--yellow);
-	--mark-padding-x: var(--box-1);
-	--mark-padding-y: var(--box-000);
+	--mark-padding-x: var(--gap-5);
+	--mark-padding-y: var(--gap-3);
 
 	--placeholder-color: var(--body-color-muted);
 
@@ -158,28 +158,19 @@
 	--selection-color: var(--white);
 	--selection-bg-color: var(--state-primary);
 
-	/* Column.css */
+	/* Column */
 	--container-width: 80rem;
-	--column-gutter: var(--box-4);
+	--column-gutter: var(--space-3);
 
-	/* Form.css */
-	--input-height-xs: var(--box-3);
-	--input-height-sm: var(--box-4);
-	--input-height: var(--box-5);
-	--input-height-lg: var(--box-6);
-	--input-height-xl: var(--box-7);
-	--input-font-size-xs: var(--box-0000);
-	--input-font-size-sm: var(--box-1);
-	--input-font-size: var(--box-2);
-	--input-font-size-lg: var(--box-3);
-	--input-font-size-xl: var(--box-4);
+	/* Form */
+	--input-font-size: var(--space-1);
 	--input-font-family: inherit;
 	--input-font-weight: inherit;
 	--input-color: var(--body-color);
 	--input-border-color: var(--component-border-color);
-	--input-border-width: var(--box-0);
+	--input-border-width: var(--gap-1);
 	--input-border-radius: var(--component-border-radius);
-	--input-bg-color: var(--color-white);
+	--input-bg-color: var(--white);
 	--input-box-shadow: var(--component-box-shadow-inner);
 	--input-readonly-bg-color: var(--component-bg-color);
 	--input-focus-color: var(--state-primary);
@@ -195,12 +186,6 @@
 	--input-icon-offset: .5em;
 	--input-icon-color: var(--state-secondary);
 
-	--input-range-track-height: .5rem;
-	--input-range-track-color: var(--component-bg-color);
-	--input-range-track-box-shadow: var(--component-box-shadow-inner);
-	--input-range-thumb-height: 1.25rem;
-	--input-range-thumb-color: var(--state-primary);
-
 	--input-invalid-color: var(--state-danger);
 	--input-invalid-border-color: var(--state-danger);
 	--input-valid-color: var(--state-success);
@@ -209,23 +194,23 @@
 	--fieldset-border-color: var(--component-border-color);
 	--fieldset-border-width: var(--component-border-width);
 	--fieldset-border-radius: var(--component-border-radius);
-	--fieldset-padding-x: var(--box-2);
-	--fieldset-padding-y: var(--box-3);
+	--fieldset-padding-x: var(--space-1);
+	--fieldset-padding-y: var(--space-2);
 
 	--label-color: inherit;
 
-	/* Table.css */
+	/* Table */
 	--table-bg-color: var(--white);
 	--table-border-color: var(--component-border-color);
 	--table-border-width: var(--component-border-width);
 	--table-header-bg-color: transparent;
-	--table-spacing-x: var(--box-1);
-	--table-spacing-y: var(--box-0000);
+	--table-spacing-x: var(--gap-5);
+	--table-spacing-y: var(--gap-4);
 	--table-hover-color: var(--white);
 	--table-hover-bg-color: var(--state-primary);
 	--table-stripe-bg-color: var(--component-bg-color);
 
-	/* Alert.css */
+	/* Alert */
 	--alert-border-radius: var(--component-border-radius);
   --alert-padding-x: var(--component-padding-x);
   --alert-padding-y: var(--component-padding-y);
@@ -248,9 +233,9 @@
   --alert-bg-color-danger: var(--state-danger);
   --alert-color-danger: var(--state-danger);
 
-	/* Badge.css */
-	--badge-font-size: var(--box-1);
-	--badge-border-radius: var(--box-2);
+	/* Badge */
+	--badge-font-size: var(--gap-5);
+	--badge-border-radius: var(--space-1);
 	--badge-focus-width: var(--component-focus-width);
 	--badge-speed: var(--component-speed);
 

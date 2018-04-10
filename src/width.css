@@ -1,10 +1,14 @@
 .w-0 { width: 0; }
-.w-1 { width: var(--box-1); }
-.w-2 { width: var(--box-2); }
-.w-3 { width: var(--box-3); }
-.w-4 { width: var(--box-4); }
-.w-5 { width: var(--box-5); }
-.w-6 { width: var(--box-6); }
+.w-1 { width: var(--space-1); }
+.w-2 { width: var(--space-2); }
+.w-3 { width: var(--space-3); }
+.w-4 { width: var(--space-4); }
+.w-5 { width: var(--space-5); }
+.w-6 { width: var(--space-6); }
+.w-7 { width: var(--space-7); }
+.w-8 { width: var(--space-8); }
+.w-9 { width: var(--space-9); }
+
 
 .w-25 { width: 25%; }
 .w-33 { width: calc(100% / 3); }

@@ -3,17 +3,17 @@
 }
 
 .tabs > a {
-  padding: var(--box-1) var(--box-2);
+  padding: var(--gap-5) var(--space-1);
   flex: 0 1 auto;
   color: var(--body-color);
-  border-bottom: var(--box-00) solid var(--state-disabled);
+  border-bottom: var(--gap-2) solid var(--state-disabled);
   text-align: center;
 }
 
 .tabs > a.active,
 .tabs > a:hover {
   opacity: 1;
-  border-bottom: var(--box-00) solid var(--state-dark);
+  border-bottom: var(--gap-2) solid var(--state-dark);
   text-decoration: none;
 }
 

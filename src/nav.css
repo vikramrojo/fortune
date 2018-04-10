@@ -1,11 +1,11 @@
 .nav {
   display: flex;
-  min-height: var(--box-3);
+  min-height: var(--space-2);
   align-items: stretch;
 }
 
 .nav img {
-  max-height: var(--box-3);
+  max-height: var(--space-2);
 }
 
 .nav>.container {
@@ -49,7 +49,7 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  padding: var(--box-1) var(--box-2);
+  padding: var(--gap-5) var(--space-1);
   color: var(--body-color);
 }
 
@@ -59,17 +59,17 @@
 }
 
 .nav .brand {
-  font-size: var(--box-2);
+  font-size: var(--space-1);
   padding-top: 0;
   padding-bottom: 0;
 }
 
 .nav .brand img {
-  padding-right: var(--box-1);
+  padding-right: var(--gap-5);
 }
 
 .nav .button {
-  margin: auto var(--box-1);
+  margin: auto var(--gap-5);
 }
 
 @custom-media --breakpoint-sm (max-width: 40rem);

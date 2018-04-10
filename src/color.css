@@ -1,11 +1,27 @@
 .white { color: var(--white); }
 .smoke { color: var(--whitesmoke); }
-.light { color: var(--lightgray); }
+.lightgray,
+.lightgey { color: var(--lightgray); }
 .silver { color: var(--silver); }
-.dark { color: var(--darkgray); }
+.darkgray,
+.darkgrey { color: var(--darkgray); }
 .gray,
 .grey { color: var(--gray); }
 .black { color: var(--black); }
+
+.navy {color: var(--navy); }
+.blue {color: var(--blue); }
+.aqua {color: var(--aqua); }
+.teal {color: var(--teal); }
+.olive {color: var(--olive); }
+.green {color: var(--green); }
+.lime {color: var(--lime); }
+.yellow {color: var(--yellow); }
+.orange {color: var(--orange); }
+.red {color: var(--red); }
+.maroon {color: var(--maroon); }
+.fuchsia {color: var(--fuchsia); }
+.purple {color: var(--purple); }
 
 .bg-white { background-color: var(--white); }
 .bg-smoke { background-color: var(--whitesmoke); }
@@ -29,4 +45,26 @@
 .bg-maroon {background-color: var(--maroon); }
 .bg-fuchsia {background-color: var(--fuchsia); }
 .bg-purple {background-color: var(--purple); }
-.bg-silver {background-color: var(--silver); }
+
+.border-white { border-color: var(--white); }
+.border-smoke { border-color: var(--whitesmoke); }
+.border-light { border-color: var(--lightgray); }
+.border-silver { border-color: var(--silver); }
+.border-dark { border-color: var(--darkgray); }
+.border-gray,
+.border-grey { border-color: var(--gray); }
+.border-black { border-color: var(--black); }
+
+.border-navy {border-color: var(--navy); }
+.border-blue {border-color: var(--blue); }
+.border-aqua {border-color: var(--aqua); }
+.border-teal {border-color: var(--teal); }
+.border-olive {border-color: var(--olive); }
+.border-green {border-color: var(--green); }
+.border-lime {border-color: var(--lime); }
+.border-yellow {border-color: var(--yellow); }
+.border-orange {border-color: var(--orange); }
+.border-red {border-color: var(--red); }
+.border-maroon {border-color: var(--maroon); }
+.border-fuchsia {border-color: var(--fuchsia); }
+.border-purple {border-color: var(--purple); }
