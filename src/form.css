@@ -92,7 +92,7 @@ select {
   background-size: var(--gap-5);
   padding-top: 0;
   padding-bottom: 0;
-  padding-right: var(--space-2);
+  padding-right: var(--gap-3);
 }
 
 textarea,
@@ -106,12 +106,10 @@ textarea.input-xl {
   white-space: normal;
 }
 
-/* Input fields */
 .input-field {
   margin-bottom: var(--space-2);
 }
 
-/* Input groups */
 .input-group {
   width: 100%;
   display: flex;
@@ -169,7 +167,6 @@ textarea.input-xl {
   }
 }
 
-/* Input hints */
 .input-hint {
   font-size: var(--input-hint-font-size);
   color: var(--input-hint-color);
@@ -177,13 +174,11 @@ textarea.input-xl {
   display: block;
 }
 
-/* Input groups can have input hints, but we need to adjust margins a bit */
 .input-group + .input-hint {
   margin-top: calc(-1 * var(--space-2)); /* input group margin - input hint margin */
   margin-bottom: 1.5rem;
 }
 
-/* Input addons */
 .input-addon {
   font-size: var(--input-font-size);
   line-height: var(--line-height);
@@ -207,12 +202,10 @@ textarea.input-xl {
   }
 }
 
-/* Input icons */
 .input-icon {
   position: relative;
   width: 100%;
 
-  /* Change default position for select controls so icons don't get hidden */
   & select {
     position: static;
   }
@@ -243,7 +236,6 @@ textarea.input-xl {
   }
 }
 
-/* Validation */
 .input-invalid {
   & label {
     color: var(--input-invalid-color) !important;

@@ -30,7 +30,6 @@
     margin-bottom: 0;
   }
 
-  /* Variations */
   &.alert-secondary {
     color: var(--alert-color-secondary);
     background-color: var(--alert-bg-color-secondary);

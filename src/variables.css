@@ -74,7 +74,7 @@
 	--component-box-shadow-inner: inset 0 1px 1px var(--darken);
 	--component-box-shadow-outer: 0 2px 2px var(--darken);
 
-	/* Button.css */
+	/* Button */
 	--button-font-size: var(--input-font-size);
 	--button-font-family: var(--input-font-family);
 	--button-font-weight: var(--input-font-weight);
@@ -88,8 +88,8 @@
 	--button-color: var(--white);
 	--button-bg-color: var(--state-primary);
 
-	/* Content.css */
-	--font-sans-serif: sans-serif; /* System Fonts */
+	/* Type */
+	--font-sans-serif: sans-serif;
 	--font-serif: serif;
 	--font-system: system-ui;
 	--font-monospace: Menlo, Consolas, "DejaVu Sans Mono", monospace;
@@ -99,7 +99,7 @@
 	--body-color-muted: var(--gray);
 
 	--font-family: var(--font-system);
-	--font-size: var(--space-1); /* Most browsers use a default font size of 16px */
+	--font-size: var(--space-1);
 	--font-size-small: calc(var(--font-size) * .75);
 	--font-weight-light: 300;
 	--font-weight: 400;
@@ -157,11 +157,11 @@
 	--selection-color: var(--white);
 	--selection-bg-color: var(--state-primary);
 
-	/* Column.css */
+	/* Column */
 	--container-width: 80rem;
 	--column-gutter: var(--space-3);
 
-	/* Form.css */
+	/* Form */
 	--input-font-size: var(--space-1);
 	--input-font-family: inherit;
 	--input-font-weight: inherit;
@@ -198,7 +198,7 @@
 
 	--label-color: inherit;
 
-	/* Table.css */
+	/* Table */
 	--table-bg-color: var(--white);
 	--table-border-color: var(--component-border-color);
 	--table-border-width: var(--component-border-width);
@@ -209,7 +209,7 @@
 	--table-hover-bg-color: var(--state-primary);
 	--table-stripe-bg-color: var(--component-bg-color);
 
-	/* Alert.css */
+	/* Alert */
 	--alert-border-radius: var(--component-border-radius);
   --alert-padding-x: var(--component-padding-x);
   --alert-padding-y: var(--component-padding-y);
@@ -232,7 +232,7 @@
   --alert-bg-color-danger: var(--state-danger);
   --alert-color-danger: var(--state-danger);
 
-	/* Badge.css */
+	/* Badge */
 	--badge-font-size: var(--gap-5);
 	--badge-border-radius: var(--space-1);
 	--badge-focus-width: var(--component-focus-width);

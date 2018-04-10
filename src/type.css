@@ -183,7 +183,6 @@ sup { vertical-align: super; }
 .lowercase { text-transform: lowercase; }
 .uppercase { text-transform: uppercase; }
 
-/* What is Pre */
 .pre { white-space: pre; }
 .pre-line { white-space: pre-line; }
 .pre-wrap { white-space: pre-wrap; }

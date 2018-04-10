@@ -1,5 +1,3 @@
-/*! Buttons */
-
 button,
 .button {
   font-family: var(--button-font-family);
@@ -18,7 +16,7 @@ button,
   white-space: nowrap;
   padding: var(--gap-4) var(--gap-5);
   cursor: pointer;
-  /* line-height: var(--line-height); */
+  line-height: var(--line-height);
   display: inline-block;
   transition: var(--button-speed) all;
   box-shadow: var(--component-box-shadow-outer);
