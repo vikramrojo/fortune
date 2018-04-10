@@ -115,7 +115,7 @@
 	--code-padding-y: calc(var(--font-size) * .2);
 
 	--headings-font-family: var(--font-system);
-	--headings-font-weight: var(--font-weight-light);
+	--headings-font-weight: var(--font-weight);
 	--headings-line-height: 1.5;
 	--headings-margin-bottom: var(--gap-5);
 	--headings-color: inherit;
