@@ -101,9 +101,10 @@
 	--font-family: var(--font-system);
 	--font-size: var(--space-1);
 	--font-size-small: calc(var(--font-size) * .75);
-	--font-weight-light: 300;
-	--font-weight: 400;
-	--font-weight-bold: 700;
+	--font-weight-thin: 200;
+	--font-weight: 300;
+	--font-weight-medium: 400;
+	--font-weight-bold: 600;
 	--line-height: 1.5;
 
 	--code-font-size: 90%;

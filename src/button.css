@@ -40,6 +40,7 @@ button,
 
   &:focus {
     outline: none;
+    box-shadow: 0 0 4px 2px var(--lightgray);
   }
 
   &:disabled,
@@ -49,6 +50,22 @@ button,
     text-decoration: none;
     opacity: .5;
     cursor: not-allowed;
+  }
+
+  &.button-invert {
+    border-color: var(--white);
+    background-color: var(--white);
+    color: var(--button-bg-color);
+    box-shadow: none;
+  }
+
+  &.button-invert:hover {
+    background-image: linear-gradient(
+      var(--darken),
+      var(--darken)
+    );
+    color: var(--button-bg-color);
+    text-decoration: none;
   }
 
   &.button-outline {
@@ -61,6 +78,7 @@ button,
   &.button-outline:hover,
   &.button-link:focus {
     background-image: none;
+    text-decoration: none;
   }
 
   &.button-block {

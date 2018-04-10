@@ -9,17 +9,16 @@
 .m-8 { padding: var(--space-8); }
 .m-9 { padding: var(--space-9); }
 
-
-.mb-0 { margin-bottom: 0; }
-.mb-1 { margin-bottom: var(--space-1); }
-.mb-2 { margin-bottom: var(--space-2); }
-.mb-3 { margin-bottom: var(--space-3); }
-.mb-4 { margin-bottom: var(--space-4); }
-.mb-5 { margin-bottom: var(--space-5); }
-.mb-6 { margin-bottom: var(--space-6); }
-.mb-7 { margin-bottom: var(--space-7); }
-.mb-8 { margin-bottom: var(--space-8); }
-.mb-9 { margin-bottom: var(--space-9); }
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: var(--space-1); }
+.mt-2 { margin-top: var(--space-2); }
+.mt-3 { margin-top: var(--space-3); }
+.mt-4 { margin-top: var(--space-4); }
+.mt-5 { margin-top: var(--space-5); }
+.mt-6 { margin-top: var(--space-6); }
+.mt-7 { margin-top: var(--space-7); }
+.mt-8 { margin-top: var(--space-8); }
+.mt-9 { margin-top: var(--space-9); }
 
 .ml-0 { margin-left: 0; }
 .ml-1 { margin-left: var(--space-1); }
@@ -32,6 +31,17 @@
 .ml-8 { margin-left: var(--space-8); }
 .ml-9 { margin-left: var(--space-9); }
 
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: var(--space-1); }
+.mb-2 { margin-bottom: var(--space-2); }
+.mb-3 { margin-bottom: var(--space-3); }
+.mb-4 { margin-bottom: var(--space-4); }
+.mb-5 { margin-bottom: var(--space-5); }
+.mb-6 { margin-bottom: var(--space-6); }
+.mb-7 { margin-bottom: var(--space-7); }
+.mb-8 { margin-bottom: var(--space-8); }
+.mb-9 { margin-bottom: var(--space-9); }
+
 .mr-0 { margin-right: 0; }
 .mr-1 { margin-right: var(--space-1); }
 .mr-2 { margin-right: var(--space-2); }
@@ -43,16 +53,6 @@
 .mr-8 { margin-right: var(--space-8); }
 .mr-9 { margin-right: var(--space-9); }
 
-.mt-0 { margin-top: 0; }
-.mt-1 { margin-top: var(--space-1); }
-.mt-2 { margin-top: var(--space-2); }
-.mt-3 { margin-top: var(--space-3); }
-.mt-4 { margin-top: var(--space-4); }
-.mt-5 { margin-top: var(--space-5); }
-.mt-6 { margin-top: var(--space-6); }
-.mt-7 { margin-top: var(--space-7); }
-.mt-8 { margin-top: var(--space-8); }
-.mt-9 { margin-top: var(--space-9); }
 
 .mx-0 {
 	margin-left: 0;

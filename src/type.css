@@ -71,7 +71,7 @@ h6,
 .h6 {
   font-family: var(--headings-font-family);
   font-weight: var(--headings-font-weight);
-  margin: 0;
+  line-height: var(--headings-line-height);
 }
 
 h1,
@@ -82,8 +82,8 @@ h5,
 h6
 {
   color: var(--headings-color);
-  line-height: var(--headings-line-height);
   margin-bottom: var(--headings-margin-bottom);
+  margin-top: 0;
 }
 
 h1,
@@ -166,7 +166,9 @@ sup { vertical-align: super; }
 .normal { font-style: normal; }
 .oblique { font-style: oblique; }
 
+.thin { font-weight: var(--font-weight-thin); }
 .regular { font-weight: var(--font-weight); }
+.medium { font-weight: var(--font-weight-medium); }
 .bold { font-weight: var(--font-weight-bold); }
 .muted { color: var(--body-color-muted) !important; }
 
