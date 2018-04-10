@@ -50,9 +50,9 @@
 .pt-4 { padding-top: var(--space-4); }
 .pt-5 { padding-top: var(--space-5); }
 .pt-6 { padding-top: var(--space-6); }
-.pr-7 { padding-right: var(--space-7); }
-.pr-8 { padding-right: var(--space-8); }
-.pr-9 { padding-right: var(--space-9); }
+.pt-7 { padding-top: var(--space-7); }
+.pt-8 { padding-top: var(--space-8); }
+.pt-9 { padding-top: var(--space-9); }
 
 .px-0 {
 	padding-left: 0;
