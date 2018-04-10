@@ -52,8 +52,8 @@ textarea {
   line-height: var(--input-height);
   vertical-align: middle;
   display: block;
-  padding-left: var(--box-0000);
-  padding-right: var(--box-0000);
+  padding-left: var(--gap-4);
+  padding-right: var(--gap-4);
   margin: 0;
   transition:
     var(--input-speed) border-color,
@@ -78,7 +78,7 @@ textarea {
   }
 
   &[type="color"] {
-    padding: var(--box-0000);
+    padding: var(--gap-4);
 
     &::-webkit-color-swatch-wrapper {
       padding: 0;
@@ -117,18 +117,18 @@ textarea {
 
 input[type="checkbox"],
 input[type="radio"] {
-  vertical-align: var(--box-0);
+  vertical-align: var(--gap-1);
 }
 
 select {
   position: relative;
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='41px' height='26px' viewBox='0 0 41 26' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3C/defs%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpolygon id='Path-3' fill='%23000000' points='0 5.38215461 19.9830489 25.3652035 40.1398855 5.20836689 34.9315186 0 19.8691842 15.0623344 4.83971338 0.0328636246'%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E%0A");
-  background-position: right var(--box-0000) center;
+  background-position: right var(--gap-4) center;
   background-repeat: no-repeat;
-  background-size: var(--box-1);
+  background-size: var(--gap-5);
   padding-top: 0;
   padding-bottom: 0;
-  padding-right: var(--box-3);
+  padding-right: var(--space-2);
 }
 
 textarea,
@@ -144,14 +144,14 @@ textarea.input-xl {
 
 /* Input fields */
 .input-field {
-  margin-bottom: var(--box-3);
+  margin-bottom: var(--space-2);
 }
 
 /* Input groups */
 .input-group {
   width: 100%;
   display: flex;
-  margin-bottom: var(--box-3);
+  margin-bottom: var(--space-2);
 
   & > input,
   & > button,
@@ -215,7 +215,7 @@ textarea.input-xl {
 
 /* Input groups can have input hints, but we need to adjust margins a bit */
 .input-group + .input-hint {
-  margin-top: calc(-1 * var(--box-3)); /* input group margin - input hint margin */
+  margin-top: calc(-1 * var(--space-2)); /* input group margin - input hint margin */
   margin-bottom: 1.5rem;
 }
 

@@ -3,7 +3,7 @@
   color: var(--badge-color);
   background-color: var(--badge-bg-color);
   border-radius: var(--badge-border-radius);
-  padding: var(--box-00) var(--box-000);
+  padding: var(--gap-2) var(--gap-3);
   vertical-align: baseline;
   display: inline-block;
   transition: var(--badge-speed) all;

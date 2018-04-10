@@ -18,7 +18,7 @@ button,
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  padding: 0 var(--box-1); /* ems for relative sizing */
+  padding: 0 var(--gap-5);
   cursor: pointer;
   display: inline-block;
   transition: var(--button-speed) all;
