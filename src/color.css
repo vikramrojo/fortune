@@ -7,6 +7,20 @@
 .grey { color: var(--gray); }
 .black { color: var(--black); }
 
+.navy {color: var(--navy); }
+.blue {color: var(--blue); }
+.aqua {color: var(--aqua); }
+.teal {color: var(--teal); }
+.olive {color: var(--olive); }
+.green {color: var(--green); }
+.lime {color: var(--lime); }
+.yellow {color: var(--yellow); }
+.orange {color: var(--orange); }
+.red {color: var(--red); }
+.maroon {color: var(--maroon); }
+.fuchsia {color: var(--fuchsia); }
+.purple {color: var(--purple); }
+
 .bg-white { background-color: var(--white); }
 .bg-smoke { background-color: var(--whitesmoke); }
 .bg-light { background-color: var(--lightgray); }
@@ -29,4 +43,3 @@
 .bg-maroon {background-color: var(--maroon); }
 .bg-fuchsia {background-color: var(--fuchsia); }
 .bg-purple {background-color: var(--purple); }
-.bg-silver {background-color: var(--silver); }
