@@ -129,6 +129,11 @@
       flex: 0 1 100%;
       max-width: 100%;
   }
+
+  [class*=" offset-"],
+  [class^='offset-'] {
+    margin-left: auto;
+  }
 }
 
 @custom-media --breakpoint (max-width: 52rem);
