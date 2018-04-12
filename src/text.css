@@ -22,12 +22,8 @@ abbr[title] {
   border-bottom: dashed 2px currentcolor;
 }
 
-b,
-strong {
-  font-weight: var(--font-weight-bold);
-}
-
-blockquote {
+blockquote,
+.blockquote {
   font-size: 120%;
   border-left: solid var(--gap-3) var(--component-border-color);
   padding: var(--gap-5) var(--gap-5) var(--gap-5) var(--space-1);
@@ -35,11 +31,13 @@ blockquote {
   margin-left: 0;
 }
 
-blockquote :last-child {
+blockquote :last-child,
+.blockquote :last-child {
   margin-bottom: 0;
 }
 
-code {
+code,
+.code {
   font-family: var(--font-monospace);
   font-size: var(--code-font-size);
   color: var(--code-color);
@@ -48,7 +46,8 @@ code {
   padding: var(--code-padding-y) var(--code-padding-x);
 }
 
-del {
+del,
+.del {
   color: var(--red);
 }
 
@@ -111,11 +110,13 @@ img {
   vertical-align: middle;
 }
 
-ins {
+ins,
+.ins {
   color: var(--green);
 }
 
-kbd {
+kbd,
+.kbd {
   font-family: var(--font-monospace);
   font-size: var(--kbd-font-size);
   color: var(--kbd-color);
@@ -124,7 +125,8 @@ kbd {
   padding: var(--kbd-padding-y) var(--kbd-padding-x);
 }
 
-mark {
+mark,
+.mark {
   color: var(--mark-color);
   background-color: var(--mark-bg-color);
   padding: var(--mark-padding-y) var(--mark-padding-x);
@@ -146,6 +148,11 @@ pre {
   margin-top: 0;
   margin-bottom: 1.5rem;
 }
+
+.pre { white-space: pre; }
+.pre-line { white-space: pre-line; }
+.pre-wrap { white-space: pre-wrap; }
+.nowrap { white-space: nowrap; }
 
 small, .small {
   font-size: var(--font-size-small);
@@ -169,6 +176,8 @@ sup { vertical-align: super; }
 .thin { font-weight: var(--font-weight-thin); }
 .regular { font-weight: var(--font-weight); }
 .medium { font-weight: var(--font-weight-medium); }
+b,
+strong,
 .bold { font-weight: var(--font-weight-bold); }
 .muted { color: var(--body-color-muted) !important; }
 
@@ -184,10 +193,5 @@ sup { vertical-align: super; }
 .capitalize { text-transform: capitalize; }
 .lowercase { text-transform: lowercase; }
 .uppercase { text-transform: uppercase; }
-
-.pre { white-space: pre; }
-.pre-line { white-space: pre-line; }
-.pre-wrap { white-space: pre-wrap; }
-.nowrap { white-space: nowrap; }
 
 .break-word { word-wrap: break-word; }
