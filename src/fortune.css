@@ -1,4 +1,6 @@
 @import url("./reset.css");
+
+/* Tokens */
 @import url("./variables.css");
 
 /* Components */
@@ -9,8 +11,9 @@
 @import url("./nav.css");
 @import url("./tab.css");
 @import url("./table.css");
+@import url("./text.css");
 
-/* Lab */
+/* Labs */
 @import url("./lab.css");
 
 /* Utilities */
@@ -24,4 +27,3 @@
 @import url("./list.css");
 @import url("./opacity.css");
 @import url("./position.css");
-@import url("./type.css");

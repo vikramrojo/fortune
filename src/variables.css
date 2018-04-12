@@ -1,5 +1,5 @@
 :root {
-	/* Spacing */
+	/* Tokens */
 	--gap-0: 0rem;
 	--gap-1: 0.0625rem; /* 1px */
 	--gap-2: 0.125rem; /* 2px */
@@ -26,7 +26,6 @@
 	--gray: gray;
 	--black: black;
 
-	/* Colors (most courtesy of http://clrs.cc/) */
 	--navy: #001f3f;
 	--blue: #0074d9;
 	--aqua: #7fdbff;
@@ -41,7 +40,16 @@
 	--fuchsia: #f012be;
 	--purple: #b10dc9;
 
-	/* States */
+	--component-bg-color: var(--whitesmoke);
+	--component-border-color: var(--silver);
+	--component-border-radius: var(--gap-2);
+	--component-border-width: var(--gap-1);
+	--component-focus: 0 0 var(--gap-2) var(--gap-2) var(--lightgray);
+	--component-padding-x: var(--gap-5);
+	--component-padding-y: var(--gap-5);
+	--component-speed: .1s;
+	--component-font-size: var(--space-1);
+
 	--state-primary: var(--blue);
 	--state-secondary: var(--gray);
 	--state-success: var(--green);
@@ -51,6 +59,7 @@
 	--state-light: var(--white);
 	--state-dark: var(--black);
 	--state-disabled: var(--lightgray);
+
 	--darken: rgba(0, 0, 0, 0.100);
 	--darken-200: rgba(0, 0, 0, 0.200);
 	--darken-400: rgba(0, 0, 0, 0.400);
@@ -62,34 +71,104 @@
 	--lighten-600: rgba(255, 255, 255, 0.600);
 	--lighten-800: rgba(255, 255, 255, 0.800);
 
-	/* Components */
-	--component-bg-color: var(--whitesmoke);
-	--component-border-color: var(--silver);
-	--component-border-radius: var(--gap-2);
-	--component-border-width: var(--gap-1);
-	--component-focus: 0 0 var(--gap-2) var(--gap-2) var(--lightgray);
-	--component-padding-x: var(--gap-5);
-	--component-padding-y: var(--gap-5);
-	--component-speed: .1s;
+	/* Alert */
+	--alert-border-radius: var(--component-border-radius);
+	--alert-padding-x: var(--component-padding-x);
+	--alert-padding-y: var(--component-padding-y);
+
+	--alert-bg-color: var(--state-primary);
+	--alert-color: var(--state-primary);
+
+	--alert-bg-color-secondary: var(--state-secondary);
+	--alert-color-secondary: var(--state-secondary);
+
+	--alert-bg-color-success: var(--state-success);
+	--alert-color-success: var(--state-success);
+
+	--alert-bg-color-info: var(--state-info);
+	--alert-color-info: var(--state-info);
+
+	--alert-bg-color-warning: var(--state-warning);
+	--alert-color-warning: var(--state-warning);
+
+	--alert-bg-color-danger: var(--state-danger);
+	--alert-color-danger: var(--state-danger);
+
+	/* Badge */
+	--badge-font-size: var(--gap-5);
+	--badge-border-radius: var(--space-1);
+	--badge-focus: var(--component-focus);
+	--badge-speed: var(--component-speed);
+
+	--badge-color: var(--white);
+	--badge-bg-color: var(--state-primary);
 
 	/* Button */
-	--button-font-size: var(--input-font-size);
-	--button-font-family: var(--input-font-family);
-	--button-font-weight: var(--input-font-weight);
+	--button-font-size: var(--component-font-size);
+	--button-font-family: inherit;
+	--button-font-weight: inherit;
 	--button-border-radius: var(--component-border-radius);
 	--button-border-width: var(--component-border-width);
 	--button-focus: var(--component-focus);
 	--button-speed: var(--component-speed);
-	--button-loader-size: 1em;
-	--button-loader-border-width: .15em;
 
 	--button-color: var(--white);
 	--button-bg-color: var(--state-primary);
 
-	/* Type */
+	/* Column */
+	--container-width: 80rem;
+	--column-gutter: var(--space-3);
+
+	/* Form */
+	--input-font-size: var(--component-font-size);
+	--input-font-family: inherit;
+	--input-font-weight: inherit;
+	--input-color: var(--body-color);
+	--input-border-color: var(--component-border-color);
+	--input-border-width: var(--gap-1);
+	--input-border-radius: var(--component-border-radius);
+	--input-bg-color: var(--white);
+	--input-readonly-bg-color: var(--component-bg-color);
+	--input-focus-color: var(--state-primary);
+
+	--input-addon-bg-color: var(--component-bg-color);
+	--input-addon-color: var(--body-color-muted);
+
+	--input-hint-color: var(--body-color-muted);
+	--input-hint-font-size: var(--font-size-small);
+
+	--input-icon-width: var(--space-2);
+	--input-icon-offset: var(--gap-4);
+	--input-icon-color: var(--state-secondary);
+
+	--input-invalid-color: var(--state-danger);
+	--input-invalid-border-color: var(--state-danger);
+	--input-valid-color: var(--state-success);
+	--input-valid-border-color: var(--state-success);
+
+	--fieldset-border-color: var(--component-border-color);
+	--fieldset-border-width: var(--component-border-width);
+	--fieldset-border-radius: var(--component-border-radius);
+	--fieldset-padding-x: var(--space-1);
+	--fieldset-padding-y: var(--space-2);
+
+	--label-color: inherit;
+
+	/* Table */
+	--table-bg-color: var(--white);
+	--table-border-color: var(--component-border-color);
+	--table-border-width: var(--component-border-width);
+	--table-header-bg-color: transparent;
+	--table-spacing-x: var(--gap-5);
+	--table-spacing-y: var(--gap-4);
+	--table-hover-color: var(--white);
+	--table-hover-bg-color: var(--state-primary);
+	--table-stripe-bg-color: var(--component-bg-color);
+
+	/* Text */
 	--font-sans-serif: sans-serif;
 	--font-serif: serif;
-	--font-system: system-ui;
+	--font-system: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
 	--font-monospace: Menlo, Consolas, "DejaVu Sans Mono", monospace;
 
 	--body-bg-color: var(--white);
@@ -155,86 +234,4 @@
 
 	--selection-color: var(--white);
 	--selection-bg-color: var(--state-primary);
-
-	/* Column */
-	--container-width: 80rem;
-	--column-gutter: var(--space-3);
-
-	/* Form */
-	--input-font-size: var(--space-1);
-	--input-font-family: inherit;
-	--input-font-weight: inherit;
-	--input-color: var(--body-color);
-	--input-border-color: var(--component-border-color);
-	--input-border-width: var(--gap-1);
-	--input-border-radius: var(--component-border-radius);
-	--input-bg-color: var(--white);
-	--input-readonly-bg-color: var(--component-bg-color);
-	--input-focus-color: var(--state-primary);
-
-	--input-addon-bg-color: var(--component-bg-color);
-	--input-addon-color: var(--body-color-muted);
-
-	--input-hint-color: var(--body-color-muted);
-	--input-hint-font-size: var(--font-size-small);
-
-	--input-icon-width: 2em;
-	--input-icon-offset: .5em;
-	--input-icon-color: var(--state-secondary);
-
-	--input-invalid-color: var(--state-danger);
-	--input-invalid-border-color: var(--state-danger);
-	--input-valid-color: var(--state-success);
-	--input-valid-border-color: var(--state-success);
-
-	--fieldset-border-color: var(--component-border-color);
-	--fieldset-border-width: var(--component-border-width);
-	--fieldset-border-radius: var(--component-border-radius);
-	--fieldset-padding-x: var(--space-1);
-	--fieldset-padding-y: var(--space-2);
-
-	--label-color: inherit;
-
-	/* Table */
-	--table-bg-color: var(--white);
-	--table-border-color: var(--component-border-color);
-	--table-border-width: var(--component-border-width);
-	--table-header-bg-color: transparent;
-	--table-spacing-x: var(--gap-5);
-	--table-spacing-y: var(--gap-4);
-	--table-hover-color: var(--white);
-	--table-hover-bg-color: var(--state-primary);
-	--table-stripe-bg-color: var(--component-bg-color);
-
-	/* Alert */
-	--alert-border-radius: var(--component-border-radius);
-  --alert-padding-x: var(--component-padding-x);
-  --alert-padding-y: var(--component-padding-y);
-
-  --alert-bg-color: var(--state-primary);
-  --alert-color: var(--state-primary);
-
-  --alert-bg-color-secondary: var(--state-secondary);
-  --alert-color-secondary: var(--state-secondary);
-
-  --alert-bg-color-success: var(--state-success);
-  --alert-color-success: var(--state-success);
-
-  --alert-bg-color-info: var(--state-info);
-  --alert-color-info: var(--state-info);
-
-  --alert-bg-color-warning: var(--state-warning);
-  --alert-color-warning: var(--state-warning);
-
-  --alert-bg-color-danger: var(--state-danger);
-  --alert-color-danger: var(--state-danger);
-
-	/* Badge */
-	--badge-font-size: var(--gap-5);
-	--badge-border-radius: var(--space-1);
-	--badge-focus: var(--component-focus);
-	--badge-speed: var(--component-speed);
-
-	--badge-color: var(--white);
-	--badge-bg-color: var(--state-primary);
 }
