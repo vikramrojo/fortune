@@ -67,12 +67,10 @@
 	--component-border-color: var(--silver);
 	--component-border-radius: var(--gap-2);
 	--component-border-width: var(--gap-1);
-	--component-focus-width: var(--gap-2);
+	--component-focus: 0 0 var(--gap-2) var(--gap-2) var(--lightgray);
 	--component-padding-x: var(--gap-5);
 	--component-padding-y: var(--gap-5);
 	--component-speed: .1s;
-	--component-box-shadow-inner: inset 0 1px 1px var(--darken);
-	--component-box-shadow-outer: 0 2px 2px var(--darken);
 
 	/* Button */
 	--button-font-size: var(--input-font-size);
@@ -80,7 +78,7 @@
 	--button-font-weight: var(--input-font-weight);
 	--button-border-radius: var(--component-border-radius);
 	--button-border-width: var(--component-border-width);
-	--button-focus-width: var(--component-focus-width);
+	--button-focus: var(--component-focus);
 	--button-speed: var(--component-speed);
 	--button-loader-size: 1em;
 	--button-loader-border-width: .15em;
@@ -171,10 +169,8 @@
 	--input-border-width: var(--gap-1);
 	--input-border-radius: var(--component-border-radius);
 	--input-bg-color: var(--white);
-	--input-box-shadow: var(--component-box-shadow-inner);
 	--input-readonly-bg-color: var(--component-bg-color);
 	--input-focus-color: var(--state-primary);
-	--input-speed: var(--component-speed);
 
 	--input-addon-bg-color: var(--component-bg-color);
 	--input-addon-color: var(--body-color-muted);
@@ -236,30 +232,9 @@
 	/* Badge */
 	--badge-font-size: var(--gap-5);
 	--badge-border-radius: var(--space-1);
-	--badge-focus-width: var(--component-focus-width);
+	--badge-focus: var(--component-focus);
 	--badge-speed: var(--component-speed);
 
 	--badge-color: var(--white);
 	--badge-bg-color: var(--state-primary);
-
-	--badge-color-secondary: var(--white);
-	--badge-bg-color-secondary: var(--state-secondary);
-
-	--badge-color-success: var(--white);
-	--badge-bg-color-success: var(--state-success);
-
-	--badge-color-info: var(--white);
-	--badge-bg-color-info: var(--state-info);
-
-	--badge-color-warning: var(--white);
-	--badge-bg-color-warning: var(--state-warning);
-
-	--badge-color-danger: var(--white);
-	--badge-bg-color-danger: var(--state-danger);
-
-	--badge-color-light: var(--black);
-	--badge-bg-color-light: var(--state-light);
-
-	--badge-color-dark: var(--white);
-	--badge-bg-color-dark: var(--state-dark);
 }

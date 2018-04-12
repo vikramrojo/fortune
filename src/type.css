@@ -191,12 +191,3 @@ sup { vertical-align: super; }
 .nowrap { white-space: nowrap; }
 
 .break-word { word-wrap: break-word; }
-
-.primary { color: var(--state-primary) !important; }
-.secondary { color: var(--state-secondary) !important; }
-.success { color: var(--state-success) !important; }
-.info { color: var(--state-info) !important; }
-.warning { color: var(--state-warning) !important; }
-.danger { color: var(--state-danger) !important; }
-.light { color: var(--state-light) !important; }
-.dark { color: var(--state-dark) !important; }

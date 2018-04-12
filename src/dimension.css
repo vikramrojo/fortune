@@ -22,3 +22,28 @@
 .minvh-66 { min-height: calc((100 / 3) * 2)vh; }
 .minvh-75 { min-height: 75vh; }
 .minvh-100 { min-height: 100vh; }
+
+.w-0 { width: 0; }
+.w-1 { width: var(--space-1); }
+.w-2 { width: var(--space-2); }
+.w-3 { width: var(--space-3); }
+.w-4 { width: var(--space-4); }
+.w-5 { width: var(--space-5); }
+.w-6 { width: var(--space-6); }
+.w-7 { width: var(--space-7); }
+.w-8 { width: var(--space-8); }
+.w-9 { width: var(--space-9); }
+
+.w-25 { width: 25%; }
+.w-33 { width: calc(100% / 3); }
+.w-50 { width: 50%; }
+.w-66 { width: calc((100% / 3) * 2); }
+.w-75 { width: 75%; }
+.w-100 { width: 100%; }
+
+.minvw-25 { min-width: 25vw; }
+.minvw-33 { min-width: calc(100 / 3)vw; }
+.minvw-50 { min-width: 50vw; }
+.minvw-66 { min-width: calc((100 / 3) * 2)vw; }
+.minvw-75 { min-width: 75vw; }
+.minvw-100 { min-width: 100vw; }

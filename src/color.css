@@ -23,6 +23,16 @@
 .fuchsia {color: var(--fuchsia); }
 .purple {color: var(--purple); }
 
+.primary { color: var(--state-primary); }
+.secondary { color: var(--state-secondary); }
+.success { color: var(--state-success); }
+.info { color: var(--state-info); }
+.warning { color: var(--state-warning); }
+.danger { color: var(--state-danger); }
+.light { color: var(--state-light); }
+.dark { color: var(--state-dark); }
+.disabled { color: var(--state-disabled); }
+
 .bg-white { background-color: var(--white); }
 .bg-smoke { background-color: var(--whitesmoke); }
 .bg-light { background-color: var(--lightgray); }
@@ -46,6 +56,16 @@
 .bg-fuchsia {background-color: var(--fuchsia); }
 .bg-purple {background-color: var(--purple); }
 
+.bg-primary { background-color: var(--state-primary); }
+.bg-secondary { background-color: var(--state-secondary); }
+.bg-success { background-color: var(--state-success); }
+.bg-info { background-color: var(--state-info); }
+.bg-warning { background-color: var(--state-warning); }
+.bg-danger { background-color: var(--state-danger); }
+.bg-light { background-color: var(--state-light); }
+.bg-dark { background-color: var(--state-dark); }
+.bg-disabled { background-color: var(--state-disabled); }
+
 .border-white { border-color: var(--white); }
 .border-smoke { border-color: var(--whitesmoke); }
 .border-light { border-color: var(--lightgray); }
@@ -68,3 +88,13 @@
 .border-maroon {border-color: var(--maroon); }
 .border-fuchsia {border-color: var(--fuchsia); }
 .border-purple {border-color: var(--purple); }
+
+.border-primary { border-color: var(--state-primary); }
+.border-secondary { border-color: var(--state-secondary); }
+.border-success { border-color: var(--state-success); }
+.border-info { border-color: var(--state-info); }
+.border-warning { border-color: var(--state-warning); }
+.border-danger { border-color: var(--state-danger); }
+.border-light { border-color: var(--state-light); }
+.border-dark { border-color: var(--state-dark); }
+.border-disabled { border-color: var(--state-disabled); }

@@ -36,7 +36,6 @@ textarea[type=text]
   color: var(--input-color);
   border: solid var(--input-border-width) var(--input-border-color);
   border-radius: var(--input-border-radius);
-  box-shadow: var(--input-box-shadow);
   background-color: var(--input-bg-color);
   line-height: var(--line-height);
   vertical-align: middle;
@@ -44,7 +43,7 @@ textarea[type=text]
   padding: var(--gap-4) var(--gap-4);
   margin: 0;
   transition:
-    var(--input-speed) border-color,
+    var(--component-speed) border-color,
     var(--component-speed) background-color,
     var(--component-speed) color;
   white-space: nowrap;

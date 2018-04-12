@@ -19,7 +19,6 @@ button,
   line-height: var(--line-height);
   display: inline-block;
   transition: var(--button-speed) all;
-  box-shadow: var(--component-box-shadow-outer);
 
   &:hover {
     color: var(--button-color);
@@ -40,13 +39,12 @@ button,
 
   &:focus {
     outline: none;
-    box-shadow: 0 0 4px 2px var(--lightgray);
+    box-shadow: var(--button-focus);
   }
 
   &:disabled,
   &.disabled {
     opacity: 0.2;
-    box-shadow: none;
     text-decoration: none;
     opacity: .5;
     cursor: not-allowed;
@@ -56,7 +54,6 @@ button,
     border-color: var(--white);
     background-color: var(--white);
     color: var(--button-bg-color);
-    box-shadow: none;
   }
 
   &.button-invert:hover {
@@ -72,7 +69,6 @@ button,
     border-color: var(--button-bg-color);
     background-color: transparent;
     color: var(--link-color);
-    box-shadow: none;
   }
 
   &.button-outline:hover,
@@ -91,7 +87,6 @@ button,
     background-color: transparent;
     color: var(--link-color);
     text-decoration: var(--link-text-decoration);
-    box-shadow: none;
   }
 
   &.button-link:hover,
@@ -100,6 +95,5 @@ button,
     background-image: none;
     color: var(--link-color-hover);
     text-decoration: var(--link-text-decoration-hover);
-    box-shadow: none;
   }
 }
