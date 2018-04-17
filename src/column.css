@@ -1,19 +1,14 @@
-.container {
-  max-width: var(--container-width);
-  margin: 0 auto;
+.cols {
+  max-width: var(--columns-width);
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
-  padding: 0 calc(var(--column-gutter) / 2);
-}
-
-.row {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  margin-left: calc(var(--column-gutter) / -2);
-  margin-right: calc(var(--column-gutter) / -2);
 }
 
-.row-flush > .col, .row-flush > [class*="col-"] {
+.cols-flush > .col, .cols-flush > [class*="col-"] {
     padding: 0;
 }
 
@@ -25,8 +20,6 @@
 [class*=" col-"],
 [class^='col-'] {
   padding: 0 calc(var(--column-gutter) / 2);
-  /* Uncomment for vertical gutters */
-  /* padding: calc(var(--column-gutter) / 2); */
 }
 
 .col-1 {

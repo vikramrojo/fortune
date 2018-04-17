@@ -116,7 +116,7 @@
 	--button-bg-color: var(--state-primary);
 
 	/* Column */
-	--container-width: 80rem;
+	--columns-width: 80rem;
 	--column-gutter: var(--space-3);
 
 	/* Form */
