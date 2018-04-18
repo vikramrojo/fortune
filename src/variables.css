@@ -154,6 +154,13 @@
 
 	--label-color: inherit;
 
+	/* Grid */
+	--grid-columns: auto;
+	--grid-rows: auto;
+
+	--grid-column: auto / span 1;
+	--grid-row: auto / span 1;
+
 	/* Table */
 	--table-bg-color: var(--white);
 	--table-border-color: var(--component-border-color);

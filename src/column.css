@@ -8,7 +8,7 @@
   justify-content: flex-start;
 }
 
-.cols-flush > .col, .cols-flush > [class*="col-"] {
+.cols-flush > .col, .cols-flush > [class^='col-'] {
     padding: 0;
 }
 
@@ -17,7 +17,6 @@
 }
 
 .col,
-[class*=" col-"],
 [class^='col-'] {
   padding: 0 calc(var(--column-gutter) / 2);
 }
@@ -117,13 +116,11 @@
   }
 
   .col,
-  [class*=" col-"],
   [class^='col-'] {
       flex: 0 1 100%;
       max-width: 100%;
   }
 
-  [class*=" offset-"],
   [class^='offset-'] {
     margin-left: auto;
   }
