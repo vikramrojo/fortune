@@ -17,7 +17,7 @@
 }
 
 .col,
-[class^='col-'] {
+[class*='col-'] {
   padding: 0 calc(var(--column-gutter) / 2);
 }
 
@@ -106,6 +106,12 @@
 .offset-10 { margin-left: calc(100% / (12/10)); }
 .offset-11 { margin-left: calc(100% / (12/11)); }
 
+[class*='col-count-'] { column-gap: var(--column-gap); }
+.col-count-2 { column-count: 2; }
+.col-count-3 { column-count: 3; }
+.col-count-4 { column-count: 4; }
+.col-count-5 { column-count: 5; }
+
 @media screen and (--breakpoint) {
   .container {
       width: 100%;
@@ -116,12 +122,12 @@
   }
 
   .col,
-  [class^='col-'] {
+  [class*='col-'] {
       flex: 0 1 100%;
       max-width: 100%;
   }
 
-  [class^='offset-'] {
+  [class*='offset-'] {
     margin-left: auto;
   }
 }

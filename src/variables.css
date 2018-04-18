@@ -118,6 +118,7 @@
 	/* Column */
 	--columns-width: 80rem;
 	--column-gutter: var(--space-3);
+	--column-gap: var(--space-3);
 
 	/* Form */
 	--input-font-size: var(--component-font-size);
