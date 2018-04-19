@@ -116,8 +116,9 @@
 	--button-bg-color: var(--state-primary);
 
 	/* Column */
-	--container-width: 80rem;
+	--columns-width: 80rem;
 	--column-gutter: var(--space-3);
+	--column-gap: var(--space-3);
 
 	/* Form */
 	--input-font-size: var(--component-font-size);
@@ -153,6 +154,13 @@
 	--fieldset-padding-y: var(--space-2);
 
 	--label-color: inherit;
+
+	/* Grid */
+	--grid-columns: repeat(auto, 1fr);
+	--grid-rows: repeat(auto, 1fr);
+
+	--grid-column: auto / span 1;
+	--grid-row: auto / span 1;
 
 	/* Table */
 	--table-bg-color: var(--white);

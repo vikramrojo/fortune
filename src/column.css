@@ -1,19 +1,14 @@
-.container {
-  max-width: var(--container-width);
-  margin: 0 auto;
+.cols {
+  max-width: var(--columns-width);
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
-  padding: 0 calc(var(--column-gutter) / 2);
-}
-
-.row {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  margin-left: calc(var(--column-gutter) / -2);
-  margin-right: calc(var(--column-gutter) / -2);
 }
 
-.row-flush > .col, .row-flush > [class*="col-"] {
+.cols-flush > .col, .cols-flush > [class^='col-'] {
     padding: 0;
 }
 
@@ -22,11 +17,9 @@
 }
 
 .col,
-[class*=" col-"],
+[class*=' col-'],
 [class^='col-'] {
   padding: 0 calc(var(--column-gutter) / 2);
-  /* Uncomment for vertical gutters */
-  /* padding: calc(var(--column-gutter) / 2); */
 }
 
 .col-1 {
@@ -114,6 +107,13 @@
 .offset-10 { margin-left: calc(100% / (12/10)); }
 .offset-11 { margin-left: calc(100% / (12/11)); }
 
+[class*=' col-count'],
+[class^='col-count'] { column-gap: var(--column-gap); }
+.col-count-2 { column-count: 2; }
+.col-count-3 { column-count: 3; }
+.col-count-4 { column-count: 4; }
+.col-count-5 { column-count: 5; }
+
 @media screen and (--breakpoint) {
   .container {
       width: 100%;
@@ -124,14 +124,14 @@
   }
 
   .col,
-  [class*=" col-"],
+  [class*=' col-'],
   [class^='col-'] {
       flex: 0 1 100%;
       max-width: 100%;
   }
 
-  [class*=" offset-"],
-  [class^='offset-'] {
+  [class*=' offset-'],
+  [class^='col-'] {
     margin-left: auto;
   }
 }
