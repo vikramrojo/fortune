@@ -22,19 +22,13 @@ button,
 
   &:hover {
     color: var(--button-color);
-    background-image: linear-gradient(
-      var(--darken),
-      var(--darken)
-    );
+    background-image: linear-gradient(var(--darken), var(--darken));
     text-decoration: none;
   }
 
   &:active,
   &.active {
-    background-image: linear-gradient(
-      var(--lighten),
-      var(--lighten)
-    );
+    background-image: linear-gradient(var(--lighten), var(--lighten));
   }
 
   &:focus {
@@ -57,10 +51,7 @@ button,
   }
 
   &.button-invert:hover {
-    background-image: linear-gradient(
-      var(--darken),
-      var(--darken)
-    );
+    background-image: linear-gradient(var(--darken), var(--darken));
     color: var(--button-bg-color);
     text-decoration: none;
   }
