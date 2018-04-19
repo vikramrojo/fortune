@@ -156,8 +156,8 @@
 	--label-color: inherit;
 
 	/* Grid */
-	--grid-columns: auto;
-	--grid-rows: auto;
+	--grid-columns: repeat(auto, 1fr);
+	--grid-rows: repeat(auto, 1fr);
 
 	--grid-column: auto / span 1;
 	--grid-row: auto / span 1;

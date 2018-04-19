@@ -50,11 +50,11 @@
 .grid-cols-6 { grid-template-columns: repeat(6, 1fr); }
 .grid-cols-7 { grid-template-columns: repeat(7, 1fr); }
 .grid-cols-8 { grid-template-columns: repeat(8, 1fr); }
-.grid-cols { grid-template-columns: repeat(var(--grid-columns), 1fr); }
+.grid-cols { grid-template-columns: var(--grid-columns); }
 
 .grid-rows-dense { grid-auto-flow: column dense; }
 .grid-rows,
-[class*='grid-cols-'] { grid-auto-flow: column; }
+[class*='grid-rows-'] { grid-auto-flow: column; }
 .grid-rows-2 { grid-template-rows: repeat(2, 1fr); }
 .grid-rows-3 { grid-template-rows: repeat(3, 1fr); }
 .grid-rows-4 { grid-template-rows: repeat(4, 1fr); }
@@ -62,12 +62,13 @@
 .grid-rows-6 { grid-template-rows: repeat(6, 1fr); }
 .grid-rows-7 { grid-template-rows: repeat(7, 1fr); }
 .grid-rows-8 { grid-template-rows: repeat(8, 1fr); }
-.grid-rows { grid-template-columns: repeat(var(--grid-rows), 1fr); }
+.grid-rows { grid-template-rows: var(--grid-rows); }
 
 .grid > * {
   grid-column: var(--grid-column);
   grid-row: var(--grid-row);
 }
+
 .grid-row-span-2 {grid-row: span 2 ;}
 .grid-row-span-3 {grid-row: span 3 ;}
 .grid-row-span-4 {grid-row: span 4 ;}
@@ -75,6 +76,7 @@
 .grid-row-span-6 {grid-row: span 6 ;}
 .grid-row-span-7 {grid-row: span 7 ;}
 .grid-row-span {grid-row: var(--grid-row) ; }
+
 .grid-col-span-2 {grid-column: span 2 ;}
 .grid-col-span-3 {grid-column: span 3 ;}
 .grid-col-span-4 {grid-column: span 4 ;}
