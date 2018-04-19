@@ -8,7 +8,7 @@
   max-height: var(--space-2);
 }
 
-.nav>.container {
+.nav > .container {
   display: flex;
 }
 
@@ -33,14 +33,15 @@
 
 @media screen and (--breakpoint-sm) {
   .nav,
-  .nav>.container {
-      flex-direction: column;
+  .nav > .container {
+    flex-direction: column;
   }
+
   .nav-center,
   .nav-left,
   .nav-right {
-      flex-wrap: wrap;
-      justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -72,5 +73,7 @@
 }
 
 @custom-media --breakpoint-sm (max-width: 40rem);
+
 @custom-media --breakpoint-md (max-width: 52rem);
+
 @custom-media --breakpoint-lg (max-width: 64rem);

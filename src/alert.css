@@ -5,20 +5,14 @@
   padding: var(--alert-padding-y) var(--alert-padding-x);
   margin-top: 0;
   margin-bottom: 1.5rem;
-  background-image: linear-gradient(
-    var(--lighten-800),
-    var(--lighten-800)
-  );
+  background-image: linear-gradient(var(--lighten-800), var(--lighten-800));
 
   &:empty {
     display: none;
   }
 
   &:hover {
-    background-image: linear-gradient(
-      var(--lighten-600),
-      var(--lighten-600)
-    );
+    background-image: linear-gradient(var(--lighten-600), var(--lighten-600));
   }
 
   & a {

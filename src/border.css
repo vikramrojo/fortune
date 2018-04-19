@@ -1,40 +1,105 @@
-.radius-0 { border-radius: 0; }
-.radius-1 { border-radius: var(--gap-1); }
-.radius-2 { border-radius: var(--gap-2); }
-.radius-3 { border-radius: var(--gap-3); }
-.radius-4 { border-radius: var(--gap-4); }
-.radius-5 { border-radius: var(--gap-5); }
-.radius-100 { border-radius: 100%; }
-.radius-max { border-radius: 9999px; }
+.radius-0 {
+  border-radius: 0;
+}
 
-.b-1 { border: var(--gap-1) solid; }
-.b-2 { border: var(--gap-2) solid; }
-.b-3 { border: var(--gap-3) solid; }
+.radius-1 {
+  border-radius: var(--gap-1);
+}
 
-.bt-1 { border-top: var(--gap-1) solid; }
-.bt-2 { border-top: var(--gap-2) solid; }
-.bt-3 { border-top: var(--gap-3) solid; }
+.radius-2 {
+  border-radius: var(--gap-2);
+}
 
-.bl-1 { border-left: var(--gap-1) solid; }
-.bl-2 { border-left: var(--gap-2) solid; }
-.bl-3 { border-left: var(--gap-3) solid; }
+.radius-3 {
+  border-radius: var(--gap-3);
+}
 
-.bb-1 { border-bottom: var(--gap-1) solid; }
-.bb-2 { border-bottom: var(--gap-2) solid; }
-.bb-3 { border-bottom: var(--gap-3) solid; }
+.radius-4 {
+  border-radius: var(--gap-4);
+}
 
-.br-1 { border-right: var(--gap-1) solid; }
-.br-2 { border-right: var(--gap-2) solid; }
-.br-3 { border-right: var(--gap-3) solid; }
+.radius-5 {
+  border-radius: var(--gap-5);
+}
+
+.radius-100 {
+  border-radius: 100%;
+}
+
+.radius-max {
+  border-radius: 9999px;
+}
+
+.b-1 {
+  border: var(--gap-1) solid;
+}
+
+.b-2 {
+  border: var(--gap-2) solid;
+}
+
+.b-3 {
+  border: var(--gap-3) solid;
+}
+
+.bt-1 {
+  border-top: var(--gap-1) solid;
+}
+
+.bt-2 {
+  border-top: var(--gap-2) solid;
+}
+
+.bt-3 {
+  border-top: var(--gap-3) solid;
+}
+
+.bl-1 {
+  border-left: var(--gap-1) solid;
+}
+
+.bl-2 {
+  border-left: var(--gap-2) solid;
+}
+
+.bl-3 {
+  border-left: var(--gap-3) solid;
+}
+
+.bb-1 {
+  border-bottom: var(--gap-1) solid;
+}
+
+.bb-2 {
+  border-bottom: var(--gap-2) solid;
+}
+
+.bb-3 {
+  border-bottom: var(--gap-3) solid;
+}
+
+.br-1 {
+  border-right: var(--gap-1) solid;
+}
+
+.br-2 {
+  border-right: var(--gap-2) solid;
+}
+
+.br-3 {
+  border-right: var(--gap-3) solid;
+}
 
 .bx-1 {
   border-left: var(--gap-1) solid;
   border-right: var(--gap-1) solid;
 }
+
 .bx-2 {
   border-left: var(--gap-2) solid;
   border-right: var(--gap-2) solid;
 }
+
 .bx-3 {
   border-left: var(--gap-3) solid;
   border-right: var(--gap-3) solid;
@@ -44,10 +109,12 @@
   border-top: var(--gap-1) solid;
   border-bottom: var(--gap-1) solid;
 }
+
 .by-2 {
   border-top: var(--gap-2) solid;
   border-bottom: var(--gap-2) solid;
 }
+
 .by-3 {
   border-top: var(--gap-3) solid;
   border-bottom: var(--gap-3) solid;
