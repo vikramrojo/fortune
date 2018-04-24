@@ -2,10 +2,15 @@
   max-width: var(--columns-width);
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
+}
+
+.cols .cols {
+  margin-left: calc(var(--column-gutter) / -2);
+  margin-right: calc(var(--column-gutter) / -2);
 }
 
 .cols-flush > .col,
