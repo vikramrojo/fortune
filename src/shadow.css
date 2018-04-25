@@ -17,3 +17,7 @@
 .shadow-4 {
   box-shadow: 0 var(--gap-4) var(--gap-4) var(--component-shadow);
 }
+
+.shadow-5 {
+  box-shadow: 0 var(--gap-5) var(--gap-5) var(--component-shadow);
+}
