@@ -1,0 +1,19 @@
+.shadow-0 {
+  box-shadow: none;
+}
+
+.shadow-1 {
+  box-shadow: 0 var(--gap-1) var(--gap-1) var(--component-shadow);
+}
+
+.shadow-2 {
+  box-shadow: 0 var(--gap-2) var(--gap-2) var(--component-shadow);
+}
+
+.shadow-3 {
+  box-shadow: 0 var(--gap-3) var(--gap-3) var(--component-shadow);
+}
+
+.shadow-4 {
+  box-shadow: 0 var(--gap-4) var(--gap-4) var(--component-shadow);
+}

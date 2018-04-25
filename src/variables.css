@@ -47,6 +47,7 @@
   --component-padding-y: var(--gap-5);
   --component-speed: .1s;
   --component-font-size: var(--space-1);
+  --component-shadow: var(--shadow-100);
   --state-primary: var(--blue);
   --state-secondary: var(--gray);
   --state-success: var(--green);
@@ -66,6 +67,11 @@
   --lighten-400: rgba(255, 255, 255, 0.400);
   --lighten-600: rgba(255, 255, 255, 0.600);
   --lighten-800: rgba(255, 255, 255, 0.800);
+  --shadow-100: rgba(80, 80, 80, 0.100);
+  --shadow-200: rgba(80, 80, 80, 0.200);
+  --shadow-400: rgba(80, 80, 80, 0.400);
+  --shadow-600: rgba(80, 80, 80, 0.600);
+  --shadow-800: rgba(80, 80, 80, 0.800);
 
   /* Alert */
   --alert-border-radius: var(--component-border-radius);
