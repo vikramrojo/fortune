@@ -8,10 +8,6 @@
   max-height: var(--space-2);
 }
 
-.nav > .container {
-  display: flex;
-}
-
 .nav-center,
 .nav-left,
 .nav-right {

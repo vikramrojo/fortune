@@ -1,0 +1,90 @@
+[class*=' tt-'],
+[class^='tt-'],
+[class*=' tb-'],
+[class^='tb-'],
+[class*=' tl-'],
+[class^='tl-'],
+[class*=' tr-'],
+[class^='tr-'] {
+  transition: transform 0.2s ease-out;
+}
+
+.tt-1:hover {
+  transform: translateY(calc(var(--gap-1) * -1));
+}
+
+.tt-2:hover {
+  transform: translateY(calc(var(--gap-2) * -1));
+}
+
+.tt-3:hover {
+  transform: translateY(calc(var(--gap-3) * -1));
+}
+
+.tt-4:hover {
+  transform: translateY(calc(var(--gap-4) * -1));
+}
+
+.tt-5:hover {
+  transform: translateY(calc(var(--gap-5) * -1));
+}
+
+.tb-1:hover {
+  transform: translateY(var(--gap-1));
+}
+
+.tb-2:hover {
+  transform: translateY(var(--gap-2));
+}
+
+.tb-3:hover {
+  transform: translateY(var(--gap-3));
+}
+
+.tb-4:hover {
+  transform: translateY(var(--gap-4));
+}
+
+.tb-5:hover {
+  transform: translateY(var(--gap-5));
+}
+
+.tl-1:hover {
+  transform: translateX(calc(var(--gap-1) * -1));
+}
+
+.tl-2:hover {
+  transform: translateX(calc(var(--gap-2) * -1));
+}
+
+.tl-3:hover {
+  transform: translateX(calc(var(--gap-3) * -1));
+}
+
+.tl-4:hover {
+  transform: translateX(calc(var(--gap-4) * -1));
+}
+
+.tl-5:hover {
+  transform: translateX(calc(var(--gap-5) * -1));
+}
+
+.tr-1:hover {
+  transform: translateX(var(--gap-1));
+}
+
+.tr-2:hover {
+  transform: translateX(var(--gap-2));
+}
+
+.tr-3:hover {
+  transform: translateX(var(--gap-3));
+}
+
+.tr-4:hover {
+  transform: translateX(var(--gap-4));
+}
+
+.tr-5:hover {
+  transform: translateX(var(--gap-5));
+}

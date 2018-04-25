@@ -117,6 +117,10 @@
   color: var(--state-disabled);
 }
 
+.transparent {
+  color: transparent;
+}
+
 .bg-white {
   background-color: var(--white);
 }
@@ -236,6 +240,10 @@
   background-color: var(--state-disabled);
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .border-white {
   border-color: var(--white);
 }
@@ -353,4 +361,8 @@
 
 .border-disabled {
   border-color: var(--state-disabled);
+}
+
+.border-transparent {
+  border-color: transparent;
 }
