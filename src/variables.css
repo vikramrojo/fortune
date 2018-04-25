@@ -18,6 +18,19 @@
   --space-8: 8rem; /* 128px */
   --space-9: 10rem; /* 160px */
 
+  --columns-width: 80rem;
+  --column-gutter: var(--space-3);
+  --column-gap: var(--space-3);
+  --component-bg-color: var(--whitesmoke);
+  --component-border-color: var(--silver);
+  --component-border-radius: var(--gap-2);
+  --component-border-width: var(--gap-1);
+  --component-focus: 0 0 var(--gap-2) var(--gap-2) var(--lightgray);
+  --component-padding-x: var(--gap-5);
+  --component-padding-y: var(--gap-5);
+  --component-speed: .1s;
+  --component-font-size: var(--space-1);
+  --component-shadow: var(--shadow);
   --white: white;
   --whitesmoke: whitesmoke;
   --lightgray: lightgray;
@@ -38,16 +51,6 @@
   --maroon: #85144b;
   --fuchsia: #f012be;
   --purple: #b10dc9;
-  --component-bg-color: var(--whitesmoke);
-  --component-border-color: var(--silver);
-  --component-border-radius: var(--gap-2);
-  --component-border-width: var(--gap-1);
-  --component-focus: 0 0 var(--gap-2) var(--gap-2) var(--lightgray);
-  --component-padding-x: var(--gap-5);
-  --component-padding-y: var(--gap-5);
-  --component-speed: .1s;
-  --component-font-size: var(--space-1);
-  --component-shadow: var(--shadow-100);
   --state-primary: var(--blue);
   --state-secondary: var(--gray);
   --state-success: var(--green);
@@ -67,7 +70,7 @@
   --lighten-400: rgba(255, 255, 255, 0.400);
   --lighten-600: rgba(255, 255, 255, 0.600);
   --lighten-800: rgba(255, 255, 255, 0.800);
-  --shadow-100: rgba(80, 80, 80, 0.100);
+  --shadow: rgba(80, 80, 80, 0.100);
   --shadow-200: rgba(80, 80, 80, 0.200);
   --shadow-400: rgba(80, 80, 80, 0.400);
   --shadow-600: rgba(80, 80, 80, 0.600);
@@ -108,11 +111,6 @@
   --button-speed: var(--component-speed);
   --button-color: var(--white);
   --button-bg-color: var(--state-primary);
-
-  /* Column */
-  --columns-width: 80rem;
-  --column-gutter: var(--space-3);
-  --column-gap: var(--space-3);
 
   /* Form */
   --input-font-size: var(--component-font-size);
