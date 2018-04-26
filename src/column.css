@@ -185,19 +185,19 @@
   column-gap: var(--column-gap);
 }
 
-.col-count-2 {
+.multi-col-2 {
   column-count: 2;
 }
 
-.col-count-3 {
+.multi-col-3 {
   column-count: 3;
 }
 
-.col-count-4 {
+.multi-col-4 {
   column-count: 4;
 }
 
-.col-count-5 {
+.multi-col-5 {
   column-count: 5;
 }
 
