@@ -1,0 +1,25 @@
+.breadcrumb {
+  display: flex;
+  font-size: 14px;
+}
+
+.breadcrumb li {
+  display: block;
+  font-weight: var(--breadcrumb-weight);
+  color: var(--state-disabled);
+}
+
+.breadcrumb li:after {
+  display: inline-block;
+  content: var(--breadcrumb-seperator);
+  padding: 0 var(--breadcrumb-gap);
+  color: var(--state-disabled);
+}
+
+.breadcrumb li:last-of-type {
+  color: inherit;
+}
+
+.breadcrumb li:last-of-type:after {
+  content: none;
+}

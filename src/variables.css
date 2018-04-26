@@ -101,6 +101,11 @@
   --badge-color: var(--white);
   --badge-bg-color: var(--state-primary);
 
+  /* Breadcrumb */
+  --breadcrumb-seperator: '/';
+  --breadcrumb-gap: var(--gap-4);
+  --breadcrumb-weight: var(--font-weight-medium);
+
   /* Button */
   --button-font-size: var(--component-font-size);
   --button-font-family: inherit;
@@ -111,6 +116,10 @@
   --button-speed: var(--component-speed);
   --button-color: var(--white);
   --button-bg-color: var(--state-primary);
+
+  /* Dropdown */
+  --dropdown-bg-color: var(--component-bg-color);
+  --dropdown-border-color: var(--component-border-color);
 
   /* Form */
   --input-font-size: var(--component-font-size);
