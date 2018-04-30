@@ -1,11 +1,11 @@
 .tabs {
   display: flex;
+  color: var(--body-color);
 }
 
 .tabs > a {
   padding: var(--gap-5) var(--space-1);
   flex: 0 1 auto;
-  color: var(--body-color);
   border-bottom: var(--gap-2) solid var(--state-disabled);
   text-align: center;
 }
@@ -21,6 +21,10 @@
   border-color: var(--state-primary);
 }
 
-.tab-full a {
+.tabs-full a {
   flex: 1;
+}
+
+.tabs > :not(.active) {
+  border-color: transparent;
 }

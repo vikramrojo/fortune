@@ -31,6 +31,7 @@
   --component-speed: .1s;
   --component-font-size: var(--space-1);
   --component-shadow: var(--shadow);
+
   --white: white;
   --whitesmoke: whitesmoke;
   --lightgray: lightgray;
@@ -155,6 +156,10 @@
   --grid-rows: repeat(auto, 1fr);
   --grid-column: auto / span 1;
   --grid-row: auto / span 1;
+
+/* Step */
+--step-color: var(--state-dark);
+--step-bg-color: var(--component-bg-color);
 
   /* Table */
   --table-bg-color: var(--white);

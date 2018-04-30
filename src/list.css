@@ -49,3 +49,21 @@
 .list-comma > *:not(:last-child):after {
   content: ", ";
 }
+
+.list-step > li {
+  counter-increment: step-counter;
+}
+
+.list-step > li::before {
+  content: counter(step-counter);
+  border-radius: 100px;
+  width: var(--space-3);
+  height: var(--space-3);
+  text-align: center;
+  display: inline-block;
+  background-color: var(--step-bg-color);
+  color: var(--step-color);
+  line-height: 2;
+  margin-left: calc(var(--space-4) * -1);
+  margin-right: var(--space-1);
+}
