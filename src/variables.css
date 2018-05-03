@@ -113,8 +113,6 @@
   --button-color: var(--white);
   --button-bg-color: var(--state-primary);
 
-  /* Dropdown */
-
   /* Form */
   --input-font-size: var(--component-font-size);
   --input-font-family: inherit;
