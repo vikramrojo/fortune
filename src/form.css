@@ -90,11 +90,7 @@ select {
   padding-right: var(--gap-3);
 }
 
-textarea,
-textarea.input-xs,
-textarea.input-sm,
-textarea.input-lg,
-textarea.input-xl {
+textarea {
   height: auto;
   resize: vertical;
   line-height: var(--line-height);

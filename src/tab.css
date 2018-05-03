@@ -1,24 +1,27 @@
-.tabs {
+.tab {
   display: flex;
 }
 
-.tabs > a {
+.tab > a {
   padding: var(--gap-5) var(--space-1);
   flex: 0 1 auto;
-  color: var(--body-color);
   border-bottom: var(--gap-2) solid var(--state-disabled);
   text-align: center;
-}
-
-.tabs > a.active,
-.tabs > a:hover {
-  opacity: 1;
-  border-bottom: var(--gap-2) solid var(--state-dark);
   text-decoration: none;
+  color: var(--body-color);
 }
 
-.tabs > a.active {
-  border-color: var(--state-primary);
+.tab-simple > :not(.active) {
+  border-color: transparent;
+}
+
+.tab > a:hover {
+  border-color: var(--state-dark);
+}
+
+.tab > a.active {
+  border-color: var(--tab-border-color);
+  color: var(--tab-border-color);
 }
 
 .tab-full a {

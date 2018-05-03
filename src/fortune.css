@@ -10,6 +10,7 @@
 @import url("./button.css");
 @import url("./dropdown.css");
 @import url("./form.css");
+@import url("./list.css");
 @import url("./nav.css");
 @import url("./tab.css");
 @import url("./table.css");
@@ -24,7 +25,6 @@
 @import url("./display.css");
 @import url("./flex.css");
 @import url("./grid.css");
-@import url("./list.css");
 @import url("./opacity.css");
 @import url("./position.css");
 @import url("./shadow.css");

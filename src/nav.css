@@ -1,11 +1,12 @@
 .nav {
   display: flex;
-  min-height: var(--space-2);
+  min-height: var(--nav-height);
   align-items: stretch;
+  color: var(--nav-link-color);
 }
 
 .nav img {
-  max-height: var(--space-2);
+  max-height: var(--nav-height);
 }
 
 .nav-center,
@@ -27,6 +28,31 @@
   justify-content: center;
 }
 
+.nav a,
+.nav .brand {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: var(--gap-5) var(--space-1);
+}
+
+.nav .active:not(.button) {
+  color: var(--nav-link-color);
+}
+
+.nav .brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.nav .brand img {
+  padding-right: var(--gap-5);
+}
+
+.nav .button {
+  margin: auto var(--gap-5);
+}
+
 @media screen and (--breakpoint-sm) {
   .nav,
   .nav > .container {
@@ -39,33 +65,6 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-}
-
-.nav a,
-.nav .brand {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  padding: var(--gap-5) var(--space-1);
-  color: var(--link-color);
-}
-
-.nav .active:not(.button) {
-  color: var(--state-primary);
-}
-
-.nav .brand {
-  font-size: var(--space-1);
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.nav .brand img {
-  padding-right: var(--gap-5);
-}
-
-.nav .button {
-  margin: auto var(--gap-5);
 }
 
 @custom-media --breakpoint-sm (max-width: 40rem);

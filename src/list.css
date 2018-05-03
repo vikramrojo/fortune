@@ -49,3 +49,73 @@
 .list-comma > *:not(:last-child):after {
   content: ", ";
 }
+
+.list-step > li {
+  counter-increment: step-counter;
+}
+
+.list-step > li::before {
+  content: counter(step-counter);
+  border-radius: 100px;
+  width: var(--space-3);
+  height: var(--space-3);
+  text-align: center;
+  display: inline-block;
+  background-color: var(--list-step-bg-color);
+  color: var(--list-step-color);
+  line-height: 2;
+  margin-left: calc(var(--space-4) * -1);
+  margin-right: var(--space-1);
+}
+
+.list-breadcrumb {
+  display: flex;
+  font-size: 14px;
+}
+
+.list-breadcrumb > li {
+  display: block;
+  font-weight: var(--list-breadcrumb-weight);
+  color: var(--state-disabled);
+}
+
+.list-breadcrumb > li:after {
+  display: inline-block;
+  content: var(--list-breadcrumb-seperator);
+  padding: 0 var(--list-breadcrumb-gap);
+  color: var(--state-disabled);
+}
+
+.list-breadcrumb > li:last-of-type {
+  color: inherit;
+}
+
+.list-breadcrumb li:last-of-type:after {
+  content: none;
+}
+
+.list-dropdown {
+  display: inline-block;
+  background: var(--list-dropdown-bg-color);
+  border-radius: var(--component-border-radius);
+  border-color: var(--list-dropdown-border-color);
+  border-width: var(--component-border-width);
+  border-style: solid;
+}
+
+.list-dropdown > li a {
+  display: block;
+  padding: var(--gap-4) var(--gap-5);
+  border-bottom-color: var(--list-dropdown-border-color);
+  border-bottom-width: var(--component-border-width);
+  border-bottom-style: solid;
+}
+
+.list-dropdown > li a:hover {
+  text-decoration: none;
+  background-image: linear-gradient(var(--darken), var(--darken));
+}
+
+.list-dropdown > li:last-of-type a {
+  border-bottom: 0;
+}
