@@ -1,12 +1,12 @@
 .nav {
   display: flex;
-  min-height: var(--space-2);
+  min-height: var(--nav-height);
   align-items: stretch;
-  color: var(--link-color);
+  color: var(--nav-link-color);
 }
 
 .nav img {
-  max-height: var(--space-2);
+  max-height: var(--nav-height);
 }
 
 .nav-center,
@@ -37,7 +37,7 @@
 }
 
 .nav .active:not(.button) {
-  color: var(--link-color);
+  color: var(--nav-link-color);
 }
 
 .nav .brand {

@@ -102,11 +102,6 @@
   --badge-color: var(--white);
   --badge-bg-color: var(--state-primary);
 
-  /* Breadcrumb */
-  --breadcrumb-seperator: '/';
-  --breadcrumb-gap: var(--gap-4);
-  --breadcrumb-weight: var(--font-weight-medium);
-
   /* Button */
   --button-font-size: var(--component-font-size);
   --button-font-family: inherit;
@@ -119,8 +114,6 @@
   --button-bg-color: var(--state-primary);
 
   /* Dropdown */
-  --dropdown-bg-color: var(--component-bg-color);
-  --dropdown-border-color: var(--component-border-color);
 
   /* Form */
   --input-font-size: var(--component-font-size);
@@ -151,15 +144,28 @@
   --fieldset-padding-y: var(--space-2);
   --label-color: inherit;
 
+  /* List */
+  --list-breadcrumb-seperator: '/';
+  --list-breadcrumb-gap: var(--gap-4);
+  --list-breadcrumb-weight: var(--font-weight-medium);
+  --list-dropdown-bg-color: var(--component-bg-color);
+  --list-dropdown-border-color: var(--component-border-color);
+  --list-step-color: var(--state-dark);
+  --list-step-bg-color: var(--component-bg-color);
+
+  /* Nav */
+  --nav-height: var(--space-2);
+  --nav-link-color: var(--link-color);
+
   /* Grid */
   --grid-columns: repeat(auto, 1fr);
   --grid-rows: repeat(auto, 1fr);
   --grid-column: auto / span 1;
   --grid-row: auto / span 1;
 
-/* Step */
---step-color: var(--state-dark);
---step-bg-color: var(--component-bg-color);
+  /* Tab */
+  --tab-color: var(--state-primary);
+  --tab-border-color: var(--state-primary);
 
   /* Table */
   --table-bg-color: var(--white);
@@ -223,6 +229,7 @@
   --mark-bg-color: var(--yellow);
   --mark-padding-x: var(--gap-5);
   --mark-padding-y: var(--gap-3);
+  --p-margin: var(--space-2);
   --placeholder-color: var(--body-color-muted);
   --pre-color: var(--code-color);
   --pre-border-radius: var(--component-border-radius);
