@@ -38,26 +38,26 @@
   background-image: linear-gradient(var(--lighten-800), transparent);
 }
 
-.bkg-blend-darken {
+.bg-blend-darken {
   background-image: linear-gradient(var(--lighten-800), transparent);
 }
 
-.bkg-blend-multiply {
+.bg-blend-multiply {
   background-blend-mode: multiply;
 }
 
-.bkg-blend-overlay {
+.bg-blend-overlay {
   background-blend-mode: overlay;
 }
 
-.bkg-blend-darken {
+.bg-blend-darken {
   background-blend-mode: darken;
 }
 
-.bkg-blend-screen {
+.bg-blend-screen {
   background-blend-mode: screen;
 }
 
-.bkg-blend-soft {
+.bg-blend-soft {
   background-blend-mode: soft-light;
 }
