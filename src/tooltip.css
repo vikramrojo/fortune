@@ -1,0 +1,23 @@
+.tooltip {
+  display: inline-block;
+  position: relative;
+  border-bottom: var(--gap-1) dashed var(--component-border-color);
+
+  &:hover > .tooltip-text {
+    display: block;
+  }
+}
+
+.tooltip-text {
+  display: none;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: var(--tooltip-min-width);
+  padding: var(--tooltip-padding);
+  color: var(--tooltip-color);
+  text-align: center;
+  background: var(--tooltip-bg-color);
+  border-radius: var(--component-border-radius);
+}
