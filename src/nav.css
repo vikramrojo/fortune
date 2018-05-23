@@ -52,23 +52,3 @@
 .nav .button {
   margin: auto var(--gap-5);
 }
-
-@media screen and (--breakpoint-sm) {
-  .nav,
-  .nav > .container {
-    flex-direction: column;
-  }
-
-  .nav-center,
-  .nav-left,
-  .nav-right {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
-@custom-media --breakpoint-sm (max-width: 40rem);
-
-@custom-media --breakpoint-md (max-width: 52rem);
-
-@custom-media --breakpoint-lg (max-width: 64rem);

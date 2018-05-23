@@ -1,0 +1,71 @@
+.show, .show-md {
+  display: none;
+}
+
+@media screen and (--breakpoint-sm) {
+  .container {
+    width: 100%;
+  }
+
+  .hide {
+    display: none !important;
+  }
+
+  .show {
+    display: block !important;
+  }
+
+  .col,
+  [class*=' col-'],
+  [class^='col-'] {
+    flex: 0 1 100%;
+    max-width: 100%;
+  }
+
+  [class*=' offset-'],
+  [class^='col-'] {
+    margin-left: auto;
+  }
+
+  .nav,
+  .nav > .container {
+    flex-direction: column;
+  }
+
+  .nav-center,
+  .nav-left,
+  .nav-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .p-reset {
+    padding: 0 !important;
+  }
+
+  .m-reset {
+    margin: 0 !important;
+  }
+}
+
+@media screen and (--breakpoint-md) {
+
+  .hide-md {
+    display: none !important;
+  }
+
+  .show-md {
+    display: block !important;
+  }
+
+  .p-md-reset {
+    padding: 0 !important;
+  }
+
+  .m-md-reset {
+    margin: 0 !important;
+  }
+}
+
+@custom-media --breakpoint-sm (max-width: 48rem);
+@custom-media --breakpoint-md (min-width: 48rem) and (max-width: 60rem);
