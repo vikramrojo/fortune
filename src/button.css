@@ -14,7 +14,7 @@ button,
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  padding: var(--gap-4) var(--gap-5);
+  padding: calc(var(--gap-5) - 1px) var(--gap-5);
   cursor: pointer;
   line-height: var(--line-height);
   display: inline-block;
