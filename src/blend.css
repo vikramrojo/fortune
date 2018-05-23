@@ -38,10 +38,6 @@
   background-image: linear-gradient(var(--lighten-800), transparent);
 }
 
-.bg-blend-darken {
-  background-image: linear-gradient(var(--lighten-800), transparent);
-}
-
 .bg-blend-multiply {
   background-blend-mode: multiply;
 }

@@ -200,27 +200,3 @@
 .multi-col-5 {
   column-count: 5;
 }
-
-@media screen and (--breakpoint) {
-  .container {
-    width: 100%;
-  }
-
-  .hide {
-    display: none !important;
-  }
-
-  .col,
-  [class*=' col-'],
-  [class^='col-'] {
-    flex: 0 1 100%;
-    max-width: 100%;
-  }
-
-  [class*=' offset-'],
-  [class^='col-'] {
-    margin-left: auto;
-  }
-}
-
-@custom-media --breakpoint (max-width: 52rem);
