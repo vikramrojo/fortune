@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/atav1k/fortune/issues"
   },
-  "homepage": "https://fortune.dance",
+  "homepage": "https://fortunecss.com",
   "devDependencies": {
     "gulp": "latest",
     "gulp-cssnano": "latest",
