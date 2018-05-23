@@ -244,4 +244,10 @@
   --pre-max-height: none;
   --selection-color: var(--white);
   --selection-bg-color: var(--state-primary);
+
+  /* Tooltip */
+  --tooltip-color: var(--white);
+  --tooltip-bg-color: var(--gray);
+  --tooltip-min-width: var(--space-9);
+  --tooltip-padding: var(--gap-4)
 }
