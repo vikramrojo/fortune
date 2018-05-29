@@ -13,6 +13,12 @@
   margin-right: calc(var(--column-gutter) / -2);
 }
 
+.cols > .cols {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
 .cols-flush > .col,
 .cols-flush > [class^='col-'] {
   padding: 0;
