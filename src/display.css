@@ -105,22 +105,6 @@
   bottom: var(--space-5);
 }
 
-.bottom-6 {
-  bottom: var(--space-6);
-}
-
-.bottom-7 {
-  bottom: var(--space-7);
-}
-
-.bottom-8 {
-  bottom: var(--space-8);
-}
-
-.bottom-9 {
-  bottom: var(--space-9);
-}
-
 .left-0 {
   left: 0;
 }
@@ -143,22 +127,6 @@
 
 .left-5 {
   left: var(--space-5);
-}
-
-.left-6 {
-  left: var(--space-6);
-}
-
-.left-7 {
-  left: var(--space-7);
-}
-
-.left-8 {
-  left: var(--space-8);
-}
-
-.left-9 {
-  left: var(--space-9);
 }
 
 .right-0 {
@@ -185,22 +153,6 @@
   right: var(--space-5);
 }
 
-.right-6 {
-  right: var(--space-6);
-}
-
-.right-7 {
-  right: var(--space-7);
-}
-
-.right-8 {
-  right: var(--space-8);
-}
-
-.right-9 {
-  right: var(--space-9);
-}
-
 .top-0 {
   top: 0;
 }
@@ -223,22 +175,6 @@
 
 .top-5 {
   top: var(--space-5);
-}
-
-.top-6 {
-  top: var(--space-6);
-}
-
-.top-7 {
-  top: var(--space-7);
-}
-
-.top-8 {
-  top: var(--space-8);
-}
-
-.top-9 {
-  top: var(--space-9);
 }
 
 .z-0 {

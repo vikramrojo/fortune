@@ -19,6 +19,11 @@
   --space-9: 10rem; /* 160px */
 
   --media: 1;
+  --media-h: 1;
+  --media-sm: 0.25;
+  --media-md: 0.5;
+  --media-lg: 0.75;
+  --media-xl: 1.25;
 
   --columns-width: 80rem;
   --column-gutter: var(--space-3);

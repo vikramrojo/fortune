@@ -1,90 +1,90 @@
-[class*=' tt-'],
-[class^='tt-'],
-[class*=' tb-'],
-[class^='tb-'],
-[class*=' tl-'],
-[class^='tl-'],
-[class*=' tr-'],
-[class^='tr-'] {
+[class*=' trans-t-'],
+[class^='trans-t-'],
+[class*=' trans-b-'],
+[class^='trans-b-'],
+[class*=' trans-l-'],
+[class^='trans-l-'],
+[class*=' trans-r-'],
+[class^='trans-r-'] {
   transition: transform 0.2s ease-out;
 }
 
-.tt-1:hover {
+.trans-t-1:hover {
   transform: translateY(calc(var(--gap-1) * -1));
 }
 
-.tt-2:hover {
+.trans-t-2:hover {
   transform: translateY(calc(var(--gap-2) * -1));
 }
 
-.tt-3:hover {
+.trans-t-3:hover {
   transform: translateY(calc(var(--gap-3) * -1));
 }
 
-.tt-4:hover {
+.trans-t-4:hover {
   transform: translateY(calc(var(--gap-4) * -1));
 }
 
-.tt-5:hover {
+.trans-t-5:hover {
   transform: translateY(calc(var(--gap-5) * -1));
 }
 
-.tb-1:hover {
+.trans-b-1:hover {
   transform: translateY(var(--gap-1));
 }
 
-.tb-2:hover {
+.trans-b-2:hover {
   transform: translateY(var(--gap-2));
 }
 
-.tb-3:hover {
+.trans-b-3:hover {
   transform: translateY(var(--gap-3));
 }
 
-.tb-4:hover {
+.trans-b-4:hover {
   transform: translateY(var(--gap-4));
 }
 
-.tb-5:hover {
+.trans-b-5:hover {
   transform: translateY(var(--gap-5));
 }
 
-.tl-1:hover {
+.trans-l-1:hover {
   transform: translateX(calc(var(--gap-1) * -1));
 }
 
-.tl-2:hover {
+.trans-l-2:hover {
   transform: translateX(calc(var(--gap-2) * -1));
 }
 
-.tl-3:hover {
+.trans-l-3:hover {
   transform: translateX(calc(var(--gap-3) * -1));
 }
 
-.tl-4:hover {
+.trans-l-4:hover {
   transform: translateX(calc(var(--gap-4) * -1));
 }
 
-.tl-5:hover {
+.trans-l-5:hover {
   transform: translateX(calc(var(--gap-5) * -1));
 }
 
-.tr-1:hover {
+.trans-r-1:hover {
   transform: translateX(var(--gap-1));
 }
 
-.tr-2:hover {
+.trans-r-2:hover {
   transform: translateX(var(--gap-2));
 }
 
-.tr-3:hover {
+.trans-r-3:hover {
   transform: translateX(var(--gap-3));
 }
 
-.tr-4:hover {
+.trans-r-4:hover {
   transform: translateX(var(--gap-4));
 }
 
-.tr-5:hover {
+.trans-r-5:hover {
   transform: translateX(var(--gap-5));
 }

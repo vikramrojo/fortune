@@ -86,32 +86,32 @@ h6 {
 
 h1,
 .h1 {
-  font-size: var(--headings-font-size-h1);
+  font-size: calc(var(--headings-font-size-h1) * var(--media-h));
 }
 
 h2,
 .h2 {
-  font-size: var(--headings-font-size-h2);
+  font-size: calc(var(--headings-font-size-h2) * var(--media-h));
 }
 
 h3,
 .h3 {
-  font-size: var(--headings-font-size-h3);
+  font-size: calc(var(--headings-font-size-h3) * var(--media-h));
 }
 
 h4,
 .h4 {
-  font-size: var(--headings-font-size-h4);
+  font-size: calc(var(--headings-font-size-h4) * var(--media-h));
 }
 
 h5,
 .h5 {
-  font-size: var(--headings-font-size-h5);
+  font-size: calc(var(--headings-font-size-h5) * var(--media-h));
 }
 
 h6,
 .h6 {
-  font-size: var(--headings-font-size-h6);
+  font-size: calc(var(--headings-font-size-h6) * var(--media-h));
 }
 
 hr {
