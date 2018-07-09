@@ -18,6 +18,8 @@
   --space-8: 8rem; /* 128px */
   --space-9: 10rem; /* 160px */
 
+  --media: 1;
+
   --columns-width: 80rem;
   --column-gutter: var(--space-3);
   --column-gap: var(--space-3);

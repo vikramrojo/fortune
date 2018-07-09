@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const gzip = require('gulp-gzip');
 const nano = require('gulp-cssnano');
 const postcss = require('gulp-postcss');
-const postcsscssnext = require('postcss-cssnext');
+const postcsspresetenv = require('postcss-preset-env');
 const postcssimport = require('postcss-import');
 const rename = require('gulp-rename');
 const size = require('gulp-size');
@@ -12,19 +12,19 @@ const lab = ['./src/lab.css'];
 
 const postcssRegular = [
   postcssimport(),
-  postcsscssnext({
+  postcsspresetenv({
     browsers: ['']
   })
 ];
 const postcssPrefix = [
   postcssimport(),
-  postcsscssnext({
+  postcsspresetenv({
     browsers: ['last 2 versions']
   })
 ];
 const postcssLab = [
   postcssimport(),
-  postcsscssnext({
+  postcsspresetenv({
     browsers: ['last 2 versions']
   })
 ];

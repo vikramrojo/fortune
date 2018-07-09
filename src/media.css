@@ -46,6 +46,30 @@
   .m-reset {
     margin: 0 !important;
   }
+
+  .m-small {
+    --media: 0.25;
+  }
+
+  .m-medium {
+    --media: 0.5;
+  }
+
+  .m-large {
+    --media: 0.75;
+  }
+
+  .p-small {
+    --media: 0.25;
+  }
+
+  .p-medium {
+    --media: 0.5;
+  }
+
+  .p-large {
+    --media: 0.75;
+  }
 }
 
 @media screen and (--breakpoint-md) {
@@ -64,6 +88,30 @@
 
   .m-md-reset {
     margin: 0 !important;
+  }
+
+  .m-md-small {
+    --media: 0.25;
+  }
+
+  .m-md-medium {
+    --media: 0.5;
+  }
+
+  .m-md-large {
+    --media: 0.75;
+  }
+
+  .p-md-small {
+    --media: 0.25;
+  }
+
+  .p-md-medium {
+    --media: 0.5;
+  }
+
+  .p-md-large {
+    --media: 0.75;
   }
 }
 
