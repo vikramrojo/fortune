@@ -1,8 +1,8 @@
-.show, .show-md {
+.show, .show-tablet {
   display: none;
 }
 
-@media screen and (--breakpoint-sm) {
+@media screen and (--breakpoint-mobile) {
   .container {
     width: 100%;
   }
@@ -47,97 +47,89 @@
     margin: 0 !important;
   }
 
-  .mar-sm {
+  .pos-sm {
     --media: var(--media-sm);
   }
 
-  .mar-md {
+  .pos-md {
     --media: var(--media-md);
   }
 
-  .mar-lg {
+  .pos-lg {
     --media: var(--media-lg);
   }
 
-  .mar-xl {
+  .pos-xl {
     --media: var(--media-xl);
   }
 
-  .pad-sm {
+  .hdg-sm {
+    --media-hdg: var(--media-sm);
+  }
+
+  .hdg-md {
+    --media-hdg: var(--media-md);
+  }
+
+  .hdg-lg {
+    --media-hdg: var(--media-lg);
+  }
+
+  .hdg-xl {
+    --media-hdg: var(--media-xl);
+  }
+}
+
+@media screen and (--breakpoint-tablet) {
+
+  .hide-tablet {
+    display: none !important;
+  }
+
+  .show-tablet {
+    display: block !important;
+  }
+
+  .pad-tablet-reset {
+    padding: 0 !important;
+  }
+
+  .mar-tablet-reset {
+    margin: 0 !important;
+  }
+
+  .pos-tablet-sm {
     --media: var(--media-sm);
   }
 
-  .pad-md {
+  .pos-tablet-md {
     --media: var(--media-md);
   }
 
-  .pad-lg {
+  .pos-tablet-lg {
     --media: var(--media-lg);
   }
 
-  .pad-xl {
+  .pos-tablet-xl {
     --media: var(--media-xl);
   }
 
-  .h-sm {
+  .hdg-sm {
     --media-h: var(--media-sm);
   }
 
-  .h-md {
+  .hdg-md {
     --media-h: var(--media-md);
   }
 
-  .h-lg {
+  .hdg-lg {
     --media-h: var(--media-lg);
   }
 
-  .h-xl {
+  .hdg-xl {
     --media-h: var(--media-xl);
   }
 }
 
-@media screen and (--breakpoint-md) {
-
-  .hide-md {
-    display: none !important;
-  }
-
-  .show-md {
-    display: block !important;
-  }
-
-  .p-md-reset {
-    padding: 0 !important;
-  }
-
-  .m-md-reset {
-    margin: 0 !important;
-  }
-
-  .m-md-small {
-    --media: 0.25;
-  }
-
-  .m-md-medium {
-    --media: 0.5;
-  }
-
-  .m-md-large {
-    --media: 0.75;
-  }
-
-  .p-md-small {
-    --media: 0.25;
-  }
-
-  .p-md-medium {
-    --media: 0.5;
-  }
-
-  .p-md-large {
-    --media: 0.75;
-  }
-}
-
-@custom-media --breakpoint-sm (max-width: 48rem);
-@custom-media --breakpoint-md (min-width: 48rem) and (max-width: 60rem);
+@custom-media --breakpoint-mobile (max-width: 48rem);
+@custom-media --breakpoint-tablet (min-width: 48rem) and (max-width: 60rem);
