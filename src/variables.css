@@ -6,6 +6,7 @@
   --gap-3: 0.25rem; /* 4px */
   --gap-4: 0.5rem; /* 8px */
   --gap-5: 0.75rem; /* 12px */
+  --gap-6: 0.875rem; /* 12px */
 
   --space-0: 0rem;
   --space-1: 1rem; /* 16px */
@@ -208,12 +209,12 @@
   --font-weight-medium: 400;
   --font-weight-bold: 600;
   --line-height: 1.5;
-  --code-font-size: 90%;
+  --code-font-size: var(--gap-5);
   --code-color: var(--black);
   --code-border-radius: var(--component-border-radius);
   --code-bg-color: var(--component-bg-color);
-  --code-padding-x: calc(var(--font-size) * .4);
-  --code-padding-y: calc(var(--font-size) * .2);
+  --code-padding-x: var(--gap-4);
+  --code-padding-y: var(--gap-2);
   --headings-font-family: var(--font-system);
   --headings-font-weight: var(--font-weight);
   --headings-line-height: 1.5;
