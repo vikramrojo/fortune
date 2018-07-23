@@ -1,38 +1,98 @@
 @import url("./fortune.css");
 /* Requires PostCSS */
 
-.red-50 {
+.red50 {
   color: color(var(--red) l(90%));
 }
 
-.red-100 {
+.red100 {
   color: color(var(--red) l(80%));
 }
 
-.red-200 {
+.red200 {
   color: color(var(--red) l(60%));
 }
 
-.red-300 {
+.red300 {
   color: color(var(--red) l(40%));
 }
 
-.red-400 {
+.red400 {
   color: color(var(--red) l(20%));
 }
 
-.red-600 {
+.red600 {
   color: color(var(--red) b(10%));
 }
 
-.red-700 {
+.red700 {
   color: color(var(--red) b(20%));
 }
 
-.red-800 {
+.red800 {
   color: color(var(--red) b(30%));
 }
 
-.red-900 {
+.red900 {
   color: color(var(--red) b(40%));
+}
+
+.gradDarken {
+  background-image: linear-gradient(transparent, var(--darken));
+}
+
+.gradDarken200 {
+  background-image: linear-gradient(transparent, var(--darken-200));
+}
+
+.gradDarken400 {
+  background-image: linear-gradient(transparent, var(--darken-400));
+}
+
+.gradDarken600 {
+  background-image: linear-gradient(transparent, var(--darken-600));
+}
+
+.gradDarken800 {
+  background-image: linear-gradient(transparent, var(--darken-800));
+}
+
+.gradLighten {
+  background-image: linear-gradient(var(--lighten), transparent);
+}
+
+.gradLighten200 {
+  background-image: linear-gradient(var(--lighten-200), transparent);
+}
+
+.gradLighten400 {
+  background-image: linear-gradient(var(--lighten-400), transparent);
+}
+
+.gradLighten600 {
+  background-image: linear-gradient(var(--lighten-600), transparent);
+}
+
+.gradLighten800 {
+  background-image: linear-gradient(var(--lighten-800), transparent);
+}
+
+.bgBlendMultiply {
+  background-blend-mode: multiply;
+}
+
+.bgBlendOverlay {
+  background-blend-mode: overlay;
+}
+
+.bgBlendDarken {
+  background-blend-mode: darken;
+}
+
+.bgBlendScreen {
+  background-blend-mode: screen;
+}
+
+.bgBlendSoft {
+  background-blend-mode: soft-light;
 }

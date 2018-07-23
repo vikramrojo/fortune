@@ -1,3 +1,4 @@
+.row,
 .cols {
   max-width: var(--columns-width);
   margin-left: auto;
@@ -8,19 +9,22 @@
   justify-content: flex-start;
 }
 
+.row .row,
 .cols .cols {
   margin-left: calc(var(--column-gutter) / -2);
   margin-right: calc(var(--column-gutter) / -2);
 }
 
+.row > .row
 .cols > .cols {
   margin-left: 0;
   margin-right: 0;
   width: 100%;
 }
 
-.cols-flush > .col,
-.cols-flush > [class^='col-'] {
+.flush > .row,
+.flush > .cols,
+.flush > [class^='col'] {
   padding: 0;
 }
 
@@ -29,180 +33,176 @@
 }
 
 .col,
-[class*=' col-'],
-[class^='col-'] {
+[class*=' col'],
+[class^='col'] {
   padding: 0 calc(var(--column-gutter) / 2);
 }
 
-.col-1 {
+.col1 {
   flex: 0 0 calc(100% / (12/1));
   max-width: calc(100% / (12/1));
 }
 
-.col-2 {
+.col2 {
   flex: 0 0 calc(100% / (12/2));
   max-width: calc(100% / (12/2));
 }
 
-.col-3 {
+.col3 {
   flex: 0 0 calc(100% / (12/3));
   max-width: calc(100% / (12/3));
 }
 
-.col-4 {
+.col4 {
   flex: 0 0 calc(100% / (12/4));
   max-width: calc(100% / (12/4));
 }
 
-.col-5 {
+.col5 {
   flex: 0 0 calc(100% / (12/5));
   max-width: calc(100% / (12/5));
 }
 
-.col-6 {
+.col6 {
   flex: 0 0 calc(100% / (12/6));
   max-width: calc(100% / (12/6));
 }
 
-.col-7 {
+.col7 {
   flex: 0 0 calc(100% / (12/7));
   max-width: calc(100% / (12/7));
 }
 
-.col-8 {
+.col8 {
   flex: 0 0 calc(100% / (12/8));
   max-width: calc(100% / (12/8));
 }
 
-.col-9 {
+.col9 {
   flex: 0 0 calc(100% / (12/9));
   max-width: calc(100% / (12/9));
 }
 
-.col-10 {
+.col10 {
   flex: 0 0 calc(100% / (12/10));
   max-width: calc(100% / (12/10));
 }
 
-.col-11 {
+.col11 {
   flex: 0 0 calc(100% / (12/11));
   max-width: calc(100% / (12/11));
 }
 
-.col-12 {
+.col12 {
   flex: 0 0 calc(100% / (12/12));
   max-width: calc(100% / (12/12));
 }
 
-.order-1 {
+.isOrder1 {
   order: 1;
 }
 
-.order-2 {
+.isOrder2 {
   order: 2;
 }
 
-.order-3 {
+.isOrder3 {
   order: 3;
 }
 
-.order-4 {
+.isOrder4 {
   order: 4;
 }
 
-.order-5 {
+.isOrder5 {
   order: 5;
 }
 
-.order-6 {
+.isOrder6 {
   order: 6;
 }
 
-.order-7 {
+.isOrder7 {
   order: 7;
 }
 
-.order-8 {
+.isOrder8 {
   order: 8;
 }
 
-.order-9 {
+.isOrder9 {
   order: 9;
 }
 
-.order-10 {
+.isOrder10 {
   order: 10;
 }
 
-.order-11 {
+.isOrder11 {
   order: 11;
 }
 
-.order-12 {
+.isOrder12 {
   order: 12;
 }
 
-.offset-1 {
+.isOffset1 {
   margin-left: calc(100% / (12/1));
 }
 
-.offset-2 {
+.isOffset2 {
   margin-left: calc(100% / (12/2));
 }
 
-.offset-3 {
+.isOffset3 {
   margin-left: calc(100% / (12/3));
 }
 
-.offset-4 {
+.isOffset4 {
   margin-left: calc(100% / (12/4));
 }
 
-.offset-5 {
+.isOffset5 {
   margin-left: calc(100% / (12/5));
 }
 
-.offset-6 {
+.isOffset6 {
   margin-left: calc(100% / (12/6));
 }
 
-.offset-7 {
+.isOffset7 {
   margin-left: calc(100% / (12/7));
 }
 
-.offset-8 {
+.isOffset8 {
   margin-left: calc(100% / (12/8));
 }
 
-.offset-9 {
+.isOffset9 {
   margin-left: calc(100% / (12/9));
 }
 
-.offset-10 {
+.isOffset10 {
   margin-left: calc(100% / (12/10));
 }
 
-.offset-11 {
+.isOffset11 {
   margin-left: calc(100% / (12/11));
 }
 
-[class*=' col-count'],
-[class^='col-count'] {
+[class*=' multiCol'],
+[class^='multiCol'] {
   column-gap: var(--column-gap);
 }
 
-.multi-col-2 {
+.multiCol2 {
   column-count: 2;
 }
 
-.multi-col-3 {
+.multiCol3 {
   column-count: 3;
 }
 
-.multi-col-4 {
+.multiCol4 {
   column-count: 4;
-}
-
-.multi-col-5 {
-  column-count: 5;
 }

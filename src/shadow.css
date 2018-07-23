@@ -1,23 +1,23 @@
-.shadow-0 {
+.shadow0 {
   box-shadow: none;
 }
 
-.shadow-1 {
+.shadow1 {
   box-shadow: 0 var(--gap-1) var(--gap-1) var(--component-shadow);
 }
 
-.shadow-2 {
+.shadow2 {
   box-shadow: 0 var(--gap-2) var(--gap-2) var(--component-shadow);
 }
 
-.shadow-3 {
+.shadow3 {
   box-shadow: 0 var(--gap-3) var(--gap-3) var(--component-shadow);
 }
 
-.shadow-4 {
+.shadow4 {
   box-shadow: 0 var(--gap-4) var(--gap-4) var(--component-shadow);
 }
 
-.shadow-5 {
+.shadow5 {
   box-shadow: 0 var(--gap-5) var(--gap-5) var(--component-shadow);
 }

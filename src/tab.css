@@ -1,5 +1,13 @@
 .tab {
   display: flex;
+
+  &.isFull > a {
+    flex: 1;
+  }
+
+  &.isSimple > :not(.isActive) {
+    border-color: transparent;
+  }
 }
 
 .tab > a {
@@ -11,19 +19,11 @@
   color: var(--body-color);
 }
 
-.tab-simple > :not(.active) {
-  border-color: transparent;
-}
-
 .tab > a:hover {
   border-color: var(--state-dark);
 }
 
-.tab > a.active {
+.tab > a.isActive {
   border-color: var(--tab-border-color);
   color: var(--tab-border-color);
-}
-
-.tab-full a {
-  flex: 1;
 }

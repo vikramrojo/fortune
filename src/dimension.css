@@ -1,175 +1,175 @@
-.ht-0 {
+.ht0 {
   height: 0;
 }
 
-.ht-1 {
+.ht1 {
   height: var(--space-1);
 }
 
-.ht-2 {
+.ht2 {
   height: var(--space-2);
 }
 
-.ht-3 {
+.ht3 {
   height: var(--space-3);
 }
 
-.ht-4 {
+.ht4 {
   height: var(--space-4);
 }
 
-.ht-5 {
+.ht5 {
   height: var(--space-5);
 }
 
-.ht-6 {
+.ht6 {
   height: var(--space-6);
 }
 
-.ht-7 {
+.ht7 {
   height: var(--space-7);
 }
 
-.ht-8 {
+.ht8 {
   height: var(--space-8);
 }
 
-.ht-9 {
+.ht9 {
   height: var(--space-9);
 }
 
-.ht-25 {
+.ht25 {
   height: 25%;
 }
 
-.ht-33 {
+.ht33 {
   height: calc(100% / 3);
 }
 
-.ht-50 {
+.ht50 {
   height: 50%;
 }
 
-.ht-66 {
+.ht66 {
   height: calc((100% / 3) * 2);
 }
 
-.ht-75 {
+.ht75 {
   height: 75%;
 }
 
-.ht-100 {
+.ht100 {
   height: 100%;
 }
 
-.minvh-25 {
+.viewHt25 {
   min-height: 25vh;
 }
 
-.minvh-33 {
+.viewHt33 {
   min-height: calc(100 / 3)vh;
 }
 
-.minvh-50 {
+.viewHt50 {
   min-height: 50vh;
 }
 
-.minvh-66 {
+.viewHt66 {
   min-height: calc((100 / 3) * 2)vh;
 }
 
-.minvh-75 {
+.viewHt75 {
   min-height: 75vh;
 }
 
-.minvh-100 {
+.viewHt100 {
   min-height: 100vh;
 }
 
-.wid-0 {
+.wid0 {
   width: 0;
 }
 
-.wid-1 {
+.wid1 {
   width: var(--space-1);
 }
 
-.wid-2 {
+.wid2 {
   width: var(--space-2);
 }
 
-.wid-3 {
+.wid3 {
   width: var(--space-3);
 }
 
-.wid-4 {
+.wid4 {
   width: var(--space-4);
 }
 
-.wid-5 {
+.wid5 {
   width: var(--space-5);
 }
 
-.wid-6 {
+.wid6 {
   width: var(--space-6);
 }
 
-.wid-7 {
+.wid7 {
   width: var(--space-7);
 }
 
-.wid-8 {
+.wid8 {
   width: var(--space-8);
 }
 
-.wid-9 {
+.wid9 {
   width: var(--space-9);
 }
 
-.wid-25 {
+.wid25 {
   width: 25%;
 }
 
-.wid-33 {
+.wid33 {
   width: calc(100% / 3);
 }
 
-.wid-50 {
+.wid50 {
   width: 50%;
 }
 
-.wid-66 {
+.wid66 {
   width: calc((100% / 3) * 2);
 }
 
-.wid-75 {
+.wid75 {
   width: 75%;
 }
 
-.wid-100 {
+.wid100 {
   width: 100%;
 }
 
-.minvw-25 {
+.viewWid25 {
   min-width: 25vw;
 }
 
-.minvw-33 {
+.viewWid33 {
   min-width: calc(100 / 3)vw;
 }
 
-.minvw-50 {
+.viewWid50 {
   min-width: 50vw;
 }
 
-.minvw-66 {
+.viewWid66 {
   min-width: calc((100 / 3) * 2)vw;
 }
 
-.minvw-75 {
+.viewWid75 {
   min-width: 75vw;
 }
 
-.minvw-100 {
+.viewWid100 {
   min-width: 100vw;
 }

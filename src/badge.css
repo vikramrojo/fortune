@@ -3,13 +3,18 @@
   color: var(--badge-color);
   background-color: var(--badge-bg-color);
   border-radius: var(--badge-border-radius);
-  padding: var(--gap-2) var(--gap-3);
+  padding: var(--badge-padding-y) var(--badge-padding-y);
   vertical-align: baseline;
   display: inline-block;
   transition: var(--badge-speed) all;
 
   &:empty {
     display: none;
+  }
+
+  &.isActive {
+    color: var(--badge-color-active);
+    background-color: var(--badge-bg-color-active);
   }
 }
 

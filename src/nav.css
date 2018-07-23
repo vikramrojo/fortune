@@ -9,43 +9,43 @@
   max-height: var(--nav-height);
 }
 
-.nav-center,
-.nav-left,
-.nav-right {
+.navCenter,
+.navLeft,
+.navRight {
   display: flex;
   flex: 1;
 }
 
-.nav-left {
+.navLeft {
   justify-content: flex-start;
 }
 
-.nav-right {
+.navRight {
   justify-content: flex-end;
 }
 
-.nav-center {
+.navCenter {
   justify-content: center;
 }
 
 .nav a,
-.nav .brand {
+.nav .isBrand {
   text-decoration: none;
   display: flex;
   align-items: center;
   padding: var(--gap-5) var(--space-1);
 }
 
-.nav .active:not(.button) {
+.nav .isActive:not(.button) {
   color: var(--nav-link-color);
 }
 
-.nav .brand {
+.nav .isBrand {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.nav .brand img {
+.nav .isBrand img {
   padding-right: var(--gap-5);
 }
 

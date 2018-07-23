@@ -1,9 +1,10 @@
-.show, .show-tablet {
+.show, .showTablet {
   display: none;
 }
 
 @media screen and (--breakpoint-mobile) {
-  .container {
+  .row,
+  .cols {
     width: 100%;
   }
 
@@ -16,117 +17,118 @@
   }
 
   .col,
-  [class*=' col-'],
-  [class^='col-'] {
+  [class*=' col'],
+  [class^='col'] {
     flex: 0 1 100%;
     max-width: 100%;
   }
 
-  [class*=' offset-'],
-  [class^='col-'] {
+  [class*=' Offset'],
+  [class^='Col'] {
     margin-left: auto;
   }
 
   .nav,
-  .nav > .container {
+  .nav > .cols,
+  .nav > .row {
     flex-direction: column;
   }
 
-  .nav-center,
-  .nav-left,
-  .nav-right {
+  .navCenter,
+  .navLeft,
+  .navRight {
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .pad-reset {
+  .padReset {
     padding: 0 !important;
   }
 
-  .mar-reset {
+  .marReset {
     margin: 0 !important;
   }
 
-  .pos-sm {
+  .posSm {
     --media: var(--media-sm);
   }
 
-  .pos-md {
+  .posMd {
     --media: var(--media-md);
   }
 
-  .pos-lg {
+  .posLg {
     --media: var(--media-lg);
   }
 
-  .pos-xl {
+  .posXl {
     --media: var(--media-xl);
   }
 
-  .hdg-sm {
+  .hdgSm {
     --media-hdg: var(--media-sm);
   }
 
-  .hdg-md {
+  .hdgMd {
     --media-hdg: var(--media-md);
   }
 
-  .hdg-lg {
+  .hdgLg {
     --media-hdg: var(--media-lg);
   }
 
-  .hdg-xl {
+  .hdgXl {
     --media-hdg: var(--media-xl);
   }
 }
 
 @media screen and (--breakpoint-tablet) {
 
-  .hide-tablet {
+  .hideTablet {
     display: none !important;
   }
 
-  .show-tablet {
+  .showTablet {
     display: block !important;
   }
 
-  .pad-tablet-reset {
+  .padTabletReset {
     padding: 0 !important;
   }
 
-  .mar-tablet-reset {
+  .marTabletReset {
     margin: 0 !important;
   }
 
-  .pos-tablet-sm {
+  .posTabletSm {
     --media: var(--media-sm);
   }
 
-  .pos-tablet-md {
+  .posTabletMd {
     --media: var(--media-md);
   }
 
-  .pos-tablet-lg {
+  .posTabletLg {
     --media: var(--media-lg);
   }
 
-  .pos-tablet-xl {
+  .posTabletXl {
     --media: var(--media-xl);
   }
 
-  .hdg-sm {
+  .hdgTabletSm {
     --media-h: var(--media-sm);
   }
 
-  .hdg-md {
+  .hdgTabletMd {
     --media-h: var(--media-md);
   }
 
-  .hdg-lg {
+  .hdgTabletLg {
     --media-h: var(--media-lg);
   }
 
-  .hdg-xl {
+  .hdgTabletXl {
     --media-h: var(--media-xl);
   }
 }

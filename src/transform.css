@@ -9,82 +9,82 @@
   transition: transform 0.2s ease-out;
 }
 
-.trans-t-1:hover {
+.shiftT1:hover {
   transform: translateY(calc(var(--gap-1) * -1));
 }
 
-.trans-t-2:hover {
+.shiftT2:hover {
   transform: translateY(calc(var(--gap-2) * -1));
 }
 
-.trans-t-3:hover {
+.shiftT3:hover {
   transform: translateY(calc(var(--gap-3) * -1));
 }
 
-.trans-t-4:hover {
+.shiftT4:hover {
   transform: translateY(calc(var(--gap-4) * -1));
 }
 
-.trans-t-5:hover {
+.shiftT5:hover {
   transform: translateY(calc(var(--gap-5) * -1));
 }
 
-.trans-b-1:hover {
+.shiftB1:hover {
   transform: translateY(var(--gap-1));
 }
 
-.trans-b-2:hover {
+.shiftB2:hover {
   transform: translateY(var(--gap-2));
 }
 
-.trans-b-3:hover {
+.shiftB3:hover {
   transform: translateY(var(--gap-3));
 }
 
-.trans-b-4:hover {
+.shiftB4:hover {
   transform: translateY(var(--gap-4));
 }
 
-.trans-b-5:hover {
+.shiftB5:hover {
   transform: translateY(var(--gap-5));
 }
 
-.trans-l-1:hover {
+.shiftL1:hover {
   transform: translateX(calc(var(--gap-1) * -1));
 }
 
-.trans-l-2:hover {
+.shiftL2:hover {
   transform: translateX(calc(var(--gap-2) * -1));
 }
 
-.trans-l-3:hover {
+.shiftL3:hover {
   transform: translateX(calc(var(--gap-3) * -1));
 }
 
-.trans-l-4:hover {
+.shiftL4:hover {
   transform: translateX(calc(var(--gap-4) * -1));
 }
 
-.trans-l-5:hover {
+.shiftL5:hover {
   transform: translateX(calc(var(--gap-5) * -1));
 }
 
-.trans-r-1:hover {
+.shiftR1:hover {
   transform: translateX(var(--gap-1));
 }
 
-.trans-r-2:hover {
+.shiftR2:hover {
   transform: translateX(var(--gap-2));
 }
 
-.trans-r-3:hover {
+.shiftR3:hover {
   transform: translateX(var(--gap-3));
 }
 
-.trans-r-4:hover {
+.shiftR4:hover {
   transform: translateX(var(--gap-4));
 }
 
-.trans-r-5:hover {
+.shiftR5:hover {
   transform: translateX(var(--gap-5));
 }

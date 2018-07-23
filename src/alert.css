@@ -24,27 +24,27 @@
     margin-bottom: 0;
   }
 
-  &.alert-secondary {
+  &.isSecondary {
     color: var(--alert-color-secondary);
     background-color: var(--alert-bg-color-secondary);
   }
 
-  &.alert-info {
+  &.isInfo {
     color: var(--alert-color-info);
     background-color: var(--alert-bg-color-info);
   }
 
-  &.alert-success {
+  &.isSuccess {
     color: var(--alert-color-success);
     background-color: var(--alert-bg-color-success);
   }
 
-  &.alert-warning {
+  &.isWarning {
     color: var(--alert-color-warning);
     background-color: var(--alert-bg-color-warning);
   }
 
-  &.alert-danger {
+  &.isDanger {
     color: var(--alert-color-danger);
     background-color: var(--alert-bg-color-danger);
   }

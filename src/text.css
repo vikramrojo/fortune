@@ -169,11 +169,11 @@ pre {
   white-space: pre;
 }
 
-.pre-line {
+.preline {
   white-space: pre-line;
 }
 
-.pre-wrap {
+.prewrap {
   white-space: pre-wrap;
 }
 
@@ -251,7 +251,7 @@ strong,
   text-align: right;
 }
 
-.line-through {
+.linethrough {
   text-decoration: line-through;
 }
 
@@ -275,6 +275,6 @@ strong,
   text-transform: uppercase;
 }
 
-.break-word {
+.breakword {
   word-wrap: break-word;
 }

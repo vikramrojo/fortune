@@ -24,7 +24,7 @@ table {
     padding: var(--table-spacing-y) var(--table-spacing-x);
   }
 
-  &.table-bordered {
+  &.tableBordered {
     border: solid var(--table-border-width) var(--table-border-color);
 
     & td {
@@ -34,14 +34,14 @@ table {
     }
   }
 
-  &.table-hoverable {
+  &.tableHoverable {
     & tbody tr:hover td {
       color: var(--table-hover-color);
       background-color: var(--table-hover-bg-color);
     }
   }
 
-  &.table-striped {
+  &.tableStriped {
     & tr:nth-child(odd) td {
       background-color: var(--table-stripe-bg-color);
     }

@@ -14,9 +14,9 @@ button,
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  padding: calc(var(--gap-5) - 1px) var(--gap-5);
+  padding: var(--gap-5) var(--gap-5);
   cursor: pointer;
-  line-height: var(--line-height);
+  line-height: calc((var(--button-font-size) * var(--line-height)) - 2px);
   display: inline-block;
   transition: var(--button-speed) all;
 
@@ -27,7 +27,7 @@ button,
   }
 
   &:active,
-  &.active {
+  &.isActive {
     background-image: linear-gradient(var(--lighten), var(--lighten));
   }
 
@@ -37,51 +37,51 @@ button,
   }
 
   &:disabled,
-  &.disabled {
+  &.isDisabled {
     opacity: 0.2;
     text-decoration: none;
     opacity: .5;
     cursor: not-allowed;
   }
 
-  &.button-invert {
+  &.isInverted {
     border-color: var(--white);
     background-color: var(--white);
     color: var(--button-bg-color);
   }
 
-  &.button-invert:hover {
+  &.isInverted:hover {
     background-image: linear-gradient(var(--darken), var(--darken));
     color: var(--button-bg-color);
     text-decoration: none;
   }
 
-  &.button-outline {
+  &.isOutline {
     border-color: var(--button-bg-color);
     background-color: transparent;
     color: var(--link-color);
   }
 
-  &.button-outline:hover,
-  &.button-link:focus {
+  &.isOutline:hover,
+  &.isLink:focus {
     background-image: none;
     text-decoration: none;
   }
 
-  &.button-block {
+  &.isBlock {
     width: 100% !important;
     display: block;
   }
 
-  &.button-link {
+  &.isLink {
     border-color: transparent;
     background-color: transparent;
     color: var(--link-color);
     text-decoration: var(--link-text-decoration);
   }
 
-  &.button-link:hover,
-  &.button-link:focus {
+  &.isLink:hover,
+  &.isLink:focus {
     border-color: transparent;
     background-image: none;
     color: var(--link-color-hover);
