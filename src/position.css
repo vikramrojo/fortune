@@ -59,19 +59,19 @@
 }
 
 .marGapB1 {
-  margin-bottom: var(--gap-5);
+  margin-bottom: var(--gap-1);
 }
 
 .marGapB2 {
-  margin-bottom: var(--gap-5);
+  margin-bottom: var(--gap-2);
 }
 
 .marGapB3 {
-  margin-bottom: var(--gap-5);
+  margin-bottom: var(--gap-3);
 }
 
 .marGapB4 {
-  margin-bottom: var(--gap-5);
+  margin-bottom: var(--gap-4);
 }
 
 .marGapB5 {

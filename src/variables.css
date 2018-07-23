@@ -6,7 +6,6 @@
   --gap-3: 0.25rem; /* 4px */
   --gap-4: 0.5rem; /* 8px */
   --gap-5: 0.75rem; /* 12px */
-  --gap-6: 0.875rem; /* 12px */
 
   --space-0: 0rem;
   --space-1: 1rem; /* 16px */
@@ -42,9 +41,9 @@
 
   --white: white;
   --smoke: #f1f3f5;
-  --lightgray: #dee2e6;
+  --light: #dee2e6;
   --silver: #adb5bd;
-  --darkgray: #495057;
+  --dark: #495057;
   --gray: #212529;
   --black: black;
   --red: #f03e3e;
@@ -65,8 +64,6 @@
   --state-info: var(--cyan);
   --state-warning: var(--orange);
   --state-danger: var(--red);
-  --state-light: var(--white);
-  --state-dark: var(--gray);
   --state-disabled: var(--lightgray);
   --darken: rgba(0, 0, 0, 0.100);
   --darken-200: rgba(0, 0, 0, 0.200);
@@ -166,7 +163,7 @@
   --list-breadcrumb-seperator: '/';
   --list-breadcrumb-gap: var(--gap-4);
   --list-breadcrumb-weight: var(--font-weight-medium);
-  --list-step-color: var(--state-dark);
+  --list-step-color: var(--gray);
   --list-step-bg-color: var(--component-bg-color);
 
   /* Nav */
@@ -231,7 +228,7 @@
   --hr-border-color: var(--component-border-color);
   --hr-margin-x: 0;
   --hr-margin-y: var(--space-3);
-  --kbd-font-size: 90%;
+  --kbd-font-size: var(--gap-5);
   --kbd-color: var(--white);
   --kbd-border-radius: var(--component-border-radius);
   --kbd-bg-color: var(--gray);

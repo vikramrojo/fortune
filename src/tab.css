@@ -20,7 +20,7 @@
 }
 
 .tab > a:hover {
-  border-color: var(--state-dark);
+  border-color: var(--gray);
 }
 
 .tab > a.isActive {

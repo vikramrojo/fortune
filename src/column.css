@@ -7,6 +7,10 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
+
+  &.isFull {
+    max-width: 100%;
+  }
 }
 
 .row .row,
@@ -22,20 +26,24 @@
   width: 100%;
 }
 
-.flush > .row,
-.flush > .cols,
-.flush > [class^='col'] {
-  padding: 0;
-}
-
 .col {
   flex: 1;
 }
 
 .col,
-[class*=' col'],
-[class^='col'] {
+[class*='col'] {
   padding: 0 calc(var(--column-gutter) / 2);
+  max-width: var(--columns-width);
+}
+
+.cols {
+  padding: 0;
+}
+
+.isFlush > .row,
+.isFlush > .cols,
+.isFlush > [class*='col'] {
+  padding: 0;
 }
 
 .col1 {

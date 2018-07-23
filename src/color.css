@@ -3,21 +3,21 @@
 }
 
 .smoke {
-  color: var(--whitesmoke);
+  color: var(--smoke);
 }
 
-.lightgray,
-.lightgey {
-  color: var(--lightgray);
+.light,
+.light {
+  color: var(--light);
 }
 
 .silver {
   color: var(--silver);
 }
 
-.darkgray,
-.darkgrey {
-  color: var(--darkgray);
+.dark,
+.dark {
+  color: var(--dark);
 }
 
 .gray,
@@ -102,14 +102,6 @@
   color: var(--state-danger);
 }
 
-.light {
-  color: var(--state-light);
-}
-
-.dark {
-  color: var(--state-dark);
-}
-
 .disabled {
   color: var(--state-disabled);
 }
@@ -123,21 +115,21 @@
 }
 
 .bgSmoke {
-  background-color: var(--whitesmoke);
+  background-color: var(--smoke);
 }
 
-.bgLightgray,
-.bgLightgrey {
-  background-color: var(--lightgray);
+.bgLight,
+.bgLight {
+  background-color: var(--light);
 }
 
 .bgSilver {
   background-color: var(--silver);
 }
 
-.bgDarkgray,
-.bgDarkgrey {
-  background-color: var(--darkgray);
+.bgDark,
+.bgDark {
+  background-color: var(--dark);
 }
 
 .bgGray,
@@ -221,14 +213,6 @@
   background-color: var(--state-danger);
 }
 
-.bgLight {
-  background-color: var(--state-light);
-}
-
-.bgDark {
-  background-color: var(--state-dark);
-}
-
 .bgDisabled {
   background-color: var(--state-disabled);
 }
@@ -242,21 +226,21 @@
 }
 
 .bordSmoke {
-  border-color: var(--whitesmoke);
+  border-color: var(--smoke);
 }
 
-.bordLightgray,
-.bordLightgrey {
-  border-color: var(--lightgray);
+.bordLight,
+.bordLight {
+  border-color: var(--light);
 }
 
 .bordSilver {
   border-color: var(--silver);
 }
 
-.bordDarkgray,
-.bordDarkgrey {
-  border-color: var(--darkgray);
+.bordDark,
+.bordDark {
+  border-color: var(--dark);
 }
 
 .bordGray,
@@ -338,14 +322,6 @@
 
 .bordDanger {
   border-color: var(--state-danger);
-}
-
-.bordLight {
-  border-color: var(--state-light);
-}
-
-.bordDark {
-  border-color: var(--state-dark);
 }
 
 .bordDisabled {

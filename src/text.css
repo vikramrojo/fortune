@@ -17,6 +17,12 @@ a:hover {
   text-decoration: var(--link-text-decoration-hover);
 }
 
+a.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
 abbr[title] {
   text-decoration: none;
   border-bottom: dashed 2px currentcolor;
