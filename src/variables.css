@@ -32,7 +32,7 @@
   --component-border-color: var(--silver);
   --component-border-radius: var(--gap-2);
   --component-border-width: var(--gap-1);
-  --component-focus: 0 0 var(--gap-2) var(--gap-2) var(--lightgray);
+  --component-focus: 0 0 var(--gap-2) var(--gap-2) var(--light);
   --component-padding-x: var(--gap-5);
   --component-padding-y: var(--gap-5);
   --component-speed: .1s;
@@ -64,7 +64,7 @@
   --state-info: var(--cyan);
   --state-warning: var(--orange);
   --state-danger: var(--red);
-  --state-disabled: var(--lightgray);
+  --state-disabled: var(--silver);
   --darken: rgba(0, 0, 0, 0.100);
   --darken-200: rgba(0, 0, 0, 0.200);
   --darken-400: rgba(0, 0, 0, 0.400);

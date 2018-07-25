@@ -3,29 +3,28 @@
   min-height: var(--nav-height);
   align-items: stretch;
   color: var(--nav-link-color);
+
+  & .isCenter {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+
+  & .isLeft {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  & .isRight {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
 }
 
 .nav img {
   max-height: var(--nav-height);
-}
-
-.navCenter,
-.navLeft,
-.navRight {
-  display: flex;
-  flex: 1;
-}
-
-.navLeft {
-  justify-content: flex-start;
-}
-
-.navRight {
-  justify-content: flex-end;
-}
-
-.navCenter {
-  justify-content: center;
 }
 
 .nav a,

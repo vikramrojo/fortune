@@ -1,6 +1,6 @@
 .tab {
   display: flex;
-
+  line-height: calc((var(--button-font-size) * var(--line-height)) - 2px);
   &.isFull > a {
     flex: 1;
   }
@@ -20,7 +20,7 @@
 }
 
 .tab > a:hover {
-  border-color: var(--gray);
+  border-color: var(--state-primary);
 }
 
 .tab > a.isActive {

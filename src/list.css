@@ -55,6 +55,8 @@
   border-radius: 100px;
   width: var(--space-3);
   height: var(--space-3);
+  margin-top: var(--gap-4);
+  margin-bottom: var(--gap-4);
   text-align: center;
   display: inline-block;
   background-color: var(--list-step-bg-color);
@@ -62,6 +64,10 @@
   line-height: 2;
   margin-left: calc(var(--space-4) * -1);
   margin-right: var(--space-1);
+}
+
+[class*='list'].isAligned {
+  margin-left: var(--space-1);
 }
 
 .listBreadcrumb {
