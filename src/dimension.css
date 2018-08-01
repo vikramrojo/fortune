@@ -3,39 +3,39 @@
 }
 
 .ht1 {
-  height: var(--space-1);
+  height: var(--space-1, var(--gap-1));
 }
 
 .ht2 {
-  height: var(--space-2);
+  height: var(--space-2, var(--gap-2));
 }
 
 .ht3 {
-  height: var(--space-3);
+  height: var(--space-3, var(--gap-3));
 }
 
 .ht4 {
-  height: var(--space-4);
+  height: var(--space-4, var(--gap-4));
 }
 
 .ht5 {
-  height: var(--space-5);
+  height: var(--space-5, var(--gap-5));
 }
 
 .ht6 {
-  height: var(--space-6);
+  height: var(--space-6, var(--gap-6));
 }
 
 .ht7 {
-  height: var(--space-7);
+  height: var(--space-7, var(--gap-7));
 }
 
 .ht8 {
-  height: var(--space-8);
+  height: var(--space-8, var(--gap-8));
 }
 
 .ht9 {
-  height: var(--space-9);
+  height: var(--space-9, var(--gap-9));
 }
 
 .ht25 {
@@ -91,39 +91,39 @@
 }
 
 .wid1 {
-  width: var(--space-1);
+  width: var(--space-1, var(--gap-1));
 }
 
 .wid2 {
-  width: var(--space-2);
+  width: var(--space-2, var(--gap-2));
 }
 
 .wid3 {
-  width: var(--space-3);
+  width: var(--space-3, var(--gap-3));
 }
 
 .wid4 {
-  width: var(--space-4);
+  width: var(--space-4, var(--gap-4));
 }
 
 .wid5 {
-  width: var(--space-5);
+  width: var(--space-5, var(--gap-5));
 }
 
 .wid6 {
-  width: var(--space-6);
+  width: var(--space-6, var(--gap-6));
 }
 
 .wid7 {
-  width: var(--space-7);
+  width: var(--space-7, var(--gap-7));
 }
 
 .wid8 {
-  width: var(--space-8);
+  width: var(--space-8, var(--gap-8));
 }
 
 .wid9 {
-  width: var(--space-9);
+  width: var(--space-9, var(--gap-9));
 }
 
 .wid25 {

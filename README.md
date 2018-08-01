@@ -21,7 +21,7 @@ To theme your site, add `:root` or `:scope` to your CSS:
   --font-family: 'Roboto', sans-serif;
   --headings-font-family: 'Roboto', sans-serif;
   --container-width: 125em;
-  --column-gutter: var(--space-4);
+  --column-gutter: var(--gap-9);
 }
 ```
 

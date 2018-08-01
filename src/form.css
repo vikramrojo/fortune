@@ -98,13 +98,13 @@ textarea {
 }
 
 .inputField {
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--component-margin-bottom);
 }
 
 .inputGroup {
   width: 100%;
   display: flex;
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--component-margin-bottom);
 
   & > input,
   & > button,
@@ -155,7 +155,7 @@ textarea {
 }
 
 .inputGroup + .inputHint {
-  margin-top: calc(-1 * var(--space-2));
+  margin-top: calc(-1 * var(--component-margin-bottom));
   margin-bottom: 1.5rem;
 }
 

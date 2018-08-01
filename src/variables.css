@@ -6,17 +6,17 @@
   --gap-3: 0.25rem; /* 4px */
   --gap-4: 0.5rem; /* 8px */
   --gap-5: 0.75rem; /* 12px */
+  --gap-6: 1rem; /* 16px */
+  --gap-7: 1.25rem; /* 20px */
+  --gap-8: 1.5rem; /* 24px */
+  --gap-9: 2rem; /* 32px */
 
-  --space-0: 0rem;
-  --space-1: 1rem; /* 16px */
-  --space-2: 1.5rem; /* 24px */
-  --space-3: 2rem; /* 32px */
-  --space-4: 3rem; /* 48px */
-  --space-5: 4rem; /* 64px */
-  --space-6: 5rem; /* 80px */
-  --space-7: 6rem; /* 96px */
-  --space-8: 8rem; /* 128px */
-  --space-9: 10rem; /* 160px */
+  --hdg-1: initial;
+  --hdg-2: initial;
+  --hdg-3: initial;
+  --hdg-4: initial;
+  --hdg-5: initial;
+  --hdg-6: initial;
 
   --media: 1;
   --media-hdg: 1;
@@ -26,8 +26,8 @@
   --media-xl: 1.25;
 
   --columns-width: 80rem;
-  --column-gutter: var(--space-3);
-  --column-gap: var(--space-3);
+  --column-gutter: var(--gap-9);
+  --column-gap: var(--gap-9);
   --component-bg-color: var(--smoke);
   --component-border-color: var(--silver);
   --component-border-radius: var(--gap-2);
@@ -36,8 +36,9 @@
   --component-padding-x: var(--gap-5);
   --component-padding-y: var(--gap-5);
   --component-speed: .1s;
-  --component-font-size: var(--space-1);
+  --component-font-size: var(--gap-6);
   --component-shadow: var(--shadow);
+  --component-margin-bottom: var(--gap-8);
 
   --white: white;
   --smoke: #f1f3f5;
@@ -100,7 +101,7 @@
 
   /* Badge */
   --badge-font-size: var(--gap-5);
-  --badge-border-radius: var(--space-1);
+  --badge-border-radius: var(--gap-6);
   --badge-focus: var(--component-focus);
   --badge-speed: var(--component-speed);
   --badge-color: var(--gray);
@@ -145,7 +146,7 @@
   --input-addon-color: var(--body-color-muted);
   --input-hint-color: var(--body-color-muted);
   --input-hint-font-size: var(--font-size-small);
-  --input-icon-width: var(--space-2);
+  --input-icon-width: var(--gap-8);
   --input-icon-offset: var(--gap-4);
   --input-icon-color: var(--state-secondary);
   --input-invalid-color: var(--state-danger);
@@ -155,8 +156,8 @@
   --fieldset-border-color: var(--component-border-color);
   --fieldset-border-width: var(--component-border-width);
   --fieldset-border-radius: var(--component-border-radius);
-  --fieldset-padding-x: var(--space-1);
-  --fieldset-padding-y: var(--space-2);
+  --fieldset-padding-x: var(--gap-6);
+  --fieldset-padding-y: var(--gap-8);
   --label-color: inherit;
 
   /* List */
@@ -167,7 +168,7 @@
   --list-step-bg-color: var(--component-bg-color);
 
   /* Nav */
-  --nav-height: var(--space-2);
+  --nav-height: var(--gap-8);
   --nav-link-color: var(--link-color);
 
   /* Grid */
@@ -200,7 +201,7 @@
   --body-color: var(--gray);
   --body-color-muted: var(--gray);
   --font-family: var(--font-system);
-  --font-size: var(--space-1);
+  --font-size: var(--gap-6);
   --font-size-small: calc(var(--font-size) * .75);
   --font-weight-thin: 200;
   --font-weight: 300;
@@ -218,16 +219,16 @@
   --headings-line-height: 1.5;
   --headings-margin-bottom: var(--gap-5);
   --headings-color: inherit;
-  --headings-font-size-h1: var(--space-5);
-  --headings-font-size-h2: var(--space-4);
-  --headings-font-size-h3: var(--space-3);
-  --headings-font-size-h4: var(--space-2);
-  --headings-font-size-h5: var(--space-1);
-  --headings-font-size-h6: var(--gap-5);
+  --headings-font-size-h1: var(--hdg-1, 4rem);
+  --headings-font-size-h2: var(--hdg-2, 3rem);
+  --headings-font-size-h3: var(--hdg-3, 2rem);
+  --headings-font-size-h4: var(--hdg-4, 1.5rem);
+  --headings-font-size-h5: var(--hdg-5, 1rem);
+  --headings-font-size-h6: var(--hdg-6, 0.75rem);
   --hr-border-width: var(--gap-1);
   --hr-border-color: var(--component-border-color);
   --hr-margin-x: 0;
-  --hr-margin-y: var(--space-3);
+  --hr-margin-y: var(--gap-9);
   --kbd-font-size: var(--gap-5);
   --kbd-color: var(--white);
   --kbd-border-radius: var(--component-border-radius);
@@ -242,7 +243,7 @@
   --mark-bg-color: var(--yellow);
   --mark-padding-x: var(--gap-5);
   --mark-padding-y: var(--gap-3);
-  --p-margin: var(--space-2);
+  --p-margin: var(--gap-8);
   --placeholder-color: var(--body-color-muted);
   --pre-color: var(--code-color);
   --pre-border-radius: var(--component-border-radius);
@@ -254,6 +255,33 @@
   /* Tooltip */
   --tooltip-color: var(--white);
   --tooltip-bg-color: var(--gray);
-  --tooltip-min-width: var(--space-9);
+  --tooltip-min-width: var(--gap-9);
   --tooltip-padding: var(--gap-4)
+}
+
+.isSpace,
+.isSpace .isSpace {
+  --space-0: 0rem;
+  --space-1: 1rem;
+  --space-2: 2rem;
+  --space-3: 3rem;
+  --space-4: 4rem;
+  --space-5: 5rem;
+  --space-6: 6rem;
+  --space-7: 8rem;
+  --space-8: 12rem;
+  --space-9: 16rem;
+}
+
+.isSpace *{
+  --space-0: initial;
+  --space-1: initial;
+  --space-2: initial;
+  --space-3: initial;
+  --space-4: initial;
+  --space-5: initial;
+  --space-6: initial;
+  --space-7: initial;
+  --space-8: initial;
+  --space-9: initial;
 }

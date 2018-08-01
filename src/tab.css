@@ -11,7 +11,7 @@
 }
 
 .tab > a {
-  padding: var(--gap-5) var(--space-1);
+  padding: var(--gap-5) var(--gap-6);
   flex: 0 1 auto;
   border-bottom: var(--gap-2) solid var(--state-disabled);
   text-align: center;

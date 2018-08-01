@@ -32,8 +32,8 @@ blockquote,
 .blockquote {
   font-size: 120%;
   border-left: solid var(--gap-3) var(--component-border-color);
-  padding: var(--gap-5) var(--gap-5) var(--gap-5) var(--space-1);
-  margin-bottom: var(--space-2);
+  padding: var(--gap-5) var(--gap-5) var(--gap-5) var(--gap-6);
+  margin-bottom: var(--component-margin-bottom);
   margin-left: 0;
 }
 
@@ -126,7 +126,8 @@ hr {
   margin: var(--hr-margin-y) var(--hr-margin-x);
 }
 
-img {
+img,
+.img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;

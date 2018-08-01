@@ -7,23 +7,23 @@
 }
 
 .gridGap1 {
-  grid-gap: var(--gap-1);
+  grid-gap: var(--space-1, var(--gap-1));
 }
 
 .gridGap2 {
-  grid-gap: var(--gap-2);
+  grid-gap: var(--space-2, var(--gap-2));
 }
 
 .gridGap3 {
-  grid-gap: var(--gap-3);
+  grid-gap: var(--space-3, var(--gap-3));
 }
 
 .gridGap4 {
-  grid-gap: var(--gap-4);
+  grid-gap: var(--space-4, var(--gap-4));
 }
 
 .gridGap5 {
-  grid-gap: var(--gap-5);
+  grid-gap: var(--space-5, var(--gap-5));
 }
 
 .gridGapX0 {
@@ -31,23 +31,23 @@
 }
 
 .gridGapX1 {
-  grid-row-gap: var(--gap-1);
+  grid-row-gap: var(--space-1, var(--gap-1));
 }
 
 .gridGapX2 {
-  grid-row-gap: var(--gap-2);
+  grid-row-gap: var(--space-2, var(--gap-2));
 }
 
 .gridGapX3 {
-  grid-row-gap: var(--gap-3);
+  grid-row-gap: var(--space-3, var(--gap-3));
 }
 
 .gridGapX4 {
-  grid-row-gap: var(--gap-4);
+  grid-row-gap: var(--space-4, var(--gap-4));
 }
 
 .gridGapX5 {
-  grid-row-gap: var(--gap-5);
+  grid-row-gap: var(--space-5, var(--gap-5));
 }
 
 .gridGapY0 {
@@ -55,95 +55,23 @@
 }
 
 .gridGapY1 {
-  grid-column-gap: var(--gap-1);
+  grid-column-gap: var(--space-1, var(--gap-1));
 }
 
 .gridGapY2 {
-  grid-column-gap: var(--gap-2);
+  grid-column-gap: var(--space-2, var(--gap-2));
 }
 
 .gridGapY3 {
-  grid-column-gap: var(--gap-3);
+  grid-column-gap: var(--space-3, var(--gap-3));
 }
 
 .gridGapY4 {
-  grid-column-gap: var(--gap-4);
+  grid-column-gap: var(--space-4, var(--gap-4));
 }
 
 .gridGapY5 {
-  grid-column-gap: var(--gap-5);
-}
-
-.gridSpace0 {
-  grid-gap: 0;
-}
-
-.gridSpace1 {
-  grid-gap: var(--space-1);
-}
-
-.gridSpace2 {
-  grid-gap: var(--space-2);
-}
-
-.gridSpace3 {
-  grid-gap: var(--space-3);
-}
-
-.gridSpace4 {
-  grid-gap: var(--space-4);
-}
-
-.gridSpace5 {
-  grid-gap: var(--space-5);
-}
-
-.gridSpaceX0 {
-  grid-row-gap: 0;
-}
-
-.gridSpaceX1 {
-  grid-row-gap: var(--space-1);
-}
-
-.gridSpaceX2 {
-  grid-row-gap: var(--space-2);
-}
-
-.gridSpaceX3 {
-  grid-row-gap: var(--space-3);
-}
-
-.gridSpaceX4 {
-  grid-row-gap: var(--space-4);
-}
-
-.gridSpaceX5 {
-  grid-row-gap: var(--space-5);
-}
-
-.gridSpaceX0 {
-  grid-column-gap: 0;
-}
-
-.gridSpaceY1 {
-  grid-column-gap: var(--space-1);
-}
-
-.gridSpaceY2 {
-  grid-column-gap: var(--space-2);
-}
-
-.gridSpaceY3 {
-  grid-column-gap: var(--space-3);
-}
-
-.gridSpaceY4 {
-  grid-column-gap: var(--space-4);
-}
-
-.gridSpaceY5 {
-  grid-column-gap: var(--space-5);
+  grid-column-gap: var(--space-5, var(--gap-5));
 }
 
 .gridColsdense {

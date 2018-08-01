@@ -32,7 +32,7 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  padding: var(--gap-5) var(--space-1);
+  padding: var(--gap-5) var(--gap-6);
 }
 
 .nav .isActive:not(.button) {
