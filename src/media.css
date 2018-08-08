@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media screen and (--breakpoint-mobile) {
+@media screen and (max-width: 48rem) {
   .row,
   .cols {
     width: 100%;
@@ -82,7 +82,7 @@
   }
 }
 
-@media screen and (--breakpoint-tablet) {
+@media screen and (min-width: 48rem) and (max-width: 60rem) {
 
   .hideTablet {
     display: none !important;
@@ -132,6 +132,3 @@
     --media-h: var(--media-xl);
   }
 }
-
-@custom-media --breakpoint-mobile (max-width: 48rem);
-@custom-media --breakpoint-tablet (min-width: 48rem) and (max-width: 60rem);

@@ -1,27 +1,27 @@
 button,
 .button {
   font-family: var(--button-font-family);
-  font-size: var(--button-font-size);
+  font-size: var(--button-font-size, 1rem);
   font-weight: var(--button-font-weight);
   text-align: center;
   text-decoration: none;
-  color: var(--button-color);
-  background-color: var(--button-bg-color);
+  color: var(--button-color, white);
+  background-color: var(--button-bg-color, var(--state-primary));
   border-radius: var(--button-border-radius);
   border-style: solid;
   border-width: var(--button-border-width);
-  border-color: var(--button-bg-color);
+  border-color: var(--button-bg-color, var(--state-primary));
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  padding: var(--gap-5) var(--gap-5);
+  padding: var(--button-padding, 0.75rem 1rem);
   cursor: pointer;
   line-height: calc((var(--button-font-size) * var(--line-height)) - 2px);
   display: inline-block;
   transition: var(--button-speed) all;
 
   &:hover {
-    color: var(--button-color);
+    color: var(--button-color, white);
     background-image: linear-gradient(var(--darken), var(--darken));
     text-decoration: none;
   }
@@ -45,19 +45,19 @@ button,
   }
 
   &.isInverted {
-    border-color: var(--white);
+    border-color: var(--button-bg-color, var(--state-primary));
     background-color: var(--white);
-    color: var(--button-bg-color);
+    color: var(--button-bg-color, var(--state-primary));
   }
 
   &.isInverted:hover {
     background-image: linear-gradient(var(--darken), var(--darken));
-    color: var(--button-bg-color);
+    color: var(--button-bg-color, var(--state-primary));
     text-decoration: none;
   }
 
   &.isOutline {
-    border-color: var(--button-bg-color);
+    border-color: var(--button-bg-color, var(--state-primary));
     background-color: transparent;
     color: var(--link-color);
   }

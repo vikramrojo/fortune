@@ -19,5 +19,5 @@
   color: var(--tooltip-color);
   text-align: center;
   background: var(--tooltip-bg-color);
-  border-radius: var(--component-border-radius);
+  border-radius: var(--tooltip-border-radius);
 }

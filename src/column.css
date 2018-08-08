@@ -1,6 +1,6 @@
 .row,
 .cols {
-  max-width: var(--columns-width);
+  max-width: var(--columns-width, 80rem);
   margin-left: auto;
   margin-right: auto;
   width: auto;
@@ -15,11 +15,11 @@
 
 .row .row,
 .cols .cols {
-  margin-left: calc(var(--column-gutter) / -2);
-  margin-right: calc(var(--column-gutter) / -2);
+  margin-left: calc(var(--column-gutter, 2rem) / -2);
+  margin-right: calc(var(--column-gutter, 2rem) / -2);
 }
 
-.row > .row
+.row > .row,
 .cols > .cols {
   margin-left: 0;
   margin-right: 0;
@@ -32,8 +32,8 @@
 
 .col,
 [class*='col'] {
-  padding: 0 calc(var(--column-gutter) / 2);
-  max-width: var(--columns-width);
+  padding: 0 calc(var(--column-gutter, 2rem) / 2);
+  max-width: var(--columns-width, 80rem);
 }
 
 .cols {
