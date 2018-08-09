@@ -62,20 +62,11 @@
   --state-danger: var(--red);
   --state-disabled: var(--silver);
   --darken: rgba(0, 0, 0, 0.100);
-  --darken-200: rgba(0, 0, 0, 0.200);
-  --darken-400: rgba(0, 0, 0, 0.400);
-  --darken-600: rgba(0, 0, 0, 0.600);
-  --darken-800: rgba(0, 0, 0, 0.800);
+  --darken-more: rgba(0, 0, 0, 0.500);
   --lighten: rgba(255, 255, 255, 0.100);
-  --lighten-200: rgba(255, 255, 255, 0.200);
-  --lighten-400: rgba(255, 255, 255, 0.400);
-  --lighten-600: rgba(255, 255, 255, 0.600);
-  --lighten-800: rgba(255, 255, 255, 0.800);
+  --lighten-more: rgba(255, 255, 255, 0.500);
   --shadow: rgba(80, 80, 80, 0.100);
-  --shadow-200: rgba(80, 80, 80, 0.200);
-  --shadow-400: rgba(80, 80, 80, 0.400);
-  --shadow-600: rgba(80, 80, 80, 0.600);
-  --shadow-800: rgba(80, 80, 80, 0.800);
+  --shadow-more: rgba(80, 80, 80, 0.500);
 
   /* Alert */
   --alert-border-radius: var(--component-border-radius, 0.125rem);
