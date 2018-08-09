@@ -49,36 +49,21 @@
     margin: 0 !important;
   }
 
-  .posSm {
-    --media: var(--media-sm);
+  .posSm.isSpace {
+    --space-0: 0rem;
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 1.5rem;
+    --space-4: 2rem;
+    --space-5: 2.5rem;
+    --space-6: 3rem;
+    --space-7: 4rem;
+    --space-8: 6rem;
+    --space-9: 8rem;
   }
 
-  .posMd {
-    --media: var(--media-md);
-  }
-
-  .posLg {
-    --media: var(--media-lg);
-  }
-
-  .posXl {
-    --media: var(--media-xl);
-  }
-
-  .hdgSm {
-    --media-hdg: var(--media-sm);
-  }
-
-  .hdgMd {
-    --media-hdg: var(--media-md);
-  }
-
-  .hdgLg {
-    --media-hdg: var(--media-lg);
-  }
-
-  .hdgXl {
-    --media-hdg: var(--media-xl);
+  .hdg {
+    --media-hdg: 0.5;
   }
 }
 
@@ -100,35 +85,7 @@
     margin: 0 !important;
   }
 
-  .posTabletSm {
-    --media: var(--media-sm);
-  }
-
-  .posTabletMd {
-    --media: var(--media-md);
-  }
-
-  .posTabletLg {
-    --media: var(--media-lg);
-  }
-
-  .posTabletXl {
-    --media: var(--media-xl);
-  }
-
-  .hdgTabletSm {
-    --media-h: var(--media-sm);
-  }
-
-  .hdgTabletMd {
-    --media-h: var(--media-md);
-  }
-
-  .hdgTabletLg {
-    --media-h: var(--media-lg);
-  }
-
-  .hdgTabletXl {
-    --media-h: var(--media-xl);
+  .hdgTablet {
+    --media-hdg: 0.75;
   }
 }

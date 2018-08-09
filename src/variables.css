@@ -18,16 +18,13 @@
   --hdg-5: initial;
   --hdg-6: initial;
 
-  --media: 1;
-  --media-hdg: 1;
-  --media-sm: 0.25;
-  --media-md: 0.5;
-  --media-lg: 0.75;
-  --media-xl: 1.25;
+  --media-hdg: initial; /* Set value in media.css */
 
   --columns-width: initial;
   --column-gutter: initial;
   --column-gap: initial;
+
+  --border-width: initial;
 
   --component-bg-color: var(--smoke);
   --component-border-color: var(--silver);
@@ -80,33 +77,29 @@
   --shadow-600: rgba(80, 80, 80, 0.600);
   --shadow-800: rgba(80, 80, 80, 0.800);
 
-  Alert
+  /* Alert */
   --alert-border-radius: var(--component-border-radius, 0.125rem);
   --alert-padding: initial;
   --alert-bg-color: var(--state-primary);
   --alert-color: var(--state-primary);
-  --alert-bg-color-secondary: var(--state-secondary);
-  --alert-color-secondary: var(--state-secondary);
-  --alert-bg-color-success: var(--state-success);
-  --alert-color-success: var(--state-success);
-  --alert-bg-color-info: var(--state-info);
-  --alert-color-info: var(--state-info);
-  --alert-bg-color-warning: var(--state-warning);
-  --alert-color-warning: var(--state-warning);
-  --alert-bg-color-danger: var(--state-danger);
-  --alert-color-danger: var(--state-danger);
+
+  /* Animate */
+  --animation-delay: initial;
+  --animation-duration: initial;
+  --animation-name: initial;
+  --animation-translate: initial;
 
   /* Badge */
-  --badge-font-size: var(--gap-5);
-  --badge-border-radius: var(--gap-6);
-  --badge-focus: var(--component-focus);
-  --badge-speed: var(--component-speed);
-  --badge-color: var(--gray);
-  --badge-bg-color: var(--smoke);
-  --badge-padding-x: var(--gap-3);
-  --badge-padding-y: var(--gap-2);
-  --badge-color-active: var(--white);
-  --badge-bg-color-active: var(--state-primary);
+  --chip-font-size: var(--gap-5);
+  --chip-border-radius: var(--gap-6);
+  --chip-focus: var(--component-focus);
+  --chip-speed: var(--component-speed);
+  --chip-color: var(--gray);
+  --chip-bg-color: var(--smoke);
+  --chip-border-color: var(--light);
+  --chip-padding: initial;
+  --chip-color-active: var(--white);
+  --chip-bg-color-active: var(--state-primary);
 
   /* Breadcrumb */
   --breadcrumb-seperator: '/';
@@ -160,6 +153,12 @@
   --fieldset-padding-y: var(--gap-8);
   --label-color: inherit;
 
+  /* Grid */
+  --grid-columns: repeat(auto, 1fr);
+  --grid-rows: repeat(auto, 1fr);
+  --grid-column: auto / span 1;
+  --grid-row: auto / span 1;
+
   /* List */
   --list-breadcrumb-seperator: '/';
   --list-breadcrumb-gap: var(--gap-4);
@@ -170,12 +169,6 @@
   /* Nav */
   --nav-height: initial;
   --nav-link-color: initial;
-
-  /* Grid */
-  --grid-columns: repeat(auto, 1fr);
-  --grid-rows: repeat(auto, 1fr);
-  --grid-column: auto / span 1;
-  --grid-row: auto / span 1;
 
   /* Tab */
   --tab-color: var(--state-primary);

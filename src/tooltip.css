@@ -2,10 +2,10 @@
   display: inline-block;
   position: relative;
   border-bottom: var(--gap-1) dashed var(--component-border-color);
+}
 
-  &:hover > .tooltip-text {
-    display: block;
-  }
+.tooltip:hover > .tooltip-text {
+  display: block;
 }
 
 .tooltipText {
