@@ -1,27 +1,28 @@
 .nav {
   display: flex;
-  min-height: var(--nav-height);
-  align-items: stretch;
-  color: var(--nav-link-color);
-
-  & .isCenter {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-  }
-
-  & .isLeft {
-    display: flex;
-    flex: 1;
-    justify-content: flex-start;
-  }
-
-  & .isRight {
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-  }
+  min-height: var(--nav-height, 3rem);
+  align-items: center;
+  color: var(--nav-link-color, var(--link-color));
 }
+
+.nav .navCenter {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav .navLeft {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.nav .navRight {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
 
 .nav img {
   max-height: var(--nav-height);

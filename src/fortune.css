@@ -5,8 +5,8 @@
 
 /* Components */
 @import url("./alert.css");
-@import url("./badge.css");
 @import url("./button.css");
+@import url("./chip.css");
 @import url("./dropdown.css");
 @import url("./form.css");
 @import url("./list.css");
@@ -17,6 +17,7 @@
 @import url("./tooltip.css");
 
 /* Utilities */
+@import url("./animate.css");
 @import url("./border.css");
 @import url("./color.css");
 @import url("./column.css");
@@ -28,4 +29,3 @@
 @import url("./opacity.css");
 @import url("./position.css");
 @import url("./shadow.css");
-@import url("./transform.css");

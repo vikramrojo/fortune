@@ -18,25 +18,20 @@
   --hdg-5: initial;
   --hdg-6: initial;
 
-  --media: 1;
-  --media-hdg: 1;
-  --media-sm: 0.25;
-  --media-md: 0.5;
-  --media-lg: 0.75;
-  --media-xl: 1.25;
+  --media-hdg: initial; /* Set value in media.css */
 
-  --columns-width: 80rem;
-  --column-gutter: var(--gap-9);
-  --column-gap: var(--gap-9);
+  --columns-width: initial;
+  --column-gutter: initial;
+  --column-gap: initial;
+
+  --border-width: initial;
+
   --component-bg-color: var(--smoke);
   --component-border-color: var(--silver);
-  --component-border-radius: var(--gap-2);
-  --component-border-width: var(--gap-1);
+  --component-border-radius: initial;
+  --component-border-width: initial;
   --component-focus: 0 0 var(--gap-2) var(--gap-2) var(--light);
-  --component-padding-x: var(--gap-5);
-  --component-padding-y: var(--gap-5);
   --component-speed: .1s;
-  --component-font-size: var(--gap-6);
   --component-shadow: var(--shadow);
   --component-margin-bottom: var(--gap-8);
 
@@ -67,69 +62,54 @@
   --state-danger: var(--red);
   --state-disabled: var(--silver);
   --darken: rgba(0, 0, 0, 0.100);
-  --darken-200: rgba(0, 0, 0, 0.200);
-  --darken-400: rgba(0, 0, 0, 0.400);
-  --darken-600: rgba(0, 0, 0, 0.600);
-  --darken-800: rgba(0, 0, 0, 0.800);
+  --darken-more: rgba(0, 0, 0, 0.500);
   --lighten: rgba(255, 255, 255, 0.100);
-  --lighten-200: rgba(255, 255, 255, 0.200);
-  --lighten-400: rgba(255, 255, 255, 0.400);
-  --lighten-600: rgba(255, 255, 255, 0.600);
-  --lighten-800: rgba(255, 255, 255, 0.800);
+  --lighten-more: rgba(255, 255, 255, 0.500);
   --shadow: rgba(80, 80, 80, 0.100);
-  --shadow-200: rgba(80, 80, 80, 0.200);
-  --shadow-400: rgba(80, 80, 80, 0.400);
-  --shadow-600: rgba(80, 80, 80, 0.600);
-  --shadow-800: rgba(80, 80, 80, 0.800);
+  --shadow-more: rgba(80, 80, 80, 0.500);
 
   /* Alert */
-  --alert-border-radius: var(--component-border-radius);
-  --alert-padding-x: var(--component-padding-x);
-  --alert-padding-y: var(--component-padding-y);
+  --alert-border-radius: var(--component-border-radius, 0.125rem);
+  --alert-padding: initial;
   --alert-bg-color: var(--state-primary);
-  --alert-color: var(--state-primary);
-  --alert-bg-color-secondary: var(--state-secondary);
-  --alert-color-secondary: var(--state-secondary);
-  --alert-bg-color-success: var(--state-success);
-  --alert-color-success: var(--state-success);
-  --alert-bg-color-info: var(--state-info);
-  --alert-color-info: var(--state-info);
-  --alert-bg-color-warning: var(--state-warning);
-  --alert-color-warning: var(--state-warning);
-  --alert-bg-color-danger: var(--state-danger);
-  --alert-color-danger: var(--state-danger);
+  --alert-color: var(--gray);
+
+  /* Animate */
+  --animation-delay: initial;
+  --animation-duration: initial;
+  --animation-name: initial;
+  --animation-translate: initial;
 
   /* Badge */
-  --badge-font-size: var(--gap-5);
-  --badge-border-radius: var(--gap-6);
-  --badge-focus: var(--component-focus);
-  --badge-speed: var(--component-speed);
-  --badge-color: var(--gray);
-  --badge-bg-color: var(--smoke);
-  --badge-padding-x: var(--gap-3);
-  --badge-padding-y: var(--gap-2);
-  --badge-color-active: var(--white);
-  --badge-bg-color-active: var(--state-primary);
-
-  /* Breadcrumb */
-  --breadcrumb-seperator: '/';
-  --breadcrumb-gap: var(--gap-4);
-  --breadcrumb-weight: var(--font-weight-medium);
+  --chip-font-size: var(--gap-5);
+  --chip-border-radius: var(--gap-9);
+  --chip-focus: var(--component-focus);
+  --chip-speed: var(--component-speed);
+  --chip-color: var(--gray);
+  --chip-border-color: initial;
+  --chip-bg-color: initial;
+  --chip-padding: initial;
+  --chip-color-active: var(--white);
+  --chip-bg-color-active: var(--state-primary);
+  --chip-weight: var(--font-weight-medium);
 
   /* Button */
-  --button-font-size: var(--component-font-size);
+  --button-font-size: var(--gap-6);
   --button-font-family: inherit;
   --button-font-weight: inherit;
-  --button-border-radius: var(--component-border-radius);
-  --button-border-width: var(--component-border-width);
+  --button-border-radius: var(--component-border-radius, 0.125rem);
+  --button-border-width: var(--component-border-width, 0.0625rem);
   --button-focus: var(--component-focus);
   --button-speed: var(--component-speed);
-  --button-color: var(--white);
-  --button-bg-color: var(--state-primary);
+  --button-color: initial;
+  --button-bg-color: initial;
+  --button-padding: initial;
 
   /* Dropdown */
   --dropdown-bg-color: var(--component-bg-color);
   --dropdown-border-color: var(--component-border-color);
+  --dropdown-border-radius: var(--component-border-radius, 0.125rem);
+  --dropdown-border-width: var(--component-border-width, 0.0625rem);
 
   /* Form */
   --input-font-size: var(--component-font-size);
@@ -138,7 +118,7 @@
   --input-color: var(--body-color);
   --input-border-color: var(--component-border-color);
   --input-border-width: var(--gap-1);
-  --input-border-radius: var(--component-border-radius);
+  --input-border-radius: var(--component-border-radius, 0.125rem);
   --input-bg-color: var(--white);
   --input-readonly-bg-color: var(--component-bg-color);
   --input-focus-color: var(--state-primary);
@@ -154,11 +134,17 @@
   --input-valid-color: var(--state-success);
   --input-valid-border-color: var(--state-success);
   --fieldset-border-color: var(--component-border-color);
-  --fieldset-border-width: var(--component-border-width);
-  --fieldset-border-radius: var(--component-border-radius);
+  --fieldset-border-width: var(--component-border-width, 0.0625rem);
+  --fieldset-border-radius: var(--component-border-radius, 0.125rem);
   --fieldset-padding-x: var(--gap-6);
   --fieldset-padding-y: var(--gap-8);
   --label-color: inherit;
+
+  /* Grid */
+  --grid-columns: repeat(auto, 1fr);
+  --grid-rows: repeat(auto, 1fr);
+  --grid-column: auto / span 1;
+  --grid-row: auto / span 1;
 
   /* List */
   --list-breadcrumb-seperator: '/';
@@ -168,23 +154,17 @@
   --list-step-bg-color: var(--component-bg-color);
 
   /* Nav */
-  --nav-height: var(--gap-8);
-  --nav-link-color: var(--link-color);
-
-  /* Grid */
-  --grid-columns: repeat(auto, 1fr);
-  --grid-rows: repeat(auto, 1fr);
-  --grid-column: auto / span 1;
-  --grid-row: auto / span 1;
+  --nav-height: initial;
+  --nav-link-color: initial;
 
   /* Tab */
-  --tab-color: var(--state-primary);
-  --tab-border-color: var(--state-primary);
+  --tab-color: initial;
+  --tab-border-color: initial;
 
   /* Table */
   --table-bg-color: var(--white);
   --table-border-color: var(--component-border-color);
-  --table-border-width: var(--component-border-width);
+  --table-border-width: var(--component-border-width, 0.0625rem);
   --table-header-bg-color: transparent;
   --table-spacing-x: var(--gap-5);
   --table-spacing-y: var(--gap-4);
@@ -210,7 +190,7 @@
   --line-height: 1.5;
   --code-font-size: var(--gap-5);
   --code-color: var(--gray);
-  --code-border-radius: var(--component-border-radius);
+  --code-border-radius: var(--component-border-radius, 0.125rem);
   --code-bg-color: var(--component-bg-color);
   --code-padding-x: var(--gap-4);
   --code-padding-y: var(--gap-2);
@@ -231,7 +211,7 @@
   --hr-margin-y: var(--gap-9);
   --kbd-font-size: var(--gap-5);
   --kbd-color: var(--white);
-  --kbd-border-radius: var(--component-border-radius);
+  --kbd-border-radius: var(--component-border-radius, 0.125rem);
   --kbd-bg-color: var(--gray);
   --kbd-padding-x: calc(var(--font-size) * .4);
   --kbd-padding-y: calc(var(--font-size) * .2);
@@ -246,7 +226,7 @@
   --p-margin: var(--gap-8);
   --placeholder-color: var(--body-color-muted);
   --pre-color: var(--code-color);
-  --pre-border-radius: var(--component-border-radius);
+  --pre-border-radius: var(--component-border-radius, 0.125rem);
   --pre-bg-color: var(--code-bg-color);
   --pre-max-height: none;
   --selection-color: var(--white);
@@ -255,8 +235,23 @@
   /* Tooltip */
   --tooltip-color: var(--white);
   --tooltip-bg-color: var(--gray);
+  --tooltip-border-radius: var(--component-border-radius, 0.125rem);
   --tooltip-min-width: var(--gap-9);
-  --tooltip-padding: var(--gap-4)
+  --tooltip-padding: var(--gap-4);
+}
+
+.isNegSpace,
+.isNegSpace .isNegSpace {
+  --space-0: -0rem;
+  --space-1: -1rem;
+  --space-2: -2rem;
+  --space-3: -3rem;
+  --space-4: -4rem;
+  --space-5: -5rem;
+  --space-6: -6rem;
+  --space-7: -8rem;
+  --space-8: -12rem;
+  --space-9: -16rem;
 }
 
 .isSpace,
@@ -273,7 +268,8 @@
   --space-9: 16rem;
 }
 
-.isSpace *{
+.isSpace *,
+.isNegSpace * {
   --space-0: initial;
   --space-1: initial;
   --space-2: initial;

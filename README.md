@@ -39,7 +39,7 @@ Component `--component-* | background-color | border-color | border-radius | bor
 
 ### Components
 Alert `.alert || --alert-*`  
-Badge `.badge | --badge-*`  
+Badge `.badge | --chip-*`  
 Button `.button || --button-* | font-family | font-size | font-weight | color | bg-color | border-radius | border-width | bg-color | focus`  
 Form `fieldset | label | input | select | textarea | .input-field | .input-group | .input-hint | .input-addon | .input-icon | .input-invalid | .input-valid || --input-* | --fieldset-* | --label-*`  
 List `.list-* | .list-step | .list-breadcrumb | .list-dropdown`  

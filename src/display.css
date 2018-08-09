@@ -12,6 +12,14 @@
   display: block;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
 .inline {
   display: inline;
 }

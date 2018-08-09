@@ -1,9 +1,9 @@
 .dropdown {
   display: inline-block;
   background: var(--dropdown-bg-color);
-  border-radius: var(--component-border-radius);
+  border-radius: var(--dropdown-border-radius);
   border-color: var(--dropdown-border-color);
-  border-width: var(--component-border-width);
+  border-width: var(--dropdown-border-width);
   border-style: solid;
 }
 
@@ -11,7 +11,7 @@
   display: block;
   padding: var(--gap-4) var(--gap-5);
   border-bottom-color: var(--dropdown-border-color);
-  border-bottom-width: var(--component-border-width);
+  border-bottom-width: var(--dropdown-border-width);
   border-bottom-style: solid;
 }
 

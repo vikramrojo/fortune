@@ -38,8 +38,8 @@
   border: var(--gap-2) solid;
 }
 
-.bord3 {
-  border: var(--gap-3) solid;
+.bordWid {
+  border: var(--border-width, 0.5rem) solid;
 }
 
 .bordT1 {
@@ -50,8 +50,8 @@
   border-top: var(--gap-2) solid;
 }
 
-.bordT3 {
-  border-top: var(--gap-3) solid;
+.bordTWid {
+  border-top: var(--border-width, 0.5rem) solid;
 }
 
 .bordL1 {
@@ -62,8 +62,8 @@
   border-left: var(--gap-2) solid;
 }
 
-.bordL3 {
-  border-left: var(--gap-3) solid;
+.bordLWid {
+  border-left: var(--border-width, 0.5rem) solid;
 }
 
 .bordB1 {
@@ -74,8 +74,8 @@
   border-bottom: var(--gap-2) solid;
 }
 
-.bordB3 {
-  border-bottom: var(--gap-3) solid;
+.bordBWid {
+  border-bottom: var(--border-width, 0.5rem) solid;
 }
 
 .bordR1 {
@@ -86,8 +86,8 @@
   border-right: var(--gap-2) solid;
 }
 
-.bordR3 {
-  border-right: var(--gap-3) solid;
+.bordRWid {
+  border-right: var(--border-width, 0.5rem) solid;
 }
 
 .bordX1 {
@@ -100,9 +100,9 @@
   border-right: var(--gap-2) solid;
 }
 
-.bordX3 {
-  border-left: var(--gap-3) solid;
-  border-right: var(--gap-3) solid;
+.bordXWid {
+  border-left: var(--border-width, 0.5rem) solid;
+  border-right: var(--border-width, 0.5rem) solid;
 }
 
 .bordY1 {
@@ -115,7 +115,7 @@
   border-bottom: var(--gap-2) solid;
 }
 
-.bordY3 {
+.bordYWid {
   border-top: var(--gap-3) solid;
-  border-bottom: var(--gap-3) solid;
+  border-bottom: var(--border-width, 0.5rem) solid;
 }
