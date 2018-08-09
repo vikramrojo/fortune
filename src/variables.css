@@ -81,7 +81,7 @@
   --alert-border-radius: var(--component-border-radius, 0.125rem);
   --alert-padding: initial;
   --alert-bg-color: var(--state-primary);
-  --alert-color: var(--state-primary);
+  --alert-color: var(--gray);
 
   /* Animate */
   --animation-delay: initial;
@@ -91,23 +91,19 @@
 
   /* Badge */
   --chip-font-size: var(--gap-5);
-  --chip-border-radius: var(--gap-6);
+  --chip-border-radius: var(--gap-9);
   --chip-focus: var(--component-focus);
   --chip-speed: var(--component-speed);
   --chip-color: var(--gray);
-  --chip-bg-color: var(--smoke);
-  --chip-border-color: var(--light);
+  --chip-border-color: initial;
+  --chip-bg-color: initial;
   --chip-padding: initial;
   --chip-color-active: var(--white);
   --chip-bg-color-active: var(--state-primary);
-
-  /* Breadcrumb */
-  --breadcrumb-seperator: '/';
-  --breadcrumb-gap: var(--gap-4);
-  --breadcrumb-weight: var(--font-weight-medium);
+  --chip-weight: var(--font-weight-medium);
 
   /* Button */
-  --button-font-size: initial;
+  --button-font-size: var(--gap-6);
   --button-font-family: inherit;
   --button-font-weight: inherit;
   --button-border-radius: var(--component-border-radius, 0.125rem);
@@ -171,8 +167,8 @@
   --nav-link-color: initial;
 
   /* Tab */
-  --tab-color: var(--state-primary);
-  --tab-border-color: var(--state-primary);
+  --tab-color: initial;
+  --tab-border-color: initial;
 
   /* Table */
   --table-bg-color: var(--white);

@@ -1,7 +1,7 @@
 button,
 .button {
   font-family: var(--button-font-family);
-  font-size: var(--button-font-size, 1rem);
+  font-size: var(--button-font-size);
   font-weight: var(--button-font-weight);
   text-align: center;
   text-decoration: none;

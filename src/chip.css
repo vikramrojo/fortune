@@ -1,25 +1,26 @@
 .chip {
   font-size: var(--chip-font-size);
   color: var(--chip-color);
-  background-color: var(--chip-bg-color);
+  background-color: var(--chip-bg-color, var(--smoke));
   border-radius: var(--chip-border-radius);
-  border: 2px solid var(--chip-border-color);
+  border: 2px solid var(--chip-border-color, var(--light));
   padding: var(--chip-padding, 0.25rem 0.5rem);
   vertical-align: baseline;
   display: inline-block;
   transition: var(--chip-speed) all;
   line-height: calc((var(--chip-font-size) * var(--line-height)) - 2px);
+  font-weight: var(--chip-weight);
 }
 
 .chip:empty {
   display: none;
 }
 
-
 a.chip:hover {
   color: var(--chip-color);
   background-image: linear-gradient(var(--darken), var(--darken));
   text-decoration: none;
+  --chip-border-color: var(--link-color);
 }
 
 a.chip:focus {
