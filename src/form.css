@@ -3,31 +3,31 @@ fieldset {
   border-radius: var(--fieldset-border-radius);
   padding: var(--fieldset-padding-y) var(--fieldset-padding-x);
   margin-bottom: 1.5rem;
+}
 
-  & legend {
-    font-weight: var(--font-weight-bold);
-    padding: 0 .25rem;
-  }
+fieldset legend {
+  font-weight: var(--font-weight-bold);
+  padding: 0 0.25rem;
+}
 
-  & > :last-child {
-    margin-bottom: 0;
-  }
+fieldset:last-child {
+  margin-bottom: 0;
 }
 
 label {
   color: var(--label-color);
   display: inline-block;
-  margin-bottom: .25rem;
-
-  & + label {
-    margin-left: 1rem;
-  }
+  margin-bottom: 0.25rem;
 }
 
-input:not([type=checkbox]):not([type=radio]):not([type=submit]):not([type=color]):not([type=button]):not([type=reset]),
+label + label {
+  margin-left: 1rem;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]),
 select,
 textarea,
-textarea[type=text] {
+textarea[type="text"] {
   width: 100%;
   font-family: var(--input-font-family);
   font-size: var(--input-font-size);
@@ -41,37 +41,34 @@ textarea[type=text] {
   display: block;
   padding: var(--gap-4) var(--gap-4);
   margin: 0;
-  transition: var(--component-speed) border-color, var(--component-speed) background-color, var(--component-speed) color;
+  transition: var(--component-speed) border-color,
+    var(--component-speed) background-color, var(--component-speed) color;
   white-space: nowrap;
   -moz-appearance: none;
   -webkit-appearance: none;
+}
 
-  &:focus {
-    outline: none;
-    border-color: var(--input-focus-color);
-  }
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]):focus,
+select:focus,
+textarea:focus,
+textarea[type="text"]:focus {
+  outline: none;
+  border-color: var(--input-focus-color);
+}
 
-  &[disabled] {
-    opacity: .5;
-    cursor: not-allowed;
-  }
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"])[disabled],
+select[disabled],
+textarea[disabled],
+textarea[type="text"][disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 
-  &[readonly] {
-    background-color: var(--input-readonly-bg-color);
-  }
-
-  &[type="color"] {
-    padding: var(--gap-4);
-
-    &::-webkit-color-swatch-wrapper {
-      padding: 0;
-    }
-
-    &::-webkit-color-swatch {
-      border: none;
-      border-radius: var(--input-border-radius);
-    }
-  }
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"])[readonly],
+select[readonly],
+textarea[readonly],
+textarea[type="text"][readonly] {
+  background-color: var(--input-readonly-bg-color);
 }
 
 input[type="checkbox"],
@@ -105,46 +102,46 @@ textarea {
   width: 100%;
   display: flex;
   margin-bottom: var(--component-margin-bottom);
+}
 
-  & > input,
-  & > button,
-  & > .button,
-  & > .inputIcon input,
-  & > .inputIcon select {
-    border-radius: 0;
-  }
+.inputGroup > input,
+.inputGroup > button,
+.inputGroup > .button,
+.inputGroup > .inputIcon input,
+.inputGroup > .inputIcon select {
+  border-radius: 0;
+}
 
-  & > input:first-child,
-  & > button:first-child,
-  & > .button:first-child,
-  & > .inputIcon:first-child input,
-  & > .inputIcon:first-child select {
-    border-top-left-radius: var(--input-border-radius);
-    border-bottom-left-radius: var(--input-border-radius);
-  }
+.inputGroup > input:first-child,
+.inputGroup > button:first-child,
+.inputGroup > .button:first-child,
+.inputGroup > .inputIcon:first-child input,
+.inputGroup > .inputIcon:first-child select {
+  border-top-left-radius: var(--input-border-radius);
+  border-bottom-left-radius: var(--input-border-radius);
+}
 
-  & > input:last-child,
-  & > button:last-child,
-  & > .button:last-child,
-  & > .inputIcon:last-child input,
-  & > .inputIcon:last-child select {
-    border-top-right-radius: var(--input-border-radius);
-    border-bottom-right-radius: var(--input-border-radius);
-  }
+.inputGroup > input:last-child,
+.inputGroup > button:last-child,
+.inputGroup > .button:last-child,
+.inputGroup > .inputIcon:last-child input,
+.inputGroup > .inputIcon:last-child select {
+  border-top-right-radius: var(--input-border-radius);
+  border-bottom-right-radius: var(--input-border-radius);
+}
 
-  & > input + input {
-    border-left-width: 0;
-  }
+.inputGroup > input + input {
+  border-left-width: 0;
+}
 
-  & > input + input:focus {
-    border-left-width: var(--input-border-width);
-    margin-left: calc(var(--input-border-width) * -1);
-  }
+.inputGroup > input + input:focus {
+  border-left-width: var(--input-border-width);
+  margin-left: calc(var(--input-border-width) * -1);
+}
 
-  & button:focus,
-  & .button:focus {
-    transform: translateZ(0);
-  }
+.inputGroup button:focus,
+.inputGroup .button:focus {
+  transform: translateZ(0);
 }
 
 .inputHint {
@@ -168,86 +165,82 @@ textarea {
   color: var(--input-addon-color);
   padding: var(--gap-4) var(--gap-4);
   white-space: nowrap;
+}
 
-  &:first-child {
-    border-left: solid var(--input-border-width) var(--input-border-color);
-    border-top-left-radius: var(--input-border-radius);
-    border-bottom-left-radius: var(--input-border-radius);
-  }
+.inputAddon:first-child {
+  border-left: solid var(--input-border-width) var(--input-border-color);
+  border-top-left-radius: var(--input-border-radius);
+  border-bottom-left-radius: var(--input-border-radius);
+}
 
-  &:last-child {
-    border-right: solid var(--input-border-width) var(--input-border-color);
-    border-top-right-radius: var(--input-border-radius);
-    border-bottom-right-radius: var(--input-border-radius);
-  }
+.inputAddon:last-child {
+  border-right: solid var(--input-border-width) var(--input-border-color);
+  border-top-right-radius: var(--input-border-radius);
+  border-bottom-right-radius: var(--input-border-radius);
 }
 
 .inputIcon {
   position: relative;
   width: 100%;
-
-  & select {
-    position: static;
-  }
-
-  & input:not(:first-child),
-  & select:not(:first-child) {
-    padding-left: var(--input-icon-width);
-  }
-
-  & input:not(:last-child) {
-    padding-right: var(--input-icon-width);
-  }
-
-  & :first-child:not(input, select),
-  & :last-child:not(input, select) {
-    position: absolute;
-    top: 0;
-    left: var(--input-icon-offset);
-    line-height: var(--line-height);
-    color: var(--input-icon-color);
-    vertical-align: middle;
-    pointer-events: none;
-  }
-
-  & :last-child:not(input, select) {
-    left: auto;
-    right: var(--input-icon-offset);
-  }
 }
 
-.isInvalid {
-  & label {
-    color: var(--input-invalid-color) !important;
-  }
-
-  & input,
-  & select,
-  & textarea {
-    color: var(--input-invalid-color) !important;
-    border-color: var(--input-invalid-border-color) !important;
-  }
-
-  & .inputIcon :first-child:not(input, select),
-  & .inputIcon :last-child:not(input, select) {
-    color: var(--input-invalid-color);
-  }
+.inputIcon select {
+  position: static;
 }
 
-.isValid {
-  & label {
-    color: var(--input-valid-color) !important;
-  }
+.inputIcon input:not(:first-child),
+.inputIcon select:not(:first-child) {
+  padding-left: var(--input-icon-width);
+}
 
-  & input,
-  & select,
-  & textarea {
-    color: var(--input-valid-color) !important;
-    border-color: var(--input-valid-border-color) !important;
-  }
+.inputIcon input:not(:last-child) {
+  padding-right: var(--input-icon-width);
+}
 
-  & .inputIcon :first-child:not(input, select),
-  & .inputIcon :last-child:not(input, select) {
-    color: var(--input-valid-color);
-  }
+.inputIcon:first-child:not(input, select),
+.inputIcon:last-child:not(input, select) {
+  position: absolute;
+  top: 0;
+  left: var(--input-icon-offset);
+  line-height: var(--line-height);
+  color: var(--input-icon-color);
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+.inputIcon:last-child:not(input, select) {
+  left: auto;
+  right: var(--input-icon-offset);
+}
+
+.isInvalid label {
+  color: var(--input-invalid-color) !important;
+}
+
+.isInvalid input,
+.isInvalid select,
+.isInvalid textarea {
+  color: var(--input-invalid-color) !important;
+  border-color: var(--input-invalid-border-color) !important;
+}
+
+.isInvalid .inputIcon :first-child:not(input, select),
+.isInvalid .inputIcon :last-child:not(input, select) {
+  color: var(--input-invalid-color);
+}
+
+.isValid label {
+  color: var(--input-valid-color) !important;
+}
+
+.isValid input,
+.isValid select,
+.isValid textarea {
+  color: var(--input-valid-color) !important;
+  border-color: var(--input-valid-border-color) !important;
+}
+
+.isValid .inputIcon :first-child:not(input, select),
+.isValid .inputIcon :last-child:not(input, select) {
+  color: var(--input-valid-color);
 }
