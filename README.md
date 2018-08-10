@@ -21,7 +21,7 @@ To theme your site, add `:root` or `:scope` to your CSS:
   --font-family: 'Roboto', sans-serif;
   --headings-font-family: 'Roboto', sans-serif;
   --container-width: 125em;
-  --column-gutter: var(--space-4);
+  --column-gutter: var(--gap-9);
 }
 ```
 
@@ -39,7 +39,7 @@ Component `--component-* | background-color | border-color | border-radius | bor
 
 ### Components
 Alert `.alert || --alert-*`  
-Badge `.badge | --badge-*`  
+Badge `.badge | --chip-*`  
 Button `.button || --button-* | font-family | font-size | font-weight | color | bg-color | border-radius | border-width | bg-color | focus`  
 Form `fieldset | label | input | select | textarea | .input-field | .input-group | .input-hint | .input-addon | .input-icon | .input-invalid | .input-valid || --input-* | --fieldset-* | --label-*`  
 List `.list-* | .list-step | .list-breadcrumb | .list-dropdown`  

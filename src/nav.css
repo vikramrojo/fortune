@@ -1,51 +1,51 @@
 .nav {
   display: flex;
-  min-height: var(--nav-height);
-  align-items: stretch;
-  color: var(--nav-link-color);
+  min-height: var(--nav-height, 3rem);
+  align-items: center;
+  color: var(--nav-link-color, var(--link-color));
 }
+
+.nav .navCenter {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav .navLeft {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.nav .navRight {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
 
 .nav img {
   max-height: var(--nav-height);
 }
 
-.nav-center,
-.nav-left,
-.nav-right {
-  display: flex;
-  flex: 1;
-}
-
-.nav-left {
-  justify-content: flex-start;
-}
-
-.nav-right {
-  justify-content: flex-end;
-}
-
-.nav-center {
-  justify-content: center;
-}
-
 .nav a,
-.nav .brand {
+.nav .isBrand {
   text-decoration: none;
   display: flex;
   align-items: center;
-  padding: var(--gap-5) var(--space-1);
+  padding: var(--gap-5) var(--gap-6);
 }
 
-.nav .active:not(.button) {
+.nav .isActive:not(.button) {
   color: var(--nav-link-color);
 }
 
-.nav .brand {
+.nav .isBrand {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.nav .brand img {
+.nav .isBrand img {
   padding-right: var(--gap-5);
 }
 

@@ -3,47 +3,43 @@ table {
   background-color: var(--table-bg-color);
   border-collapse: collapse;
   margin-bottom: 1.5rem;
+}
 
-  & caption {
-    caption-side: bottom;
-    font-size: var(--font-size-small);
-    color: var(--body-color-muted);
-    text-align: center;
-    padding-top: var(--table-spacing-y);
-  }
+table caption {
+  caption-side: bottom;
+  font-size: var(--font-size-small);
+  color: var(--body-color-muted);
+  text-align: center;
+  padding-top: var(--table-spacing-y);
+}
 
-  & th {
-    text-align: left;
-    background-color: var(--table-header-bg-color);
-    border-bottom: solid calc(var(--table-border-width) * 2) var(--table-border-color);
-    padding: var(--table-spacing-y) var(--table-spacing-x);
-  }
+table th {
+  text-align: left;
+  background-color: var(--table-header-bg-color);
+  border-bottom: solid calc(var(--table-border-width) * 2) var(--table-border-color);
+  padding: var(--table-spacing-y) var(--table-spacing-x);
+}
 
-  & td {
-    border-bottom: solid var(--table-border-width) var(--table-border-color);
-    padding: var(--table-spacing-y) var(--table-spacing-x);
-  }
+table td {
+  border-bottom: solid var(--table-border-width) var(--table-border-color);
+  padding: var(--table-spacing-y) var(--table-spacing-x);
+}
 
-  &.table-bordered {
-    border: solid var(--table-border-width) var(--table-border-color);
+table.isBordered {
+  border: solid var(--table-border-width) var(--table-border-color);
+}
 
-    & td {
-      border-style: solid;
-      border-width: var(--table-border-width);
-      border-color: var(--table-border-color);
-    }
-  }
+table.isBordered td {
+  border-style: solid;
+  border-width: var(--table-border-width);
+  border-color: var(--table-border-color);
+}
 
-  &.table-hoverable {
-    & tbody tr:hover td {
-      color: var(--table-hover-color);
-      background-color: var(--table-hover-bg-color);
-    }
-  }
+table.isHoverable tbody tr:hover td {
+  color: var(--table-hover-color);
+  background-color: var(--table-hover-bg-color);
+}
 
-  &.table-striped {
-    & tr:nth-child(odd) td {
-      background-color: var(--table-stripe-bg-color);
-    }
-  }
+table.isStriped tr:nth-child(odd) td {
+  background-color: var(--table-stripe-bg-color);
 }

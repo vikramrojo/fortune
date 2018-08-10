@@ -97,34 +97,28 @@ textarea {
   white-space: normal;
 }
 
-.input-field {
-  margin-bottom: var(--space-2);
+.inputField {
+  margin-bottom: var(--component-margin-bottom);
 }
 
-.input-group {
+.inputGroup {
   width: 100%;
   display: flex;
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--component-margin-bottom);
 
   & > input,
   & > button,
   & > .button,
-  & > .dropdown button,
-  & > .dropdown .button,
-  & > .file-button label,
-  & > .input-icon input,
-  & > .input-icon select {
+  & > .inputIcon input,
+  & > .inputIcon select {
     border-radius: 0;
   }
 
   & > input:first-child,
   & > button:first-child,
   & > .button:first-child,
-  & > .dropdown:first-child button,
-  & > .dropdown:first-child .button,
-  & > .file-button:first-child label,
-  & > .input-icon:first-child input,
-  & > .input-icon:first-child select {
+  & > .inputIcon:first-child input,
+  & > .inputIcon:first-child select {
     border-top-left-radius: var(--input-border-radius);
     border-bottom-left-radius: var(--input-border-radius);
   }
@@ -132,11 +126,8 @@ textarea {
   & > input:last-child,
   & > button:last-child,
   & > .button:last-child,
-  & > .dropdown:last-child button,
-  & > .dropdown:last-child .button,
-  & > .file-button:last-child label,
-  & > .input-icon:last-child input,
-  & > .input-icon:last-child select {
+  & > .inputIcon:last-child input,
+  & > .inputIcon:last-child select {
     border-top-right-radius: var(--input-border-radius);
     border-bottom-right-radius: var(--input-border-radius);
   }
@@ -150,27 +141,25 @@ textarea {
     margin-left: calc(var(--input-border-width) * -1);
   }
 
-  /* Force a new stacking context so focus rings don't get truncated by adjacent elements */
   & button:focus,
-  & .button:focus,
-  & .file-button input[type="file"]:focus + label {
+  & .button:focus {
     transform: translateZ(0);
   }
 }
 
-.input-hint {
+.inputHint {
   font-size: var(--input-hint-font-size);
   color: var(--input-hint-color);
   margin: 0 0 0 0;
   display: block;
 }
 
-.input-group + .input-hint {
-  margin-top: calc(-1 * var(--space-2)); /* input group margin - input hint margin */
+.inputGroup + .inputHint {
+  margin-top: calc(-1 * var(--component-margin-bottom));
   margin-bottom: 1.5rem;
 }
 
-.input-addon {
+.inputAddon {
   font-size: var(--input-font-size);
   line-height: var(--line-height);
   border-top: solid var(--input-border-width) var(--input-border-color);
@@ -193,7 +182,7 @@ textarea {
   }
 }
 
-.input-icon {
+.inputIcon {
   position: relative;
   width: 100%;
 
@@ -227,7 +216,7 @@ textarea {
   }
 }
 
-.input-invalid {
+.isInvalid {
   & label {
     color: var(--input-invalid-color) !important;
   }
@@ -239,13 +228,13 @@ textarea {
     border-color: var(--input-invalid-border-color) !important;
   }
 
-  & .input-icon :first-child:not(input, select),
-  & .input-icon :last-child:not(input, select) {
+  & .inputIcon :first-child:not(input, select),
+  & .inputIcon :last-child:not(input, select) {
     color: var(--input-invalid-color);
   }
 }
 
-.input-valid {
+.isValid {
   & label {
     color: var(--input-valid-color) !important;
   }
@@ -257,8 +246,8 @@ textarea {
     border-color: var(--input-valid-border-color) !important;
   }
 
-  & .input-icon :first-child:not(input, select),
-  & .input-icon :last-child:not(input, select) {
+  & .inputIcon :first-child:not(input, select),
+  & .inputIcon :last-child:not(input, select) {
     color: var(--input-valid-color);
   }
 }

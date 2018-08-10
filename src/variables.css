@@ -6,121 +6,110 @@
   --gap-3: 0.25rem; /* 4px */
   --gap-4: 0.5rem; /* 8px */
   --gap-5: 0.75rem; /* 12px */
+  --gap-6: 1rem; /* 16px */
+  --gap-7: 1.25rem; /* 20px */
+  --gap-8: 1.5rem; /* 24px */
+  --gap-9: 2rem; /* 32px */
 
-  --space-0: 0rem;
-  --space-1: 1rem; /* 16px */
-  --space-2: 1.5rem; /* 24px */
-  --space-3: 2rem; /* 32px */
-  --space-4: 3rem; /* 48px */
-  --space-5: 4rem; /* 64px */
-  --space-6: 5rem; /* 80px */
-  --space-7: 6rem; /* 96px */
-  --space-8: 8rem; /* 128px */
-  --space-9: 10rem; /* 160px */
+  --hdg-1: initial;
+  --hdg-2: initial;
+  --hdg-3: initial;
+  --hdg-4: initial;
+  --hdg-5: initial;
+  --hdg-6: initial;
 
-  --columns-width: 80rem;
-  --column-gutter: var(--space-3);
-  --column-gap: var(--space-3);
-  --component-bg-color: var(--whitesmoke);
+  --media-hdg: initial; /* Set value in media.css */
+
+  --columns-width: initial;
+  --column-gutter: initial;
+  --column-gap: initial;
+
+  --border-width: initial;
+
+  --component-bg-color: var(--smoke);
   --component-border-color: var(--silver);
-  --component-border-radius: var(--gap-2);
-  --component-border-width: var(--gap-1);
-  --component-focus: 0 0 var(--gap-2) var(--gap-2) var(--lightgray);
-  --component-padding-x: var(--gap-5);
-  --component-padding-y: var(--gap-5);
+  --component-border-radius: initial;
+  --component-border-width: initial;
+  --component-focus: 0 0 var(--gap-2) var(--gap-2) var(--light);
   --component-speed: .1s;
-  --component-font-size: var(--space-1);
   --component-shadow: var(--shadow);
+  --component-margin-bottom: var(--gap-8);
 
   --white: white;
-  --whitesmoke: whitesmoke;
-  --lightgray: lightgray;
-  --silver: silver;
-  --darkgray: darkgray;
-  --gray: gray;
+  --smoke: #f1f3f5;
+  --light: #dee2e6;
+  --silver: #adb5bd;
+  --dark: #495057;
+  --gray: #212529;
   --black: black;
-  --navy: #001f3f;
-  --blue: #0074d9;
-  --aqua: #7fdbff;
-  --teal: #39cccc;
-  --olive: #3d9970;
-  --green: #2ecc40;
-  --lime: #01ff70;
-  --yellow: #ffdc00;
-  --orange: #ff851b;
-  --red: #ff4136;
-  --maroon: #85144b;
-  --fuchsia: #f012be;
-  --purple: #b10dc9;
+  --red: #f03e3e;
+  --pink: #d6336c;
+  --grape: #ae3ec9;
+  --violet: #7048e8;
+  --indigo: #4263eb;
+  --blue: #1c7ed6;
+  --cyan: #1098ad;
+  --teal: #0ca678;
+  --green: #37b24d;
+  --lime: #74b816;
+  --yellow: #f59f00;
+  --orange: #f76707;
   --state-primary: var(--blue);
   --state-secondary: var(--gray);
   --state-success: var(--green);
-  --state-info: var(--teal);
+  --state-info: var(--cyan);
   --state-warning: var(--orange);
   --state-danger: var(--red);
-  --state-light: var(--white);
-  --state-dark: var(--black);
-  --state-disabled: var(--lightgray);
+  --state-disabled: var(--silver);
   --darken: rgba(0, 0, 0, 0.100);
-  --darken-200: rgba(0, 0, 0, 0.200);
-  --darken-400: rgba(0, 0, 0, 0.400);
-  --darken-600: rgba(0, 0, 0, 0.600);
-  --darken-800: rgba(0, 0, 0, 0.800);
+  --darken-more: rgba(0, 0, 0, 0.500);
   --lighten: rgba(255, 255, 255, 0.100);
-  --lighten-200: rgba(255, 255, 255, 0.200);
-  --lighten-400: rgba(255, 255, 255, 0.400);
-  --lighten-600: rgba(255, 255, 255, 0.600);
-  --lighten-800: rgba(255, 255, 255, 0.800);
+  --lighten-more: rgba(255, 255, 255, 0.500);
   --shadow: rgba(80, 80, 80, 0.100);
-  --shadow-200: rgba(80, 80, 80, 0.200);
-  --shadow-400: rgba(80, 80, 80, 0.400);
-  --shadow-600: rgba(80, 80, 80, 0.600);
-  --shadow-800: rgba(80, 80, 80, 0.800);
+  --shadow-more: rgba(80, 80, 80, 0.500);
 
   /* Alert */
-  --alert-border-radius: var(--component-border-radius);
-  --alert-padding-x: var(--component-padding-x);
-  --alert-padding-y: var(--component-padding-y);
+  --alert-border-radius: var(--component-border-radius, 0.125rem);
+  --alert-padding: initial;
   --alert-bg-color: var(--state-primary);
-  --alert-color: var(--state-primary);
-  --alert-bg-color-secondary: var(--state-secondary);
-  --alert-color-secondary: var(--state-secondary);
-  --alert-bg-color-success: var(--state-success);
-  --alert-color-success: var(--state-success);
-  --alert-bg-color-info: var(--state-info);
-  --alert-color-info: var(--state-info);
-  --alert-bg-color-warning: var(--state-warning);
-  --alert-color-warning: var(--state-warning);
-  --alert-bg-color-danger: var(--state-danger);
-  --alert-color-danger: var(--state-danger);
+  --alert-color: var(--gray);
+
+  /* Animate */
+  --animation-delay: initial;
+  --animation-duration: initial;
+  --animation-name: initial;
+  --animation-translate: initial;
 
   /* Badge */
-  --badge-font-size: var(--gap-5);
-  --badge-border-radius: var(--space-1);
-  --badge-focus: var(--component-focus);
-  --badge-speed: var(--component-speed);
-  --badge-color: var(--white);
-  --badge-bg-color: var(--state-primary);
-
-  /* Breadcrumb */
-  --breadcrumb-seperator: '/';
-  --breadcrumb-gap: var(--gap-4);
-  --breadcrumb-weight: var(--font-weight-medium);
+  --chip-font-size: var(--gap-5);
+  --chip-border-radius: var(--gap-9);
+  --chip-focus: var(--component-focus);
+  --chip-speed: var(--component-speed);
+  --chip-color: var(--gray);
+  --chip-border-color: initial;
+  --chip-bg-color: initial;
+  --chip-padding: initial;
+  --chip-color-active: var(--white);
+  --chip-bg-color-active: var(--state-primary);
+  --chip-weight: var(--font-weight-medium);
 
   /* Button */
-  --button-font-size: var(--component-font-size);
+  --button-font-size: var(--gap-6);
   --button-font-family: inherit;
   --button-font-weight: inherit;
-  --button-border-radius: var(--component-border-radius);
-  --button-border-width: var(--component-border-width);
+  --button-border-radius: var(--component-border-radius, 0.125rem);
+  --button-border-width: var(--component-border-width, 0.0625rem);
   --button-focus: var(--component-focus);
   --button-speed: var(--component-speed);
-  --button-color: var(--white);
-  --button-bg-color: var(--state-primary);
+  --button-color: initial;
+  --button-bg-color: initial;
+  --button-padding: initial;
 
   /* Dropdown */
   --dropdown-bg-color: var(--component-bg-color);
   --dropdown-border-color: var(--component-border-color);
+  --dropdown-border-radius: var(--component-border-radius, 0.125rem);
+  --dropdown-border-width: var(--component-border-width, 0.0625rem);
 
   /* Form */
   --input-font-size: var(--component-font-size);
@@ -129,7 +118,7 @@
   --input-color: var(--body-color);
   --input-border-color: var(--component-border-color);
   --input-border-width: var(--gap-1);
-  --input-border-radius: var(--component-border-radius);
+  --input-border-radius: var(--component-border-radius, 0.125rem);
   --input-bg-color: var(--white);
   --input-readonly-bg-color: var(--component-bg-color);
   --input-focus-color: var(--state-primary);
@@ -137,7 +126,7 @@
   --input-addon-color: var(--body-color-muted);
   --input-hint-color: var(--body-color-muted);
   --input-hint-font-size: var(--font-size-small);
-  --input-icon-width: var(--space-2);
+  --input-icon-width: var(--gap-8);
   --input-icon-offset: var(--gap-4);
   --input-icon-color: var(--state-secondary);
   --input-invalid-color: var(--state-danger);
@@ -145,24 +134,11 @@
   --input-valid-color: var(--state-success);
   --input-valid-border-color: var(--state-success);
   --fieldset-border-color: var(--component-border-color);
-  --fieldset-border-width: var(--component-border-width);
-  --fieldset-border-radius: var(--component-border-radius);
-  --fieldset-padding-x: var(--space-1);
-  --fieldset-padding-y: var(--space-2);
+  --fieldset-border-width: var(--component-border-width, 0.0625rem);
+  --fieldset-border-radius: var(--component-border-radius, 0.125rem);
+  --fieldset-padding-x: var(--gap-6);
+  --fieldset-padding-y: var(--gap-8);
   --label-color: inherit;
-
-  /* List */
-  --list-breadcrumb-seperator: '/';
-  --list-breadcrumb-gap: var(--gap-4);
-  --list-breadcrumb-weight: var(--font-weight-medium);
-  --list-dropdown-bg-color: var(--component-bg-color);
-  --list-dropdown-border-color: var(--component-border-color);
-  --list-step-color: var(--state-dark);
-  --list-step-bg-color: var(--component-bg-color);
-
-  /* Nav */
-  --nav-height: var(--space-2);
-  --nav-link-color: var(--link-color);
 
   /* Grid */
   --grid-columns: repeat(auto, 1fr);
@@ -170,14 +146,25 @@
   --grid-column: auto / span 1;
   --grid-row: auto / span 1;
 
+  /* List */
+  --list-breadcrumb-seperator: '/';
+  --list-breadcrumb-gap: var(--gap-4);
+  --list-breadcrumb-weight: var(--font-weight-medium);
+  --list-step-color: var(--gray);
+  --list-step-bg-color: var(--component-bg-color);
+
+  /* Nav */
+  --nav-height: initial;
+  --nav-link-color: initial;
+
   /* Tab */
-  --tab-color: var(--state-primary);
-  --tab-border-color: var(--state-primary);
+  --tab-color: initial;
+  --tab-border-color: initial;
 
   /* Table */
   --table-bg-color: var(--white);
   --table-border-color: var(--component-border-color);
-  --table-border-width: var(--component-border-width);
+  --table-border-width: var(--component-border-width, 0.0625rem);
   --table-header-bg-color: transparent;
   --table-spacing-x: var(--gap-5);
   --table-spacing-y: var(--gap-4);
@@ -191,41 +178,41 @@
   --font-system: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
   --font-monospace: Menlo, Consolas, "DejaVu Sans Mono", monospace;
   --body-bg-color: var(--white);
-  --body-color: var(--black);
+  --body-color: var(--gray);
   --body-color-muted: var(--gray);
   --font-family: var(--font-system);
-  --font-size: var(--space-1);
+  --font-size: var(--gap-6);
   --font-size-small: calc(var(--font-size) * .75);
   --font-weight-thin: 200;
   --font-weight: 300;
   --font-weight-medium: 400;
   --font-weight-bold: 600;
   --line-height: 1.5;
-  --code-font-size: 90%;
-  --code-color: var(--black);
-  --code-border-radius: var(--component-border-radius);
+  --code-font-size: var(--gap-5);
+  --code-color: var(--gray);
+  --code-border-radius: var(--component-border-radius, 0.125rem);
   --code-bg-color: var(--component-bg-color);
-  --code-padding-x: calc(var(--font-size) * .4);
-  --code-padding-y: calc(var(--font-size) * .2);
+  --code-padding-x: var(--gap-4);
+  --code-padding-y: var(--gap-2);
   --headings-font-family: var(--font-system);
   --headings-font-weight: var(--font-weight);
   --headings-line-height: 1.5;
   --headings-margin-bottom: var(--gap-5);
   --headings-color: inherit;
-  --headings-font-size-h1: var(--space-5);
-  --headings-font-size-h2: var(--space-4);
-  --headings-font-size-h3: var(--space-3);
-  --headings-font-size-h4: var(--space-2);
-  --headings-font-size-h5: var(--space-1);
-  --headings-font-size-h6: var(--gap-5);
+  --headings-font-size-h1: var(--hdg-1, 4rem);
+  --headings-font-size-h2: var(--hdg-2, 3rem);
+  --headings-font-size-h3: var(--hdg-3, 2rem);
+  --headings-font-size-h4: var(--hdg-4, 1.5rem);
+  --headings-font-size-h5: var(--hdg-5, 1rem);
+  --headings-font-size-h6: var(--hdg-6, 0.75rem);
   --hr-border-width: var(--gap-1);
   --hr-border-color: var(--component-border-color);
   --hr-margin-x: 0;
-  --hr-margin-y: var(--space-3);
-  --kbd-font-size: 90%;
+  --hr-margin-y: var(--gap-9);
+  --kbd-font-size: var(--gap-5);
   --kbd-color: var(--white);
-  --kbd-border-radius: var(--component-border-radius);
-  --kbd-bg-color: var(--black);
+  --kbd-border-radius: var(--component-border-radius, 0.125rem);
+  --kbd-bg-color: var(--gray);
   --kbd-padding-x: calc(var(--font-size) * .4);
   --kbd-padding-y: calc(var(--font-size) * .2);
   --link-color: var(--state-primary);
@@ -236,10 +223,10 @@
   --mark-bg-color: var(--yellow);
   --mark-padding-x: var(--gap-5);
   --mark-padding-y: var(--gap-3);
-  --p-margin: var(--space-2);
+  --p-margin: var(--gap-8);
   --placeholder-color: var(--body-color-muted);
   --pre-color: var(--code-color);
-  --pre-border-radius: var(--component-border-radius);
+  --pre-border-radius: var(--component-border-radius, 0.125rem);
   --pre-bg-color: var(--code-bg-color);
   --pre-max-height: none;
   --selection-color: var(--white);
@@ -248,6 +235,49 @@
   /* Tooltip */
   --tooltip-color: var(--white);
   --tooltip-bg-color: var(--gray);
-  --tooltip-min-width: var(--space-9);
-  --tooltip-padding: var(--gap-4)
+  --tooltip-border-radius: var(--component-border-radius, 0.125rem);
+  --tooltip-min-width: var(--gap-9);
+  --tooltip-padding: var(--gap-4);
+}
+
+.isNegSpace,
+.isNegSpace .isNegSpace {
+  --space-0: -0rem;
+  --space-1: -1rem;
+  --space-2: -2rem;
+  --space-3: -3rem;
+  --space-4: -4rem;
+  --space-5: -5rem;
+  --space-6: -6rem;
+  --space-7: -8rem;
+  --space-8: -12rem;
+  --space-9: -16rem;
+}
+
+.isSpace,
+.isSpace .isSpace {
+  --space-0: 0rem;
+  --space-1: 1rem;
+  --space-2: 2rem;
+  --space-3: 3rem;
+  --space-4: 4rem;
+  --space-5: 5rem;
+  --space-6: 6rem;
+  --space-7: 8rem;
+  --space-8: 12rem;
+  --space-9: 16rem;
+}
+
+.isSpace *,
+.isNegSpace * {
+  --space-0: initial;
+  --space-1: initial;
+  --space-2: initial;
+  --space-3: initial;
+  --space-4: initial;
+  --space-5: initial;
+  --space-6: initial;
+  --space-7: initial;
+  --space-8: initial;
+  --space-9: initial;
 }

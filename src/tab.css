@@ -1,29 +1,30 @@
 .tab {
   display: flex;
+  line-height: calc((var(--button-font-size) * var(--line-height)) - 2px);
+}
+
+.tab.isFull > a {
+  flex: 1;
+}
+
+.tab.isSimple > :not(.isActive) {
+  border-color: transparent;
 }
 
 .tab > a {
-  padding: var(--gap-5) var(--space-1);
+  padding: var(--gap-5) var(--gap-6);
   flex: 0 1 auto;
-  border-bottom: var(--gap-2) solid var(--state-disabled);
+  border-bottom: var(--gap-2) solid var(--tab-border-color, var(--state-disabled));
   text-align: center;
   text-decoration: none;
   color: var(--body-color);
 }
 
-.tab-simple > :not(.active) {
-  border-color: transparent;
-}
-
 .tab > a:hover {
-  border-color: var(--state-dark);
+  border-color: var(--tab-border-color, var(--state-primary));
 }
 
-.tab > a.active {
-  border-color: var(--tab-border-color);
-  color: var(--tab-border-color);
-}
-
-.tab-full a {
-  flex: 1;
+.tab > a.isActive {
+  border-color: var(--tab-border-color, var(--state-primary));
+  color: var(--tab-color, var(--state-primary));
 }

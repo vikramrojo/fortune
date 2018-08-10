@@ -1,121 +1,121 @@
-.radius-0 {
+.rad0 {
   border-radius: 0;
 }
 
-.radius-1 {
+.rad1 {
   border-radius: var(--gap-1);
 }
 
-.radius-2 {
+.rad2 {
   border-radius: var(--gap-2);
 }
 
-.radius-3 {
+.rad3 {
   border-radius: var(--gap-3);
 }
 
-.radius-4 {
+.rad4 {
   border-radius: var(--gap-4);
 }
 
-.radius-5 {
+.rad5 {
   border-radius: var(--gap-5);
 }
 
-.radius-100 {
+.rad100 {
   border-radius: 100%;
 }
 
-.radius-max {
+.radMax {
   border-radius: 9999px;
 }
 
-.b-1 {
+.bord1 {
   border: var(--gap-1) solid;
 }
 
-.b-2 {
+.bord2 {
   border: var(--gap-2) solid;
 }
 
-.b-3 {
-  border: var(--gap-3) solid;
+.bordWid {
+  border: var(--border-width, 0.5rem) solid;
 }
 
-.bt-1 {
+.bordT1 {
   border-top: var(--gap-1) solid;
 }
 
-.bt-2 {
+.bordT2 {
   border-top: var(--gap-2) solid;
 }
 
-.bt-3 {
-  border-top: var(--gap-3) solid;
+.bordTWid {
+  border-top: var(--border-width, 0.5rem) solid;
 }
 
-.bl-1 {
+.bordL1 {
   border-left: var(--gap-1) solid;
 }
 
-.bl-2 {
+.bordL2 {
   border-left: var(--gap-2) solid;
 }
 
-.bl-3 {
-  border-left: var(--gap-3) solid;
+.bordLWid {
+  border-left: var(--border-width, 0.5rem) solid;
 }
 
-.bb-1 {
+.bordB1 {
   border-bottom: var(--gap-1) solid;
 }
 
-.bb-2 {
+.bordB2 {
   border-bottom: var(--gap-2) solid;
 }
 
-.bb-3 {
-  border-bottom: var(--gap-3) solid;
+.bordBWid {
+  border-bottom: var(--border-width, 0.5rem) solid;
 }
 
-.br-1 {
+.bordR1 {
   border-right: var(--gap-1) solid;
 }
 
-.br-2 {
+.bordR2 {
   border-right: var(--gap-2) solid;
 }
 
-.br-3 {
-  border-right: var(--gap-3) solid;
+.bordRWid {
+  border-right: var(--border-width, 0.5rem) solid;
 }
 
-.bx-1 {
+.bordX1 {
   border-left: var(--gap-1) solid;
   border-right: var(--gap-1) solid;
 }
 
-.bx-2 {
+.bordX2 {
   border-left: var(--gap-2) solid;
   border-right: var(--gap-2) solid;
 }
 
-.bx-3 {
-  border-left: var(--gap-3) solid;
-  border-right: var(--gap-3) solid;
+.bordXWid {
+  border-left: var(--border-width, 0.5rem) solid;
+  border-right: var(--border-width, 0.5rem) solid;
 }
 
-.by-1 {
+.bordY1 {
   border-top: var(--gap-1) solid;
   border-bottom: var(--gap-1) solid;
 }
 
-.by-2 {
+.bordY2 {
   border-top: var(--gap-2) solid;
   border-bottom: var(--gap-2) solid;
 }
 
-.by-3 {
+.bordYWid {
   border-top: var(--gap-3) solid;
-  border-bottom: var(--gap-3) solid;
+  border-bottom: var(--border-width, 0.5rem) solid;
 }

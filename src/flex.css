@@ -1,201 +1,113 @@
-.flex-wrap {
+.flex {
+  display: flex;
+}
+
+.flexWrap {
   flex-wrap: wrap;
 }
 
-.flex-wrap-reverse {
+.flexWrapReverse {
   flex-wrap: wrap-reverse;
 }
 
-.flex-reverse {
+.flexReverse {
   flex-direction: row-reverse;
 }
 
-.flex-reverse.flex-column {
+.flexReverse.flexCol {
   flex-direction: column-reverse;
 }
 
-.flex-column {
+.flexCol {
   flex-direction: column;
 }
 
-.flex-center {
+.flexRow {
+  flex-direction: row;
+}
+
+.flexCenter {
   align-items: center;
   justify-content: center;
 }
 
-.flex-ycenter {
+.flexYCenter {
   align-items: center;
 }
 
-.flex-xcenter {
+.flexXCenter {
   justify-content: center;
 }
 
-.flex-around {
+.flexAround {
   justify-content: space-around;
 }
 
-.flex-between {
+.flexBetween {
   justify-content: space-between;
 }
 
-.flex-right {
+.flexRight {
   justify-content: flex-end;
 }
 
-.flex-baseline {
+.flexBaseline {
   align-items: baseline;
 }
 
-.flex-end {
+.flexEnd {
   align-items: flex-end;
 }
 
-.flex-start {
+.flexStart {
   align-items: flex-start;
 }
 
-.flex-gap-1:not(.flex-column):not(.flex-reverse) > *:not(:last-child) {
-  margin-right: var(--space-1);
-}
-
-.flex-gap-2:not(.flex-column):not(.flex-reverse) > *:not(:last-child) {
-  margin-right: var(--space-2);
-}
-
-.flex-gap-3:not(.flex-column):not(.flex-reverse) > *:not(:last-child) {
-  margin-right: var(--space-3);
-}
-
-.flex-gap-4:not(.flex-column):not(.flex-reverse) > *:not(:last-child) {
-  margin-right: var(--space-4);
-}
-
-.flex-gap-5:not(.flex-column):not(.flex-reverse) > *:not(:last-child) {
-  margin-right: var(--space-5);
-}
-
-.flex-gap-6:not(.flex-column):not(.flex-reverse) > *:not(:last-child) {
-  margin-right: var(--space-6);
-}
-
-.flex-gap-1.flex-reverse:not(.flex-column) > *:not(:last-child) {
-  margin-left: var(--space-1);
-}
-
-.flex-gap-2.flex-reverse:not(.flex-column) > *:not(:last-child) {
-  margin-left: var(--space-2);
-}
-
-.flex-gap-3.flex-reverse:not(.flex-column) > *:not(:last-child) {
-  margin-left: var(--space-3);
-}
-
-.flex-gap-4.flex-reverse:not(.flex-column) > *:not(:last-child) {
-  margin-left: var(--space-4);
-}
-
-.flex-gap-5.flex-reverse:not(.flex-column) > *:not(:last-child) {
-  margin-left: var(--space-5);
-}
-
-.flex-gap-6.flex-reverse:not(.flex-column) > *:not(:last-child) {
-  margin-left: var(--space-6);
-}
-
-.flex-gap-1.flex-column:not(.flex-reverse) > *:not(:last-child) {
-  margin-bottom: var(--space-1);
-}
-
-.flex-gap-2.flex-column:not(.flex-reverse) > *:not(:last-child) {
-  margin-bottom: var(--space-2);
-}
-
-.flex-gap-3.flex-column:not(.flex-reverse) > *:not(:last-child) {
-  margin-bottom: var(--space-3);
-}
-
-.flex-gap-4.flex-column:not(.flex-reverse) > *:not(:last-child) {
-  margin-bottom: var(--space-4);
-}
-
-.flex-gap-5.flex-column:not(.flex-reverse) > *:not(:last-child) {
-  margin-bottom: var(--space-5);
-}
-
-.flex-gap-6.flex-column:not(.flex-reverse) > *:not(:last-child) {
-  margin-bottom: var(--space-6);
-}
-
-.flex-gap-1.flex-column.flex-reverse > *:not(:first-child) {
-  margin-bottom: var(--space-1);
-}
-
-.flex-gap-2.flex-column.flex-reverse > *:not(:first-child) {
-  margin-bottom: var(--space-2);
-}
-
-.flex-gap-3.flex-column.flex-reverse > *:not(:first-child) {
-  margin-bottom: var(--space-3);
-}
-
-.flex-gap-4.flex-column.flex-reverse > *:not(:first-child) {
-  margin-bottom: var(--space-4);
-}
-
-.flex-gap-5.flex-column.flex-reverse > *:not(:first-child) {
-  margin-bottom: var(--space-5);
-}
-
-.flex-gap-6.flex-column.flex-reverse > *:not(:first-child) {
-  margin-bottom: var(--space-6);
-}
-
-.grow-1,
-.grow-2,
-.grow-3,
-.grow-4,
-.grow-5,
-.grow-6 {
+.grow1,
+.grow2,
+.grow3,
+.grow4,
+.grow5,
+.grow6 {
   flex-basis: 0;
 }
 
-.grow-1 {
+.grow1 {
   flex-grow: 1;
 }
 
-.grow-2 {
+.grow2 {
   flex-grow: 2;
 }
 
-.grow-3 {
+.grow3 {
   flex-grow: 3;
 }
 
-.grow-4 {
+.grow4 {
   flex-grow: 4;
 }
 
-.grow-5 {
+.grow5 {
   flex-grow: 5;
 }
 
-.grow-6 {
+.grow6 {
   flex-grow: 6;
 }
 
-.self-center {
+.selfCenter {
   align-self: center;
 }
 
-.self-start {
+.selfStart {
   align-self: flex-start;
 }
 
-.self-end {
+.selfEnd {
   align-self: flex-end;
 }
 
-.self-baseline {
+.selfBaseline {
   align-self: baseline;
 }

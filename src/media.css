@@ -1,9 +1,10 @@
-.show, .show-md {
+.show, .showTablet {
   display: none;
 }
 
-@media screen and (--breakpoint-sm) {
-  .container {
+@media screen and (max-width: 48rem) {
+  .row,
+  .cols {
     width: 100%;
   }
 
@@ -16,56 +17,75 @@
   }
 
   .col,
-  [class*=' col-'],
-  [class^='col-'] {
+  [class*=' col'],
+  [class^='col'] {
     flex: 0 1 100%;
     max-width: 100%;
   }
 
-  [class*=' offset-'],
-  [class^='col-'] {
+  [class*='Offset'],
+  [class*='col'] {
     margin-left: auto;
   }
 
   .nav,
-  .nav > .container {
+  .nav > .cols,
+  .nav > .row {
     flex-direction: column;
   }
 
-  .nav-center,
-  .nav-left,
-  .nav-right {
+  .navCenter,
+  .navLeft,
+  .navRight {
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .p-reset {
+  .padReset {
     padding: 0 !important;
   }
 
-  .m-reset {
+  .marReset {
     margin: 0 !important;
+  }
+
+  .posSm.isSpace {
+    --space-0: 0rem;
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 1.5rem;
+    --space-4: 2rem;
+    --space-5: 2.5rem;
+    --space-6: 3rem;
+    --space-7: 4rem;
+    --space-8: 6rem;
+    --space-9: 8rem;
+  }
+
+  .hdg {
+    --media-hdg: 0.5;
   }
 }
 
-@media screen and (--breakpoint-md) {
+@media screen and (min-width: 48rem) and (max-width: 60rem) {
 
-  .hide-md {
+  .hideTablet {
     display: none !important;
   }
 
-  .show-md {
+  .showTablet {
     display: block !important;
   }
 
-  .p-md-reset {
+  .padTabletReset {
     padding: 0 !important;
   }
 
-  .m-md-reset {
+  .marTabletReset {
     margin: 0 !important;
   }
-}
 
-@custom-media --breakpoint-sm (max-width: 48rem);
-@custom-media --breakpoint-md (min-width: 48rem) and (max-width: 60rem);
+  .hdgTablet {
+    --media-hdg: 0.75;
+  }
+}

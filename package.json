@@ -29,7 +29,7 @@
     "gulp-rename": "latest",
     "gulp-size": "latest",
     "gulp-stylelint": "latest",
-    "postcss-cssnext": "latest",
+    "postcss-preset-env": "latest",
     "postcss-import": "latest",
     "stylelint": "latest"
   }
