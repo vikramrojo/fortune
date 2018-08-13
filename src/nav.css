@@ -41,4 +41,5 @@
 
 .nav .button {
   margin: var(--nav-padding);
+  color: var(--button-color, white);
 }

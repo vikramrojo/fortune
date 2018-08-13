@@ -28,6 +28,7 @@
   --component-speed: 0.1s;
   --component-shadow: var(--shadow);
   --component-margin-bottom: 1.5rem;
+  --component-padding: 0.5rem 0.75rem;
 
   --white: white;
   --smoke: #f1f3f5;
@@ -104,7 +105,7 @@
   --dropdown-border-color: var(--component-border-color);
   --dropdown-border-radius: var(--component-border-radius);
   --dropdown-border-width: var(--component-border-width);
-  --dropdown-padding: 0.5rem 0.75rem;
+  --dropdown-padding: var(--component-padding);
 
   /* Form */
   --input-font-size: var(--component-font-size);
@@ -127,6 +128,7 @@
   --input-invalid-color: var(--state-danger);
   --input-invalid-border-color: var(--state-danger);
   --input-valid-color: var(--state-success);
+  --input-padding: var(--component-padding);
   --input-valid-border-color: var(--state-success);
   --fieldset-border-color: var(--component-border-color);
   --fieldset-border-width: var(--component-border-width);
@@ -151,12 +153,12 @@
   /* Nav */
   --nav-height: 3rem;
   --nav-link-color: initial;
-  --nav-padding: 0.5rem 0.75rem;
+  --nav-padding: var(--component-padding);
 
   /* Tab */
   --tab-color: initial;
   --tab-border-color: initial;
-  --tab-padding: 0.5rem 0.75rem;
+  --tab-padding: var(--component-padding);
   --tab-border: 0.125rem;
 
   /* Table */
