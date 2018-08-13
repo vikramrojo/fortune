@@ -240,20 +240,6 @@
   --tooltip-padding: 0.5rem;
 }
 
-.isNegSpace,
-.isNegSpace .isNegSpace {
-  --space-0: -0rem;
-  --space-1: -1rem;
-  --space-2: -2rem;
-  --space-3: -3rem;
-  --space-4: -4rem;
-  --space-5: -5rem;
-  --space-6: -6rem;
-  --space-7: -8rem;
-  --space-8: -12rem;
-  --space-9: -16rem;
-}
-
 .isGap,
 .isGap .isGap {
   --gap-0: 0rem;
@@ -279,17 +265,4 @@
   --gap-7: initial;
   --gap-8: initial;
   --gap-9: initial;
-}
-
-.isNegSpace * {
-  --space-0: initial;
-  --space-1: initial;
-  --space-2: initial;
-  --space-3: initial;
-  --space-4: initial;
-  --space-5: initial;
-  --space-6: initial;
-  --space-7: initial;
-  --space-8: initial;
-  --space-9: initial;
 }
