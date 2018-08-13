@@ -86,39 +86,39 @@
 }
 
 .bottom1 {
-  bottom: var(--space-1, var(--gap-1));
+  bottom: var(--gap-1, var(--space-1));
 }
 
 .bottom2 {
-  bottom: var(--space-2, var(--gap-2));
+  bottom: var(--gap-2, var(--space-2));
 }
 
 .bottom3 {
-  bottom: var(--space-3, var(--gap-3));
+  bottom: var(--gap-3, var(--space-3));
 }
 
 .bottom4 {
-  bottom: var(--space-4, var(--gap-4));
+  bottom: var(--gap-4, var(--space-4));
 }
 
 .bottom5 {
-  bottom: var(--space-5, var(--gap-5));
+  bottom: var(--gap-5, var(--space-5));
 }
 
 .bottom6 {
-  bottom: var(--space-6, var(--gap-6));
+  bottom: var(--gap-6, var(--space-6));
 }
 
 .bottom7 {
-  bottom: var(--space-7, var(--gap-5));
+  bottom: var(--gap-7, var(--space-7));
 }
 
 .bottom8 {
-  bottom: var(--space-8, var(--gap-8));
+  bottom: var(--gap-8, var(--space-8));
 }
 
 .bottom9 {
-  bottom: var(--space-9, var(--gap-9));
+  bottom: var(--gap-9, var(--space-9));
 }
 
 .left0 {
@@ -126,39 +126,39 @@
 }
 
 .left1 {
-  left: var(--space-1, var(--gap-1));
+  left: var(--gap-1, var(--space-1));
 }
 
 .left2 {
-  left: var(--space-2, var(--gap-2));
+  left: var(--gap-2, var(--space-2));
 }
 
 .left3 {
-  left: var(--space-3, var(--gap-3));
+  left: var(--gap-3, var(--space-3));
 }
 
 .left4 {
-  left: var(--space-4, var(--gap-4));
+  left: var(--gap-4, var(--space-4));
 }
 
 .left5 {
-  left: var(--space-5, var(--gap-5));
+  left: var(--gap-5, var(--space-5));
 }
 
 .left6 {
-  left: var(--space-6, var(--gap-6));
+  left: var(--gap-6, var(--space-6));
 }
 
 .left7 {
-  left: var(--space-7, var(--gap-7));
+  left: var(--gap-7, var(--space-7));
 }
 
 .left8 {
-  left: var(--space-8, var(--gap-8));
+  left: var(--gap-8, var(--space-8));
 }
 
 .left9 {
-  left: var(--space-9, var(--gap-9));
+  left: var(--gap-9, var(--space-9));
 }
 
 .right0 {
@@ -166,39 +166,39 @@
 }
 
 .right1 {
-  right: var(--space-1, var(--gap-1));
+  right: var(--gap-1, var(--space-1));
 }
 
 .right2 {
-  right: var(--space-2, var(--gap-2));
+  right: var(--gap-2, var(--space-2));
 }
 
 .right3 {
-  right: var(--space-3, var(--gap-3));
+  right: var(--gap-3, var(--space-3));
 }
 
 .right4 {
-  right: var(--space-4, var(--gap-4));
+  right: var(--gap-4, var(--space-4));
 }
 
 .right5 {
-  right: var(--space-5, var(--gap-5));
+  right: var(--gap-5, var(--space-5));
 }
 
 .right6 {
-  right: var(--space-6, var(--gap-6));
+  right: var(--gap-6, var(--space-6));
 }
 
 .right7 {
-  right: var(--space-7, var(--gap-7));
+  right: var(--gap-7, var(--space-7));
 }
 
 .right8 {
-  right: var(--space-8, var(--gap-8));
+  right: var(--gap-8, var(--space-8));
 }
 
 .right9 {
-  right: var(--space-9, var(--gap-9));
+  right: var(--gap-9, var(--space-9));
 }
 
 .top0 {
@@ -206,39 +206,39 @@
 }
 
 .top1 {
-  top: var(--space-1, var(--gap-1));
+  top: var(--gap-1, var(--space-1));
 }
 
 .top2 {
-  top: var(--space-2, var(--gap-2));
+  top: var(--gap-2, var(--space-2));
 }
 
 .top3 {
-  top: var(--space-3, var(--gap-3));
+  top: var(--gap-3, var(--space-3));
 }
 
 .top4 {
-  top: var(--space-4, var(--gap-4));
+  top: var(--gap-4, var(--space-4));
 }
 
 .top5 {
-  top: var(--space-5, var(--gap-5));
+  top: var(--gap-5, var(--space-5));
 }
 
 .top6 {
-  top: var(--space-6, var(--gap-6));
+  top: var(--gap-6, var(--space-6));
 }
 
 .top7 {
-  top: var(--space-7, var(--gap-7));
+  top: var(--gap-7, var(--space-7));
 }
 
 .top8 {
-  top: var(--space-8, var(--gap-8));
+  top: var(--gap-8, var(--space-8));
 }
 
 .top9 {
-  top: var(--space-9, var(--gap-9));
+  top: var(--gap-9, var(--space-9));
 }
 
 .z0 {

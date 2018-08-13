@@ -14,7 +14,7 @@ button,
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  padding: var(--button-padding, 0.75rem 1rem);
+  padding: var(--button-padding);
   cursor: pointer;
   line-height: calc((var(--button-font-size) * var(--line-height)) - 2px);
   display: inline-block;
@@ -42,12 +42,11 @@ button:focus,
 }
 
 button:disabled,
-button.isDisabled
-.button:disabled,
+button.isDisabled .button:disabled,
 .button.isDisabled {
   opacity: 0.2;
   text-decoration: none;
-  opacity: .5;
+  opacity: 0.5;
   cursor: not-allowed;
 }
 
@@ -79,7 +78,6 @@ button.isLink,
   color: var(--link-color);
   text-decoration: var(--link-text-decoration);
 }
-
 
 button.isLink:hover,
 .button.isLink:hover,

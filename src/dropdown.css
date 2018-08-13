@@ -9,7 +9,7 @@
 
 .dropdown li a {
   display: block;
-  padding: var(--gap-4) var(--gap-5);
+  padding: var(--dropdown-padding);
   border-bottom-color: var(--dropdown-border-color);
   border-bottom-width: var(--dropdown-border-width);
   border-bottom-style: solid;

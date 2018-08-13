@@ -1,4 +1,5 @@
-.show, .showTablet {
+.show,
+.showTablet {
   display: none;
 }
 
@@ -17,14 +18,14 @@
   }
 
   .col,
-  [class*=' col'],
-  [class^='col'] {
+  [class*=" col"],
+  [class^="col"] {
     flex: 0 1 100%;
     max-width: 100%;
   }
 
-  [class*='Offset'],
-  [class*='col'] {
+  [class*="Offset"],
+  [class*="col"] {
     margin-left: auto;
   }
 
@@ -49,26 +50,12 @@
     margin: 0 !important;
   }
 
-  .posSm.isSpace {
-    --space-0: 0rem;
-    --space-1: 0.5rem;
-    --space-2: 1rem;
-    --space-3: 1.5rem;
-    --space-4: 2rem;
-    --space-5: 2.5rem;
-    --space-6: 3rem;
-    --space-7: 4rem;
-    --space-8: 6rem;
-    --space-9: 8rem;
-  }
-
   .hdg {
-    --media-hdg: 0.5;
+    --media-hdg: 0.8;
   }
 }
 
 @media screen and (min-width: 48rem) and (max-width: 60rem) {
-
   .hideTablet {
     display: none !important;
   }
@@ -86,6 +73,6 @@
   }
 
   .hdgTablet {
-    --media-hdg: 0.75;
+    --media-hdg: 0.9;
   }
 }

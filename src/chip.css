@@ -4,7 +4,7 @@
   background-color: var(--chip-bg-color, var(--smoke));
   border-radius: var(--chip-border-radius);
   border: 2px solid var(--chip-border-color, var(--light));
-  padding: var(--chip-padding, 0.25rem 0.5rem);
+  padding: var(--chip-padding);
   vertical-align: baseline;
   display: inline-block;
   transition: var(--chip-speed) all;

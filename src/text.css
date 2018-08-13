@@ -31,8 +31,8 @@ abbr[title] {
 blockquote,
 .blockquote {
   font-size: 120%;
-  border-left: solid var(--gap-3) var(--component-border-color);
-  padding: var(--gap-5) var(--gap-5) var(--gap-5) var(--gap-6);
+  border-left: solid 0.25rem var(--component-border-color);
+  padding: var(--blockquote-padding);
   margin-bottom: var(--component-margin-bottom);
   margin-left: 0;
 }

@@ -12,9 +12,10 @@
 }
 
 .tab > a {
-  padding: var(--gap-5) var(--gap-6);
+  padding: var(--tab-padding);
   flex: 0 1 auto;
-  border-bottom: var(--gap-2) solid var(--tab-border-color, var(--state-disabled));
+  border-bottom: var(--tab-border) solid
+    var(--tab-border-color, var(--state-disabled));
   text-align: center;
   text-decoration: none;
   color: var(--body-color);

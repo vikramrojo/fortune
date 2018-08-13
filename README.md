@@ -14,16 +14,16 @@ Fortune helps prototype sites by providing a set of non-blocking utilities and b
 To load Fortune via CDN, add this to your `<head>`:
 
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fortune-css/dist/fortune.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fortune.css/dist/fortune.min.css">
 ```
 
-To theme your site, add `:root` or `:scope` to your CSS:
+To theme your site or components, modify `:root`, `:scope` or `.class` in your CSS:
 
 ```
 :root {
   --font-family: 'Roboto', sans-serif;
   --headings-font-family: 'Roboto', sans-serif;
   --container-width: 125em;
-  --column-gutter: var(--gap-9);
+  --column-gutter: 4rem;
 }
 ```

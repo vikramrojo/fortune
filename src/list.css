@@ -53,21 +53,21 @@
 .listStep > li::before {
   content: counter(step-counter);
   border-radius: 100px;
-  width: var(--gap-9);
-  height: var(--gap-9);
-  margin-top: var(--gap-4);
-  margin-bottom: var(--gap-4);
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: -2rem;
+  margin-right: 1rem;
   text-align: center;
   display: inline-block;
   background-color: var(--list-step-bg-color);
   color: var(--list-step-color);
   line-height: 2;
-  margin-left: calc(var(--gap-9) * -1);
-  margin-right: var(--gap-6);
 }
 
-[class*='list'].isAligned {
-  margin-left: var(--gap-6);
+[class*="list"].isAligned {
+  margin-left: 1rem;
 }
 
 .listBreadcrumb {
