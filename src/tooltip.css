@@ -1,7 +1,7 @@
 .tooltip {
   display: inline-block;
   position: relative;
-  border-bottom: var(--gap-1) dashed var(--component-border-color);
+  border-bottom: 0.0625rem dashed var(--component-border-color);
 }
 
 .tooltip:hover > .tooltip-text {

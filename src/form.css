@@ -39,7 +39,7 @@ textarea[type="text"] {
   line-height: var(--line-height);
   vertical-align: middle;
   display: block;
-  padding: var(--gap-4) var(--gap-4);
+  padding: var(--input-padding);
   margin: 0;
   transition: var(--component-speed) border-color,
     var(--component-speed) background-color, var(--component-speed) color;
@@ -73,18 +73,18 @@ textarea[type="text"][readonly] {
 
 input[type="checkbox"],
 input[type="radio"] {
-  vertical-align: var(--gap-1);
+  vertical-align: 0.0625rem;
 }
 
 select {
   position: relative;
   background-image: url("data:image/svg+xml, %3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='41px' height='26px' viewBox='0 0 41 26' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3C/defs%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpolygon id='Path-3' fill='%23000000' points='0 5.38215461 19.9830489 25.3652035 40.1398855 5.20836689 34.9315186 0 19.8691842 15.0623344 4.83971338 0.0328636246'%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E%0A");
-  background-position: right var(--gap-4) center;
+  background-position: right 0.5rem center;
   background-repeat: no-repeat;
-  background-size: var(--gap-5);
+  background-size: 0.5rem;
   padding-top: 0;
   padding-bottom: 0;
-  padding-right: var(--gap-3);
+  padding-right: 0.25rem;
 }
 
 textarea {
@@ -153,7 +153,7 @@ textarea {
 
 .inputGroup + .inputHint {
   margin-top: calc(-1 * var(--component-margin-bottom));
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--component-margin-bottom);
 }
 
 .inputAddon {
@@ -163,7 +163,7 @@ textarea {
   border-bottom: solid var(--input-border-width) var(--input-border-color);
   background: var(--input-addon-bg-color);
   color: var(--input-addon-color);
-  padding: var(--gap-4) var(--gap-4);
+  padding: var(--input-padding);
   white-space: nowrap;
 }
 

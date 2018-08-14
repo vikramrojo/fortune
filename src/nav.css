@@ -1,6 +1,6 @@
 .nav {
   display: flex;
-  min-height: var(--nav-height, 3rem);
+  min-height: var(--nav-height);
   align-items: center;
   color: var(--nav-link-color, var(--link-color));
 }
@@ -23,32 +23,23 @@
   justify-content: flex-end;
 }
 
-
 .nav img {
   max-height: var(--nav-height);
 }
 
-.nav a,
-.nav .isBrand {
+.nav a {
   text-decoration: none;
   display: flex;
   align-items: center;
-  padding: var(--gap-5) var(--gap-6);
+  padding: var(--nav-padding);
+  color: inherit;
 }
 
 .nav .isActive:not(.button) {
-  color: var(--nav-link-color);
-}
-
-.nav .isBrand {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.nav .isBrand img {
-  padding-right: var(--gap-5);
+  color: var(--nav-link-color, var(--link-color));
 }
 
 .nav .button {
-  margin: auto var(--gap-5);
+  margin: var(--nav-padding);
+  color: var(--button-color, white);
 }

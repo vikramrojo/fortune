@@ -7,23 +7,23 @@
 }
 
 .gridGap1 {
-  grid-gap: var(--space-1, var(--gap-1));
+  grid-gap: var(--gap-1, var(--space-1));
 }
 
 .gridGap2 {
-  grid-gap: var(--space-2, var(--gap-2));
+  grid-gap: var(--gap-2, var(--space-2));
 }
 
 .gridGap3 {
-  grid-gap: var(--space-3, var(--gap-3));
+  grid-gap: var(--gap-3, var(--space-3));
 }
 
 .gridGap4 {
-  grid-gap: var(--space-4, var(--gap-4));
+  grid-gap: var(--gap-4, var(--space-4));
 }
 
 .gridGap5 {
-  grid-gap: var(--space-5, var(--gap-5));
+  grid-gap: var(--gap-5, var(--space-5));
 }
 
 .gridGapX0 {
@@ -31,23 +31,23 @@
 }
 
 .gridGapX1 {
-  grid-row-gap: var(--space-1, var(--gap-1));
+  grid-row-gap: var(--gap-1, var(--space-1));
 }
 
 .gridGapX2 {
-  grid-row-gap: var(--space-2, var(--gap-2));
+  grid-row-gap: var(--gap-2, var(--space-2));
 }
 
 .gridGapX3 {
-  grid-row-gap: var(--space-3, var(--gap-3));
+  grid-row-gap: var(--gap-3, var(--space-3));
 }
 
 .gridGapX4 {
-  grid-row-gap: var(--space-4, var(--gap-4));
+  grid-row-gap: var(--gap-4, var(--space-4));
 }
 
 .gridGapX5 {
-  grid-row-gap: var(--space-5, var(--gap-5));
+  grid-row-gap: var(--gap-5, var(--space-5));
 }
 
 .gridGapY0 {
@@ -55,23 +55,23 @@
 }
 
 .gridGapY1 {
-  grid-column-gap: var(--space-1, var(--gap-1));
+  grid-column-gap: var(--gap-1, var(--space-1));
 }
 
 .gridGapY2 {
-  grid-column-gap: var(--space-2, var(--gap-2));
+  grid-column-gap: var(--gap-2, var(--space-2));
 }
 
 .gridGapY3 {
-  grid-column-gap: var(--space-3, var(--gap-3));
+  grid-column-gap: var(--gap-3, var(--space-3));
 }
 
 .gridGapY4 {
-  grid-column-gap: var(--space-4, var(--gap-4));
+  grid-column-gap: var(--gap-4, var(--space-4));
 }
 
 .gridGapY5 {
-  grid-column-gap: var(--space-5, var(--gap-5));
+  grid-column-gap: var(--gap-5, var(--space-5));
 }
 
 .gridColsdense {
@@ -79,7 +79,7 @@
 }
 
 .gridCols,
-[class*='gridCols'] {
+[class*="gridCols"] {
   grid-auto-flow: row;
 }
 
@@ -124,7 +124,7 @@
 }
 
 .gridRows,
-[class*='gridRows'] {
+[class*="gridRows"] {
   grid-auto-flow: column;
 }
 

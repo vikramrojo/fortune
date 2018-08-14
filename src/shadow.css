@@ -3,21 +3,21 @@
 }
 
 .shadow1 {
-  box-shadow: 0 var(--gap-1) var(--gap-1) var(--component-shadow);
+  box-shadow: 0 0.625rem 0.625rem var(--component-shadow);
 }
 
 .shadow2 {
-  box-shadow: 0 var(--gap-2) var(--gap-2) var(--component-shadow);
+  box-shadow: 0 0.125rem 0.125rem var(--component-shadow);
 }
 
 .shadow3 {
-  box-shadow: 0 var(--gap-3) var(--gap-3) var(--component-shadow);
+  box-shadow: 0 0.25rem 0.25rem var(--component-shadow);
 }
 
 .shadow4 {
-  box-shadow: 0 var(--gap-4) var(--gap-4) var(--component-shadow);
+  box-shadow: 0 0.5rem 0.5rem var(--component-shadow);
 }
 
 .shadow5 {
-  box-shadow: 0 var(--gap-5) var(--gap-5) var(--component-shadow);
+  box-shadow: 0 0.75rem 0.75rem var(--component-shadow);
 }

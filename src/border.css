@@ -3,23 +3,23 @@
 }
 
 .rad1 {
-  border-radius: var(--gap-1);
+  border-radius: 0.0625rem;
 }
 
 .rad2 {
-  border-radius: var(--gap-2);
+  border-radius: 0.125rem;
 }
 
 .rad3 {
-  border-radius: var(--gap-3);
+  border-radius: 0.25rem;
 }
 
 .rad4 {
-  border-radius: var(--gap-4);
+  border-radius: 0.5rem;
 }
 
 .rad5 {
-  border-radius: var(--gap-5);
+  border-radius: 0.75rem;
 }
 
 .rad100 {
@@ -31,11 +31,11 @@
 }
 
 .bord1 {
-  border: var(--gap-1) solid;
+  border: 0.0625rem solid;
 }
 
 .bord2 {
-  border: var(--gap-2) solid;
+  border: 0.125rem solid;
 }
 
 .bordWid {
@@ -43,11 +43,11 @@
 }
 
 .bordT1 {
-  border-top: var(--gap-1) solid;
+  border-top: 0.0625rem solid;
 }
 
 .bordT2 {
-  border-top: var(--gap-2) solid;
+  border-top: 0.125rem solid;
 }
 
 .bordTWid {
@@ -55,11 +55,11 @@
 }
 
 .bordL1 {
-  border-left: var(--gap-1) solid;
+  border-left: 0.0625rem solid;
 }
 
 .bordL2 {
-  border-left: var(--gap-2) solid;
+  border-left: 0.125rem solid;
 }
 
 .bordLWid {
@@ -67,11 +67,11 @@
 }
 
 .bordB1 {
-  border-bottom: var(--gap-1) solid;
+  border-bottom: 0.0625rem solid;
 }
 
 .bordB2 {
-  border-bottom: var(--gap-2) solid;
+  border-bottom: 0.125rem solid;
 }
 
 .bordBWid {
@@ -79,11 +79,11 @@
 }
 
 .bordR1 {
-  border-right: var(--gap-1) solid;
+  border-right: 0.0625rem solid;
 }
 
 .bordR2 {
-  border-right: var(--gap-2) solid;
+  border-right: 0.125rem solid;
 }
 
 .bordRWid {
@@ -91,13 +91,13 @@
 }
 
 .bordX1 {
-  border-left: var(--gap-1) solid;
-  border-right: var(--gap-1) solid;
+  border-left: 0.0625rem solid;
+  border-right: 0.0625rem solid;
 }
 
 .bordX2 {
-  border-left: var(--gap-2) solid;
-  border-right: var(--gap-2) solid;
+  border-left: 0.125rem solid;
+  border-right: 0.125rem solid;
 }
 
 .bordXWid {
@@ -106,16 +106,16 @@
 }
 
 .bordY1 {
-  border-top: var(--gap-1) solid;
-  border-bottom: var(--gap-1) solid;
+  border-top: 0.0625rem solid;
+  border-bottom: 0.0625rem solid;
 }
 
 .bordY2 {
-  border-top: var(--gap-2) solid;
-  border-bottom: var(--gap-2) solid;
+  border-top: 0.125rem solid;
+  border-bottom: 0.125rem solid;
 }
 
 .bordYWid {
-  border-top: var(--gap-3) solid;
+  border-top: 0.25rem solid;
   border-bottom: var(--border-width, 0.5rem) solid;
 }

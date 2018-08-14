@@ -16,7 +16,8 @@ table caption {
 table th {
   text-align: left;
   background-color: var(--table-header-bg-color);
-  border-bottom: solid calc(var(--table-border-width) * 2) var(--table-border-color);
+  border-bottom: solid calc(var(--table-border-width) * 2)
+    var(--table-border-color);
   padding: var(--table-spacing-y) var(--table-spacing-x);
 }
 
@@ -37,7 +38,7 @@ table.isBordered td {
 
 table.isHoverable tbody tr:hover td {
   color: var(--table-hover-color);
-  background-color: var(--table-hover-bg-color);
+  background-color: var(--table-hover-bg-color, var(--state-primary));
 }
 
 table.isStriped tr:nth-child(odd) td {
