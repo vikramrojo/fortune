@@ -20,7 +20,7 @@ a.chip:hover {
   color: var(--chip-color);
   background-image: linear-gradient(var(--darken), var(--darken));
   text-decoration: none;
-  --chip-border-color: var(--link-color);
+  --chip-border-color: var(--chip-link-color);
 }
 
 a.chip:focus {

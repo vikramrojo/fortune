@@ -86,6 +86,7 @@
   --chip-padding: 0.25rem 0.5rem;
   --chip-color-active: var(--white);
   --chip-bg-color-active: var(--state-primary);
+  --chip-link-color: var(--link-color);
   --chip-weight: var(--font-weight-medium);
 
   /* Button */
@@ -144,7 +145,7 @@
   --grid-row: auto / span 1;
 
   /* List */
-  --list-breadcrumb-seperator: "/";
+  --list-breadcrumb-seperator: '/';
   --list-breadcrumb-gap: 0.5rem;
   --list-breadcrumb-weight: var(--font-weight-medium);
   --list-step-color: var(--gray);
@@ -175,9 +176,9 @@
   /* Text */
   --font-sans-serif: sans-serif;
   --font-serif: serif;
-  --font-system: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
-  --font-monospace: Menlo, Consolas, "DejaVu Sans Mono", monospace;
+  --font-system: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
+  --font-monospace: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
   --blockquote-padding: 0.75rem;
   --body-bg-color: var(--white);
   --body-color: var(--gray);
