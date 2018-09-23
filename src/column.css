@@ -7,10 +7,10 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
+}
 
-  &.isFull {
-    max-width: 100%;
-  }
+.row.isFull, .cols.isFull {
+  max-width: 100%;
 }
 
 .row .row,
