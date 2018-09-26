@@ -1,6 +1,6 @@
 {
   "name": "fortune.css",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "Vikram Babu",
   "description": "Fortune is your friendly CSS framework.",
   "main": "dist/fortune.css",
