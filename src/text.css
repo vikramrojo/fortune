@@ -266,6 +266,10 @@ strong,
   text-decoration: overline;
 }
 
+.plaintext {
+  text-decoration: none;
+}
+
 .underline {
   text-decoration: underline;
 }

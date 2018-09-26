@@ -7,7 +7,7 @@
   border-style: solid;
 }
 
-.dropdown li a {
+.dropdown li > a, .dropdown li :not(a) {
   display: block;
   padding: var(--dropdown-padding);
   border-bottom-color: var(--dropdown-border-color);

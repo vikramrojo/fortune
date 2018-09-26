@@ -23,6 +23,7 @@
 
 .tab > a:hover {
   border-color: var(--tab-border-color, var(--state-primary));
+  text-decoration: none;
 }
 
 .tab > a.isActive {

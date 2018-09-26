@@ -54,7 +54,7 @@ button.isOutline,
 .button.isOutline {
   border-color: var(--button-bg-color, var(--state-primary));
   background-color: transparent;
-  color: var(--link-color);
+  color: var(--button-color, var(--link-color));
 }
 
 button.isOutline:hover,
