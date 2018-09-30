@@ -9,10 +9,6 @@
   justify-content: flex-start;
 }
 
-.row.isFull, .cols.isFull {
-  max-width: 100%;
-}
-
 .row .row,
 .cols .cols {
   margin-left: calc(var(--column-gutter, 2rem) / -2);
@@ -25,6 +21,16 @@
   margin-right: 0;
   width: 100%;
 }
+
+.row.isFull, .cols.isFull {
+  min-width: 100%;
+}
+
+.row .row.isFull, .cols .cols.isFull {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .col {
   flex: 1;
@@ -224,4 +230,8 @@
 
 .multiCol4 {
   column-count: 4;
+}
+
+.multiCol4 {
+  column-count: 5;
 }

@@ -96,6 +96,18 @@
   flex-grow: 6;
 }
 
+.grow6 {
+  flex-grow: 7;
+}
+
+.grow6 {
+  flex-grow: 8;
+}
+
+.grow6 {
+  flex-grow: 9;
+}
+
 .selfCenter {
   align-self: center;
 }

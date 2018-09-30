@@ -3,29 +3,33 @@
 /* Tokens */
 @import url("./variables.css");
 
-/* Components */
+/* 4 Elements */
+@import url("./form.css");
+@import url("./list.css");
+@import url("./table.css");
+@import url("./text.css");
+
+/* 7 Components */
 @import url("./alert.css");
 @import url("./button.css");
 @import url("./chip.css");
 @import url("./dropdown.css");
-@import url("./form.css");
-@import url("./list.css");
 @import url("./nav.css");
 @import url("./tab.css");
-@import url("./table.css");
-@import url("./text.css");
 @import url("./tooltip.css");
 
-/* Utilities */
+/* 5 Layout */
+@import url("./column.css");
+@import url("./dimension.css");
+@import url("./flex.css");
+@import url("./grid.css");
+@import url("./position.css");
+
+/* 7 Utilities */
 @import url("./animate.css");
 @import url("./border.css");
 @import url("./color.css");
-@import url("./column.css");
-@import url("./dimension.css");
 @import url("./display.css");
-@import url("./flex.css");
-@import url("./grid.css");
 @import url("./media.css");
 @import url("./opacity.css");
-@import url("./position.css");
 @import url("./shadow.css");
