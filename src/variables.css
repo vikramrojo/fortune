@@ -1,5 +1,6 @@
 :root {
   /* Tokens */
+  --space: initial;
   --space-0: 0rem;
   --space-1: 1rem; /* 16px */
   --space-2: 2rem; /* 32px */

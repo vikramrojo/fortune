@@ -17,19 +17,3 @@
 @import url("./nav.css");
 @import url("./tab.css");
 @import url("./tooltip.css");
-
-/* 5 Layout */
-@import url("./column.css");
-@import url("./dimension.css");
-@import url("./flex.css");
-@import url("./grid.css");
-@import url("./position.css");
-
-/* 7 Utility */
-@import url("./animate.css");
-@import url("./border.css");
-@import url("./color.css");
-@import url("./display.css");
-@import url("./media.css");
-@import url("./opacity.css");
-@import url("./shadow.css");
