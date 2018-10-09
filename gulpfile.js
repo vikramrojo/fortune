@@ -9,6 +9,7 @@ const size = require('gulp-size');
 const stylelint = require('gulp-stylelint');
 const fortune = ['./src/fortune.css'];
 const lab = ['./src/lab.css'];
+const fortuner = ['./src/fortuner.css'];
 
 const postcssRegular = [
   postcssimport(),
@@ -28,10 +29,16 @@ const postcssLab = [
     browsers: ['last 2 versions']
   })
 ];
+const postcssFortuner = [
+  postcssimport(),
+  postcsspresetenv({
+    browsers: ['last 2 versions']
+  })
+];
 
 
 // Build
-gulp.task('build', ['build: regular', 'build: minified', 'build: prefixed', 'build: lab']);
+gulp.task('build', ['build: regular', 'build: prefixed', 'build: lab', 'build: fortuner']);
 
 // Build vanilla version
 gulp.task('build: regular', () =>
@@ -41,21 +48,10 @@ gulp.task('build: regular', () =>
 		.pipe(rename("fortune.css"))
 		.pipe(gulp.dest("./dist"))
 		.pipe(size({ showFiles: true }))
-		.pipe(gzip())
-		.pipe(rename("fortune.css.gz"))
-		.pipe(gulp.dest("./dist"))
-		.pipe(size({ showFiles: true, gzip: true }))
-);
-
-// Build minified version
-gulp.task('build: minified', () =>
-	gulp
-		.src(fortune)
-		.pipe(postcss(postcssRegular))
 		.pipe(nano())
 		.pipe(rename("fortune.min.css"))
 		.pipe(gulp.dest("./dist"))
-		.pipe(size({ showFiles: true }))
+		.pipe(size({ showFiles: true }))    
 		.pipe(gzip())
 		.pipe(rename("fortune.min.css.gz"))
 		.pipe(gulp.dest("./dist"))
@@ -67,14 +63,13 @@ gulp.task('build: prefixed', () =>
   gulp
     .src(fortune)
     .pipe(postcss(postcssPrefix))
+    .pipe(rename('fortune.prefixed.css'))
+    .pipe(gulp.dest('./dist'))
+    .pipe(size({ showFiles: true }))
     .pipe(nano())
     .pipe(rename('fortune.prefixed.min.css'))
     .pipe(gulp.dest('./dist'))
     .pipe(size({ showFiles: true }))
-    .pipe(gzip())
-    .pipe(rename('fortune.prefixed.min.css.gz'))
-    .pipe(gulp.dest('./dist'))
-    .pipe(size({ showFiles: true, gzip: true }))
 );
 
 // Build labs
@@ -82,14 +77,27 @@ gulp.task('build: lab', () =>
   gulp
     .src(lab)
     .pipe(postcss(postcssLab))
+    .pipe(rename('lab.css'))
+    .pipe(gulp.dest('./dist'))
+    .pipe(size({ showFiles: true }))
     .pipe(nano())
     .pipe(rename('lab.min.css'))
     .pipe(gulp.dest('./dist'))
     .pipe(size({ showFiles: true }))
-		.pipe(gzip())
-		.pipe(rename("lab.min.css.gz"))
-		.pipe(gulp.dest("./dist"))
-		.pipe(size({ showFiles: true, gzip: true }))
+);
+
+// Build labs
+gulp.task('build: fortuner', () =>
+  gulp
+    .src(fortuner)
+    .pipe(postcss(postcssFortuner))
+    .pipe(rename('fortuner.css'))
+    .pipe(gulp.dest('./dist'))
+    .pipe(size({ showFiles: true }))
+    .pipe(nano())
+    .pipe(rename('fortuner.min.css'))
+    .pipe(gulp.dest('./dist'))
+    .pipe(size({ showFiles: true }))
 );
 
 // Lint
